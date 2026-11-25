@@ -1,0 +1,623 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 18,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 18,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 18
+    }
+  },
+  "results": [
+    {
+      "path": "src/docs/diagrams/styled/agent-collaboration-flow-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 777,
+      "nonEmptyLines": 777,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 774
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 775
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 776
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/business-capabilities-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 456,
+      "nonEmptyLines": 456,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 453
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 454
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 455
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/chart-generation-flow-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 612,
+      "nonEmptyLines": 612,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 609
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 610
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 611
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/chart-startup-flow-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 362,
+      "nonEmptyLines": 362,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 359
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 360
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 361
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/design-value-map-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 449,
+      "nonEmptyLines": 449,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 446
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 447
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 448
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/improvement-roadmap-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 268,
+      "nonEmptyLines": 268,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 265
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 266
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 267
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/input-guard-flow-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 549,
+      "nonEmptyLines": 549,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 546
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 547
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 548
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/input-guard-resume-flow-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 518,
+      "nonEmptyLines": 518,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 515
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 516
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 517
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/manifest.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 114,
+      "nonEmptyLines": 114,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/module-dependencies-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 494,
+      "nonEmptyLines": 494,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 491
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 492
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 493
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/order-approval-flow-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 662,
+      "nonEmptyLines": 662,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 659
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 660
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 661
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/procurement-architecture-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 372,
+      "nonEmptyLines": 372,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 369
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 370
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 371
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/sandbox-lifecycle-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 667,
+      "nonEmptyLines": 667,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 664
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 665
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 666
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/skills-context-flow-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 405,
+      "nonEmptyLines": 405,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 402
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 403
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 404
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/sse-interaction-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 567,
+      "nonEmptyLines": 567,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 564
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 565
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 566
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/startup-dependencies-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 489,
+      "nonEmptyLines": 489,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 486
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 487
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 488
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/storage-responsibilities-zh.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 483,
+      "nonEmptyLines": 483,
+      "sections": [
+        {
+          "heading": "diagramData",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "viewportOption",
+          "level": 1,
+          "line": 480
+        },
+        {
+          "heading": "viewportSetting",
+          "level": 1,
+          "line": 481
+        },
+        {
+          "heading": "search",
+          "level": 1,
+          "line": 482
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/docs/diagrams/styled/validation.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 146,
+      "nonEmptyLines": 146,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

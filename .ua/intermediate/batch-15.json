@@ -1,0 +1,981 @@
+{
+  "nodes": [
+    {
+      "id": "document:src/skills/procurement/procurement-optimization/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "src/skills/procurement/procurement-optimization/SKILL.md",
+      "summary": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "技能",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:src/skills/procurement/supplier-price-urls/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "src/skills/procurement/supplier-price-urls/SKILL.md",
+      "summary": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "技能",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:src/skills/procurement/supplier-price-urls/data/url_mapping.yaml",
+      "type": "config",
+      "name": "url_mapping.yaml",
+      "filePath": "src/skills/procurement/supplier-price-urls/data/url_mapping.yaml",
+      "summary": "为采购 Agent 提供url mapping领域技能说明或辅助脚本。",
+      "tags": [
+        "配置",
+        "技能",
+        "yaml"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:src/skills/procurement/web-scraper/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "src/skills/procurement/web-scraper/SKILL.md",
+      "summary": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "技能",
+        "api"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:src/skills/procurement/web-scraper/_meta.json",
+      "type": "config",
+      "name": "_meta.json",
+      "filePath": "src/skills/procurement/web-scraper/_meta.json",
+      "summary": "为采购 Agent 提供 meta领域技能说明或辅助脚本。",
+      "tags": [
+        "配置",
+        "技能",
+        "api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "type": "file",
+      "name": "scrape_page.py",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "summary": "为采购 Agent 提供scrape page领域技能说明或辅助脚本。",
+      "tags": [
+        "技能",
+        "api",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/test/test_logging.py",
+      "type": "file",
+      "name": "test_logging.py",
+      "filePath": "src/test/test_logging.py",
+      "summary": "验证test logging相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/test/test_skills_sync.py",
+      "type": "file",
+      "name": "test_skills_sync.py",
+      "filePath": "src/test/test_skills_sync.py",
+      "summary": "验证test skills sync相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "技能",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/test/test_subagents.py",
+      "type": "file",
+      "name": "test_subagents.py",
+      "filePath": "src/test/test_subagents.py",
+      "summary": "验证test subagents相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/test/test_web_search.py",
+      "type": "file",
+      "name": "test_web_search.py",
+      "filePath": "src/test/test_web_search.py",
+      "summary": "验证test web search相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "api",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:start_web.py",
+      "type": "file",
+      "name": "start_web.py",
+      "filePath": "start_web.py",
+      "summary": "实现项目start web模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "api",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_extract_main_content",
+      "type": "function",
+      "name": "_extract_main_content",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        50,
+        64
+      ],
+      "summary": "处理 extract main content相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_clean_soup",
+      "type": "function",
+      "name": "_clean_soup",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        67,
+        85
+      ],
+      "summary": "处理 clean soup相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_html_to_markdown",
+      "type": "function",
+      "name": "_html_to_markdown",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        88,
+        96
+      ],
+      "summary": "处理 html to markdown相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_resolve_url",
+      "type": "function",
+      "name": "_resolve_url",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        99,
+        108
+      ],
+      "summary": "处理 resolve url相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_walk",
+      "type": "function",
+      "name": "_walk",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        111,
+        229
+      ],
+      "summary": "处理 walk相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_inline_content",
+      "type": "function",
+      "name": "_inline_content",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        232,
+        263
+      ],
+      "summary": "处理 inline content相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_table_to_md",
+      "type": "function",
+      "name": "_table_to_md",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        266,
+        287
+      ],
+      "summary": "处理 table to md相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_make_output_path",
+      "type": "function",
+      "name": "_make_output_path",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        294,
+        306
+      ],
+      "summary": "处理 make output path相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_try_install_markdownify",
+      "type": "function",
+      "name": "_try_install_markdownify",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        309,
+        319
+      ],
+      "summary": "处理 try install markdownify相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:fetch_and_convert",
+      "type": "function",
+      "name": "fetch_and_convert",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        322,
+        392
+      ],
+      "summary": "处理fetch and convert相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_has_lxml",
+      "type": "function",
+      "name": "_has_lxml",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        395,
+        400
+      ],
+      "summary": "处理 has lxml相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:_try_markdownify",
+      "type": "function",
+      "name": "_try_markdownify",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        403,
+        428
+      ],
+      "summary": "处理 try markdownify相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/procurement/web-scraper/scrape_page.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/skills/procurement/web-scraper/scrape_page.py",
+      "lineRange": [
+        435,
+        447
+      ],
+      "summary": "处理main相关逻辑，供scrape page模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/test/test_logging.py:LoggingTests",
+      "type": "class",
+      "name": "LoggingTests",
+      "filePath": "src/test/test_logging.py",
+      "lineRange": [
+        15,
+        177
+      ],
+      "summary": "LoggingTests 封装test logging相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/test_skills_sync.py:SkillsUploadTests",
+      "type": "class",
+      "name": "SkillsUploadTests",
+      "filePath": "src/test/test_skills_sync.py",
+      "lineRange": [
+        23,
+        153
+      ],
+      "summary": "SkillsUploadTests 封装test skills sync相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/test_subagents.py:SubagentTests",
+      "type": "class",
+      "name": "SubagentTests",
+      "filePath": "src/test/test_subagents.py",
+      "lineRange": [
+        32,
+        172
+      ],
+      "summary": "SubagentTests 封装test subagents相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/test_web_search.py:WebSearchTests",
+      "type": "class",
+      "name": "WebSearchTests",
+      "filePath": "src/test/test_web_search.py",
+      "lineRange": [
+        15,
+        129
+      ],
+      "summary": "WebSearchTests 封装test web search相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:start_web.py:check_ports_available",
+      "type": "function",
+      "name": "check_ports_available",
+      "filePath": "start_web.py",
+      "lineRange": [
+        29,
+        65
+      ],
+      "summary": "处理check ports available相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:start_web.py:_start_process",
+      "type": "function",
+      "name": "_start_process",
+      "filePath": "start_web.py",
+      "lineRange": [
+        68,
+        85
+      ],
+      "summary": "处理 start process相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:start_web.py:_service_env",
+      "type": "function",
+      "name": "_service_env",
+      "filePath": "start_web.py",
+      "lineRange": [
+        88,
+        92
+      ],
+      "summary": "处理 service env相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:start_web.py:run_backend",
+      "type": "function",
+      "name": "run_backend",
+      "filePath": "start_web.py",
+      "lineRange": [
+        95,
+        104
+      ],
+      "summary": "处理run backend相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:start_web.py:_check_running",
+      "type": "function",
+      "name": "_check_running",
+      "filePath": "start_web.py",
+      "lineRange": [
+        107,
+        110
+      ],
+      "summary": "处理 check running相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:start_web.py:_wait_for_service",
+      "type": "function",
+      "name": "_wait_for_service",
+      "filePath": "start_web.py",
+      "lineRange": [
+        113,
+        155
+      ],
+      "summary": "处理 wait for service相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:start_web.py:check_backend_ready",
+      "type": "function",
+      "name": "check_backend_ready",
+      "filePath": "start_web.py",
+      "lineRange": [
+        158,
+        162
+      ],
+      "summary": "处理check backend ready相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:start_web.py:run_frontend",
+      "type": "function",
+      "name": "run_frontend",
+      "filePath": "start_web.py",
+      "lineRange": [
+        165,
+        189
+      ],
+      "summary": "处理run frontend相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:start_web.py:stop_process",
+      "type": "function",
+      "name": "stop_process",
+      "filePath": "start_web.py",
+      "lineRange": [
+        192,
+        219
+      ],
+      "summary": "处理stop process相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:start_web.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "start_web.py",
+      "lineRange": [
+        222,
+        275
+      ],
+      "summary": "处理main相关逻辑，供start web模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_extract_main_content",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_extract_main_content",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_clean_soup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_clean_soup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_html_to_markdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_html_to_markdown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_resolve_url",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_resolve_url",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_walk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_walk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_inline_content",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_inline_content",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_table_to_md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_table_to_md",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_make_output_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_make_output_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_try_install_markdownify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_try_install_markdownify",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:fetch_and_convert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:fetch_and_convert",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_has_lxml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_has_lxml",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_try_markdownify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:_try_markdownify",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/procurement/web-scraper/scrape_page.py",
+      "target": "function:src/skills/procurement/web-scraper/scrape_page.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_logging.py",
+      "target": "class:src/test/test_logging.py:LoggingTests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_skills_sync.py",
+      "target": "class:src/test/test_skills_sync.py:SkillsUploadTests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_subagents.py",
+      "target": "class:src/test/test_subagents.py:SubagentTests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_web_search.py",
+      "target": "class:src/test/test_web_search.py:WebSearchTests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:check_ports_available",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:check_ports_available",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_start_process",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_start_process",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_service_env",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_service_env",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:run_backend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:run_backend",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_check_running",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_check_running",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_wait_for_service",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:_wait_for_service",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:check_backend_ready",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:check_backend_ready",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:run_frontend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:run_frontend",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:stop_process",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:stop_process",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:start_web.py",
+      "target": "function:start_web.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

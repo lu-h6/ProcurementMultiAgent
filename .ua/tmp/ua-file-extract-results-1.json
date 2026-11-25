@@ -1,0 +1,2275 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 16,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 16,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 16,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/agent/backends/sandbox_manager.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 222,
+      "nonEmptyLines": 171,
+      "functions": [
+        {
+          "name": "_sandbox_storage",
+          "startLine": 31,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "initialize",
+          "startLine": 37,
+          "endLine": 40,
+          "params": [
+            "storage"
+          ]
+        },
+        {
+          "name": "pre_warm",
+          "startLine": 43,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "ensure_sandbox_for_user",
+          "startLine": 56,
+          "endLine": 117,
+          "params": [
+            "user_id"
+          ]
+        },
+        {
+          "name": "recreate_user_sandbox",
+          "startLine": 120,
+          "endLine": 127,
+          "params": [
+            "user_id"
+          ]
+        },
+        {
+          "name": "cleanup_user",
+          "startLine": 130,
+          "endLine": 140,
+          "params": [
+            "user_id"
+          ]
+        },
+        {
+          "name": "shutdown",
+          "startLine": 143,
+          "endLine": 158,
+          "params": []
+        },
+        {
+          "name": "_delete_sandbox",
+          "startLine": 164,
+          "endLine": 172,
+          "params": [
+            "sandbox_id"
+          ]
+        },
+        {
+          "name": "_rebuild_sandbox",
+          "startLine": 175,
+          "endLine": 200,
+          "params": [
+            "user_id",
+            "existing_proxy"
+          ]
+        },
+        {
+          "name": "_schedule_replenish",
+          "startLine": 203,
+          "endLine": 206,
+          "params": []
+        },
+        {
+          "name": "_replenish_warm",
+          "startLine": 209,
+          "endLine": 222,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "_sandbox_storage",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "initialize",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "pre_warm",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "ensure_sandbox_for_user",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "recreate_user_sandbox",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "cleanup_user",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "shutdown",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "_delete_sandbox",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "_rebuild_sandbox",
+          "line": 175,
+          "isDefault": false
+        },
+        {
+          "name": "_schedule_replenish",
+          "line": 203,
+          "isDefault": false
+        },
+        {
+          "name": "_replenish_warm",
+          "line": 209,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_sandbox_storage",
+          "callee": "RuntimeError",
+          "lineNumber": 33
+        },
+        {
+          "caller": "pre_warm",
+          "callee": "logger.debug",
+          "lineNumber": 46
+        },
+        {
+          "caller": "pre_warm",
+          "callee": "setup_sandbox",
+          "lineNumber": 48
+        },
+        {
+          "caller": "pre_warm",
+          "callee": "SandboxBackendProxy",
+          "lineNumber": 49
+        },
+        {
+          "caller": "pre_warm",
+          "callee": "logger.info",
+          "lineNumber": 50
+        },
+        {
+          "caller": "pre_warm",
+          "callee": "logger.warning",
+          "lineNumber": 52
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "SANDBOX_BACKENDS.get",
+          "lineNumber": 66
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "proxy.aexecute",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "logger.debug",
+          "lineNumber": 70
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "logger.warning",
+          "lineNumber": 73
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_rebuild_sandbox",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_sandbox_storage().bind_sandbox",
+          "lineNumber": 85
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_sandbox_storage",
+          "lineNumber": 85
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "logger.info",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_schedule_replenish",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_sandbox_storage().get_sandbox",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_sandbox_storage",
+          "lineNumber": 94
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "doc.get",
+          "lineNumber": 95
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "logger.debug",
+          "lineNumber": 97
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "setup_sandbox",
+          "lineNumber": 99
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "logger.warning",
+          "lineNumber": 101
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_rebuild_sandbox",
+          "lineNumber": 102
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "sandbox_backend.aexecute",
+          "lineNumber": 105
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "logger.warning",
+          "lineNumber": 107
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_rebuild_sandbox",
+          "lineNumber": 108
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "SandboxBackendProxy",
+          "lineNumber": 110
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_sandbox_storage().bind_sandbox",
+          "lineNumber": 112
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_sandbox_storage",
+          "lineNumber": 112
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "logger.info",
+          "lineNumber": 113
+        },
+        {
+          "caller": "ensure_sandbox_for_user",
+          "callee": "_rebuild_sandbox",
+          "lineNumber": 117
+        },
+        {
+          "caller": "recreate_user_sandbox",
+          "callee": "_rebuild_sandbox",
+          "lineNumber": 127
+        },
+        {
+          "caller": "recreate_user_sandbox",
+          "callee": "SANDBOX_BACKENDS.get",
+          "lineNumber": 127
+        },
+        {
+          "caller": "cleanup_user",
+          "callee": "SANDBOX_BACKENDS.pop",
+          "lineNumber": 132
+        },
+        {
+          "caller": "cleanup_user",
+          "callee": "_delete_sandbox",
+          "lineNumber": 135
+        },
+        {
+          "caller": "cleanup_user",
+          "callee": "logger.warning",
+          "lineNumber": 137
+        },
+        {
+          "caller": "cleanup_user",
+          "callee": "_sandbox_storage().delete_sandbox",
+          "lineNumber": 139
+        },
+        {
+          "caller": "cleanup_user",
+          "callee": "_sandbox_storage",
+          "lineNumber": 139
+        },
+        {
+          "caller": "cleanup_user",
+          "callee": "logger.info",
+          "lineNumber": 140
+        },
+        {
+          "caller": "shutdown",
+          "callee": "_delete_sandbox",
+          "lineNumber": 149
+        },
+        {
+          "caller": "shutdown",
+          "callee": "list",
+          "lineNumber": 154
+        },
+        {
+          "caller": "shutdown",
+          "callee": "cleanup_user",
+          "lineNumber": 155
+        },
+        {
+          "caller": "_delete_sandbox",
+          "callee": "SandboxManager.create",
+          "lineNumber": 168
+        },
+        {
+          "caller": "_delete_sandbox",
+          "callee": "manager.kill_sandbox",
+          "lineNumber": 170
+        },
+        {
+          "caller": "_delete_sandbox",
+          "callee": "manager.close",
+          "lineNumber": 172
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "logger.debug",
+          "lineNumber": 179
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "setup_sandbox",
+          "lineNumber": 180
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "existing_proxy.replace_backend",
+          "lineNumber": 184
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "SandboxBackendProxy",
+          "lineNumber": 186
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "_sandbox_storage().get_sandbox",
+          "lineNumber": 190
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "_sandbox_storage",
+          "lineNumber": 190
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "old_doc.get",
+          "lineNumber": 191
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "_delete_sandbox",
+          "lineNumber": 193
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "_sandbox_storage().bind_sandbox",
+          "lineNumber": 197
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "_sandbox_storage",
+          "lineNumber": 197
+        },
+        {
+          "caller": "_rebuild_sandbox",
+          "callee": "logger.info",
+          "lineNumber": 199
+        },
+        {
+          "caller": "_schedule_replenish",
+          "callee": "asyncio.create_task",
+          "lineNumber": 206
+        },
+        {
+          "caller": "_schedule_replenish",
+          "callee": "_replenish_warm",
+          "lineNumber": 206
+        },
+        {
+          "caller": "_replenish_warm",
+          "callee": "setup_sandbox",
+          "lineNumber": 216
+        },
+        {
+          "caller": "_replenish_warm",
+          "callee": "SandboxBackendProxy",
+          "lineNumber": 219
+        },
+        {
+          "caller": "_replenish_warm",
+          "callee": "logger.info",
+          "lineNumber": 220
+        },
+        {
+          "caller": "_replenish_warm",
+          "callee": "logger.warning",
+          "lineNumber": 222
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/backends/sandbox_proxy.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 106,
+      "nonEmptyLines": 76,
+      "classes": [
+        {
+          "name": "SandboxBackendProxy",
+          "startLine": 24,
+          "endLine": 106,
+          "methods": [
+            "__init__",
+            "id",
+            "replace_backend",
+            "execute",
+            "read",
+            "write",
+            "edit",
+            "ls",
+            "glob",
+            "grep",
+            "delete",
+            "upload_files",
+            "download_files",
+            "aexecute",
+            "aread",
+            "awrite",
+            "aedit",
+            "als",
+            "aglob",
+            "agrep",
+            "adelete",
+            "aupload_files",
+            "adownload_files",
+            "__getattr__"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SandboxBackendProxy",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "execute",
+          "callee": "self._backend.execute",
+          "lineNumber": 40
+        },
+        {
+          "caller": "read",
+          "callee": "self._backend.read",
+          "lineNumber": 43
+        },
+        {
+          "caller": "write",
+          "callee": "self._backend.write",
+          "lineNumber": 46
+        },
+        {
+          "caller": "edit",
+          "callee": "self._backend.edit",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ls",
+          "callee": "self._backend.ls",
+          "lineNumber": 52
+        },
+        {
+          "caller": "glob",
+          "callee": "self._backend.glob",
+          "lineNumber": 55
+        },
+        {
+          "caller": "grep",
+          "callee": "self._backend.grep",
+          "lineNumber": 59
+        },
+        {
+          "caller": "delete",
+          "callee": "self._backend.delete",
+          "lineNumber": 62
+        },
+        {
+          "caller": "upload_files",
+          "callee": "self._backend.upload_files",
+          "lineNumber": 65
+        },
+        {
+          "caller": "download_files",
+          "callee": "self._backend.download_files",
+          "lineNumber": 68
+        },
+        {
+          "caller": "aexecute",
+          "callee": "self._backend.aexecute",
+          "lineNumber": 73
+        },
+        {
+          "caller": "aread",
+          "callee": "self._backend.aread",
+          "lineNumber": 76
+        },
+        {
+          "caller": "awrite",
+          "callee": "self._backend.awrite",
+          "lineNumber": 79
+        },
+        {
+          "caller": "aedit",
+          "callee": "self._backend.aedit",
+          "lineNumber": 82
+        },
+        {
+          "caller": "als",
+          "callee": "self._backend.als",
+          "lineNumber": 85
+        },
+        {
+          "caller": "aglob",
+          "callee": "self._backend.aglob",
+          "lineNumber": 88
+        },
+        {
+          "caller": "agrep",
+          "callee": "self._backend.agrep",
+          "lineNumber": 92
+        },
+        {
+          "caller": "adelete",
+          "callee": "self._backend.adelete",
+          "lineNumber": 95
+        },
+        {
+          "caller": "aupload_files",
+          "callee": "self._backend.aupload_files",
+          "lineNumber": 98
+        },
+        {
+          "caller": "adownload_files",
+          "callee": "self._backend.adownload_files",
+          "lineNumber": 101
+        },
+        {
+          "caller": "__getattr__",
+          "callee": "name.startswith",
+          "lineNumber": 104
+        },
+        {
+          "caller": "__getattr__",
+          "callee": "AttributeError",
+          "lineNumber": 105
+        },
+        {
+          "caller": "__getattr__",
+          "callee": "getattr",
+          "lineNumber": 106
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/config.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 66,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/main_agent.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 254,
+      "nonEmptyLines": 226,
+      "functions": [
+        {
+          "name": "precompute_agent_context",
+          "startLine": 93,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "create_main_agent",
+          "startLine": 114,
+          "endLine": 254,
+          "params": [
+            "config",
+            "sandbox_backend",
+            "precomputed"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PrecomputedContext",
+          "startLine": 80,
+          "endLine": 90,
+          "methods": [],
+          "properties": [
+            "analyst_mcp_tools",
+            "order_mcp_tools",
+            "extra_mcp_tools",
+            "chart_tool"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PrecomputedContext",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "precompute_agent_context",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "create_main_agent",
+          "line": 114,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "precompute_agent_context",
+          "callee": "load_mcp_tools",
+          "lineNumber": 95
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 96
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "logger.info",
+          "lineNumber": 97
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "len",
+          "lineNumber": 99
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "len",
+          "lineNumber": 99
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "len",
+          "lineNumber": 100
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "len",
+          "lineNumber": 100
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "len",
+          "lineNumber": 100
+        },
+        {
+          "caller": "precompute_agent_context",
+          "callee": "PrecomputedContext",
+          "lineNumber": 102
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "mysql_storage.initialize",
+          "lineNumber": 130
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "CompositeBackend",
+          "lineNumber": 136
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "StoreBackend",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "StoreBackend",
+          "lineNumber": 143
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "LOCAL_AGENTS_MD.read_text(encoding=\"utf-8\").encode",
+          "lineNumber": 150
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "LOCAL_AGENTS_MD.read_text",
+          "lineNumber": 150
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "sandbox_backend.aupload_files",
+          "lineNumber": 151
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "create_assign_skill_tool",
+          "lineNumber": 154
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "create_download_tool",
+          "lineNumber": 159
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "create_analyst_middleware",
+          "lineNumber": 186
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "create_order_middleware",
+          "lineNumber": 209
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "GuardrailResponseMiddleware",
+          "lineNumber": 214
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "SandboxHealthMiddleware",
+          "lineNumber": 216
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "ToolErrorMiddleware",
+          "lineNumber": 222
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "UserInfoInjectionMiddleware",
+          "lineNumber": 224
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "SkillsSyncMiddleware",
+          "lineNumber": 226
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "UserSkillsRestoreMiddleware",
+          "lineNumber": 228
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "create_summarization_tool_middleware",
+          "lineNumber": 230
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "SandboxCircuitBreakerMiddleware",
+          "lineNumber": 232
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "ModelCallLimitMiddleware",
+          "lineNumber": 234
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "ToolCallLimitMiddleware",
+          "lineNumber": 235
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "create_deep_agent",
+          "lineNumber": 239
+        },
+        {
+          "caller": "create_main_agent",
+          "callee": "logger.debug",
+          "lineNumber": 253
+        }
+      ],
+      "metrics": {
+        "importCount": 18,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/memory/prompts.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 249,
+      "nonEmptyLines": 192,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/middleware_config.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "create_analyst_middleware",
+          "startLine": 16,
+          "endLine": 36,
+          "params": [
+            "model",
+            "backend"
+          ]
+        },
+        {
+          "name": "create_order_middleware",
+          "startLine": 39,
+          "endLine": 52,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "create_analyst_middleware",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "create_order_middleware",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create_analyst_middleware",
+          "callee": "create_summarization_tool_middleware",
+          "lineNumber": 33
+        },
+        {
+          "caller": "create_analyst_middleware",
+          "callee": "ModelCallLimitMiddleware",
+          "lineNumber": 34
+        },
+        {
+          "caller": "create_analyst_middleware",
+          "callee": "ToolCallLimitMiddleware",
+          "lineNumber": 35
+        },
+        {
+          "caller": "create_order_middleware",
+          "callee": "ModelCallLimitMiddleware",
+          "lineNumber": 50
+        },
+        {
+          "caller": "create_order_middleware",
+          "callee": "ToolCallLimitMiddleware",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/middlewares/context_injection.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 48,
+      "classes": [
+        {
+          "name": "UserInfoInjectionMiddleware",
+          "startLine": 15,
+          "endLine": 58,
+          "methods": [
+            "_with_context",
+            "wrap_model_call",
+            "awrap_model_call"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserInfoInjectionMiddleware",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_with_context",
+          "callee": "getattr",
+          "lineNumber": 19
+        },
+        {
+          "caller": "_with_context",
+          "callee": "ctx.get",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_with_context",
+          "callee": "isinstance",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_with_context",
+          "callee": "getattr",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_with_context",
+          "callee": "logger.warning",
+          "lineNumber": 22
+        },
+        {
+          "caller": "_with_context",
+          "callee": "ctx.get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "_with_context",
+          "callee": "isinstance",
+          "lineNumber": 24
+        },
+        {
+          "caller": "_with_context",
+          "callee": "getattr",
+          "lineNumber": 24
+        },
+        {
+          "caller": "_with_context",
+          "callee": "json.dumps",
+          "lineNumber": 27
+        },
+        {
+          "caller": "_with_context",
+          "callee": "json.dumps",
+          "lineNumber": 28
+        },
+        {
+          "caller": "_with_context",
+          "callee": "SystemMessage",
+          "lineNumber": 41
+        },
+        {
+          "caller": "_with_context",
+          "callee": "isinstance",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_with_context",
+          "callee": "base.model_copy",
+          "lineNumber": 45
+        },
+        {
+          "caller": "_with_context",
+          "callee": "isinstance",
+          "lineNumber": 49
+        },
+        {
+          "caller": "_with_context",
+          "callee": "isinstance",
+          "lineNumber": 49
+        },
+        {
+          "caller": "_with_context",
+          "callee": "msg.content.startswith",
+          "lineNumber": 50
+        },
+        {
+          "caller": "_with_context",
+          "callee": "request.override",
+          "lineNumber": 52
+        },
+        {
+          "caller": "wrap_model_call",
+          "callee": "handler",
+          "lineNumber": 55
+        },
+        {
+          "caller": "wrap_model_call",
+          "callee": "self._with_context",
+          "lineNumber": 55
+        },
+        {
+          "caller": "awrap_model_call",
+          "callee": "handler",
+          "lineNumber": 58
+        },
+        {
+          "caller": "awrap_model_call",
+          "callee": "self._with_context",
+          "lineNumber": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/middlewares/guardrail_response.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 18,
+      "classes": [
+        {
+          "name": "GuardrailResponseMiddleware",
+          "startLine": 9,
+          "endLine": 23,
+          "methods": [
+            "before_agent",
+            "abefore_agent"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GuardrailResponseMiddleware",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "before_agent",
+          "callee": "context.get",
+          "lineNumber": 14
+        },
+        {
+          "caller": "before_agent",
+          "callee": "isinstance",
+          "lineNumber": 14
+        },
+        {
+          "caller": "before_agent",
+          "callee": "getattr",
+          "lineNumber": 15
+        },
+        {
+          "caller": "before_agent",
+          "callee": "AIMessage",
+          "lineNumber": 18
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "self.before_agent",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/middlewares/sandbox_breaker.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 109,
+      "nonEmptyLines": 89,
+      "functions": [
+        {
+          "name": "_looks_like_sandbox_error",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "_count_consecutive_sandbox_errors",
+          "startLine": 47,
+          "endLine": 72,
+          "params": [
+            "messages"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SandboxCircuitBreakerMiddleware",
+          "startLine": 75,
+          "endLine": 109,
+          "methods": [
+            "__init__",
+            "before_model",
+            "abefore_model"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "_looks_like_sandbox_error",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "_count_consecutive_sandbox_errors",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "SandboxCircuitBreakerMiddleware",
+          "line": 75,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_looks_like_sandbox_error",
+          "callee": "text.lower",
+          "lineNumber": 43
+        },
+        {
+          "caller": "_looks_like_sandbox_error",
+          "callee": "any",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_looks_like_sandbox_error",
+          "callee": "kw.lower",
+          "lineNumber": 44
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "reversed",
+          "lineNumber": 52
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "isinstance",
+          "lineNumber": 53
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "getattr",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "isinstance",
+          "lineNumber": 55
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "\" \".join",
+          "lineNumber": 56
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "b.get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "isinstance",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "str",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "getattr",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "_looks_like_sandbox_error",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "str",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "isinstance",
+          "lineNumber": 65
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "getattr",
+          "lineNumber": 66
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "isinstance",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "str",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_count_consecutive_sandbox_errors",
+          "callee": "getattr",
+          "lineNumber": 70
+        },
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 81
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 81
+        },
+        {
+          "caller": "before_model",
+          "callee": "state.get",
+          "lineNumber": 88
+        },
+        {
+          "caller": "before_model",
+          "callee": "_count_consecutive_sandbox_errors",
+          "lineNumber": 92
+        },
+        {
+          "caller": "before_model",
+          "callee": "logger.warning",
+          "lineNumber": 96
+        },
+        {
+          "caller": "before_model",
+          "callee": "AIMessage",
+          "lineNumber": 103
+        },
+        {
+          "caller": "abefore_model",
+          "callee": "self.before_model",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/middlewares/sandbox_health.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 61,
+      "classes": [
+        {
+          "name": "SandboxHealthMiddleware",
+          "startLine": 24,
+          "endLine": 77,
+          "methods": [
+            "__init__",
+            "before_agent",
+            "abefore_agent",
+            "_check",
+            "_recover"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SandboxHealthMiddleware",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 39
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "self._check",
+          "lineNumber": 52
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "logger.warning",
+          "lineNumber": 56
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "self._recover",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_check",
+          "callee": "self._backend.aexecute",
+          "lineNumber": 62
+        },
+        {
+          "caller": "_recover",
+          "callee": "recreate_user_sandbox",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_recover",
+          "callee": "self._backend.aupload_files",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_recover",
+          "callee": "logger.info",
+          "lineNumber": 73
+        },
+        {
+          "caller": "_recover",
+          "callee": "logger.exception",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/middlewares/skills_sync.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 91,
+      "classes": [
+        {
+          "name": "SkillsSyncMiddleware",
+          "startLine": 21,
+          "endLine": 110,
+          "methods": [
+            "__init__",
+            "before_agent",
+            "abefore_agent",
+            "_sync_files",
+            "_make_notification"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SkillsSyncMiddleware",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 25
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "self._sync_files",
+          "lineNumber": 36
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "self._make_notification",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "Path",
+          "lineNumber": 48
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "local_skills_dir.exists",
+          "lineNumber": 49
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "sorted",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "local_skills_dir.rglob",
+          "lineNumber": 57
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "local_file.is_file",
+          "lineNumber": 58
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "local_file.relative_to",
+          "lineNumber": 60
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "relative_path.as_posix",
+          "lineNumber": 61
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "local_file.read_bytes",
+          "lineNumber": 63
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "hashlib.md5(local_content).hexdigest",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "hashlib.md5",
+          "lineNumber": 64
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "self._last_hashes.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "self.backend.aexecute",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "quote",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "self.backend.adownload_files",
+          "lineNumber": 74
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "isinstance",
+          "lineNumber": 77
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "remote_content.encode",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "hashlib.md5(remote_content).hexdigest",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "hashlib.md5",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "files_to_upload.append",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "updated_skills.append",
+          "lineNumber": 90
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "self.backend.aupload_files",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "RuntimeError",
+          "lineNumber": 97
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "', '.join",
+          "lineNumber": 97
+        },
+        {
+          "caller": "_sync_files",
+          "callee": "self._last_hashes.update",
+          "lineNumber": 99
+        },
+        {
+          "caller": "_make_notification",
+          "callee": "\"\\n\".join",
+          "lineNumber": 105
+        },
+        {
+          "caller": "_make_notification",
+          "callee": "SystemMessage",
+          "lineNumber": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/middlewares/tool_error.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "_tool_call_id",
+          "startLine": 22,
+          "endLine": 26,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "_tool_name",
+          "startLine": 29,
+          "endLine": 33,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "_build_error_payload",
+          "startLine": 36,
+          "endLine": 45,
+          "params": [
+            "e",
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ToolErrorMiddleware",
+          "startLine": 48,
+          "endLine": 91,
+          "methods": [
+            "wrap_tool_call",
+            "awrap_tool_call"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "_tool_call_id",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "_tool_name",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "_build_error_payload",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "ToolErrorMiddleware",
+          "line": 48,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_tool_call_id",
+          "callee": "getattr",
+          "lineNumber": 23
+        },
+        {
+          "caller": "_tool_call_id",
+          "callee": "isinstance",
+          "lineNumber": 24
+        },
+        {
+          "caller": "_tool_call_id",
+          "callee": "tc.get",
+          "lineNumber": 25
+        },
+        {
+          "caller": "_tool_call_id",
+          "callee": "getattr",
+          "lineNumber": 26
+        },
+        {
+          "caller": "_tool_name",
+          "callee": "getattr",
+          "lineNumber": 30
+        },
+        {
+          "caller": "_tool_name",
+          "callee": "isinstance",
+          "lineNumber": 31
+        },
+        {
+          "caller": "_tool_name",
+          "callee": "tc.get",
+          "lineNumber": 32
+        },
+        {
+          "caller": "_tool_name",
+          "callee": "getattr",
+          "lineNumber": 33
+        },
+        {
+          "caller": "_build_error_payload",
+          "callee": "str",
+          "lineNumber": 38
+        },
+        {
+          "caller": "_build_error_payload",
+          "callee": "type",
+          "lineNumber": 39
+        },
+        {
+          "caller": "_build_error_payload",
+          "callee": "_tool_name",
+          "lineNumber": 42
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "handler",
+          "lineNumber": 59
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "logger.warning",
+          "lineNumber": 63
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "_tool_name",
+          "lineNumber": 65
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "type",
+          "lineNumber": 65
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "str",
+          "lineNumber": 65
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "ToolMessage",
+          "lineNumber": 67
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "json.dumps",
+          "lineNumber": 68
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "_build_error_payload",
+          "lineNumber": 68
+        },
+        {
+          "caller": "wrap_tool_call",
+          "callee": "_tool_call_id",
+          "lineNumber": 69
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "handler",
+          "lineNumber": 79
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "logger.warning",
+          "lineNumber": 83
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "_tool_name",
+          "lineNumber": 85
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "type",
+          "lineNumber": 85
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "str",
+          "lineNumber": 85
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "ToolMessage",
+          "lineNumber": 87
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "json.dumps",
+          "lineNumber": 88
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "_build_error_payload",
+          "lineNumber": 88
+        },
+        {
+          "caller": "awrap_tool_call",
+          "callee": "_tool_call_id",
+          "lineNumber": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/middlewares/user_skills_restore.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 69,
+      "classes": [
+        {
+          "name": "UserSkillsRestoreMiddleware",
+          "startLine": 19,
+          "endLine": 87,
+          "methods": [
+            "__init__",
+            "abefore_agent",
+            "before_agent",
+            "_collect_skills"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserSkillsRestoreMiddleware",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 28
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "self._collect_skills",
+          "lineNumber": 37
+        },
+        {
+          "caller": "abefore_agent",
+          "callee": "self.backend.aupload_files",
+          "lineNumber": 39
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "store.asearch",
+          "lineNumber": 62
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "str(item.key).lstrip",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "str",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "key.split",
+          "lineNumber": 71
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "len",
+          "lineNumber": 72
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "isinstance",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "content.get",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "isinstance",
+          "lineNumber": 80
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "content.encode",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_collect_skills",
+          "callee": "files.append",
+          "lineNumber": 85
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/agent/tools/assign_skill.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 135,
+      "functions": [
+        {
+          "name": "create_assign_skill_tool",
+          "startLine": 14,
+          "endLine": 91,
+          "params": [
+            "sandbox_backend",
+            "store",
+            "skills_namespace"
+          ]
+        },
+        {
+          "name": "_persist_skill",
+          "startLine": 98,
+          "endLine": 151,
+          "params": [
+            "sandbox_backend",
+            "store",
+            "namespace",
+            "skill_name",
+            "scope"
+          ]
+        },
+        {
+          "name": "_cleanup_packages",
+          "startLine": 154,
+          "endLine": 168,
+          "params": [
+            "sandbox_backend"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create_assign_skill_tool",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "_persist_skill",
+          "line": 98,
+          "isDefault": false
+        },
+        {
+          "name": "_cleanup_packages",
+          "line": 154,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "assign_skill",
+          "callee": "\", \".join",
+          "lineNumber": 47
+        },
+        {
+          "caller": "assign_skill",
+          "callee": "SCOPE_MAP.keys",
+          "lineNumber": 47
+        },
+        {
+          "caller": "assign_skill",
+          "callee": "sandbox_backend.aexecute",
+          "lineNumber": 55
+        },
+        {
+          "caller": "assign_skill",
+          "callee": "sandbox_backend.aexecute",
+          "lineNumber": 66
+        },
+        {
+          "caller": "assign_skill",
+          "callee": "sandbox_backend.aexecute",
+          "lineNumber": 71
+        },
+        {
+          "caller": "assign_skill",
+          "callee": "verify.output.strip",
+          "lineNumber": 74
+        },
+        {
+          "caller": "assign_skill",
+          "callee": "_persist_skill",
+          "lineNumber": 78
+        },
+        {
+          "caller": "assign_skill",
+          "callee": "_cleanup_packages",
+          "lineNumber": 81
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "datetime.now(timezone.utc).isoformat",
+          "lineNumber": 108
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "datetime.now",
+          "lineNumber": 108
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "sandbox_backend.aexecute",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "p.strip",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "ls_result.output.strip().split",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "ls_result.output.strip",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "p.strip",
+          "lineNumber": 115
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "len",
+          "lineNumber": 123
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "sandbox_backend.adownload_files",
+          "lineNumber": 128
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "content_bytes.decode",
+          "lineNumber": 132
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "isinstance",
+          "lineNumber": 132
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "str",
+          "lineNumber": 132
+        },
+        {
+          "caller": "_persist_skill",
+          "callee": "store.aput",
+          "lineNumber": 138
+        },
+        {
+          "caller": "_cleanup_packages",
+          "callee": "sandbox_backend.aexecute",
+          "lineNumber": 162
+        },
+        {
+          "caller": "_cleanup_packages",
+          "callee": "result.output.strip",
+          "lineNumber": 164
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/tools/download_sandbox_file.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "create_download_tool",
+          "startLine": 11,
+          "endLine": 103,
+          "params": [
+            "sandbox_backend",
+            "download_dir"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "create_download_tool",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "create_download_tool",
+          "callee": "download_dir.mkdir",
+          "lineNumber": 25
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "sandbox_path.startswith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "sandbox_backend.adownload_files",
+          "lineNumber": 51
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "Path",
+          "lineNumber": 68
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "Path",
+          "lineNumber": 70
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "isinstance",
+          "lineNumber": 76
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "content.encode",
+          "lineNumber": 77
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "isinstance",
+          "lineNumber": 78
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "str(content).encode",
+          "lineNumber": 81
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "str",
+          "lineNumber": 81
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "local_path.write_bytes",
+          "lineNumber": 83
+        },
+        {
+          "caller": "download_sandbox_file",
+          "callee": "len",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/tools/hitl_tools.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "request_order_info",
+          "startLine": 20,
+          "endLine": 38,
+          "params": [
+            "missing_fields",
+            "collected_data"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "request_order_info",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "request_order_info",
+          "callee": "interrupt",
+          "lineNumber": 33
+        },
+        {
+          "caller": "request_order_info",
+          "callee": "json.dumps",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

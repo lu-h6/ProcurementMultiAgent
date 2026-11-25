@@ -1,0 +1,1179 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 9,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 9,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "frontend/src/api/chat.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 114,
+      "functions": [
+        {
+          "name": "streamChat",
+          "startLine": 5,
+          "endLine": 7,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "resumeChat",
+          "startLine": 9,
+          "endLine": 11,
+          "params": [
+            "threadId",
+            "resumeData"
+          ]
+        },
+        {
+          "name": "requestStream",
+          "startLine": 13,
+          "endLine": 120,
+          "params": [
+            "url",
+            "body",
+            "threadId",
+            "callbacks",
+            "signal"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "streamChat",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "resumeChat",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "streamChat",
+          "callee": "requestStream",
+          "lineNumber": 6
+        },
+        {
+          "caller": "resumeChat",
+          "callee": "requestStream",
+          "lineNumber": 10
+        },
+        {
+          "caller": "resumeChat",
+          "callee": "encodeURIComponent",
+          "lineNumber": 10
+        },
+        {
+          "caller": "snapshot",
+          "callee": "[...state.tools.values()].map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "snapshot",
+          "callee": "state.tools.values",
+          "lineNumber": 16
+        },
+        {
+          "caller": "requestStream",
+          "callee": "apiFetch",
+          "lineNumber": 19
+        },
+        {
+          "caller": "requestStream",
+          "callee": "JSON.stringify",
+          "lineNumber": 19
+        },
+        {
+          "caller": "requestStream",
+          "callee": "response.body.getReader",
+          "lineNumber": 20
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "getCallId",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "state.tools.get",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "state.tools.set",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "callbacks.onToolStart",
+          "lineNumber": 31
+        },
+        {
+          "caller": "consume",
+          "callee": "line.startsWith",
+          "lineNumber": 39
+        },
+        {
+          "caller": "consume",
+          "callee": "JSON.parse",
+          "lineNumber": 41
+        },
+        {
+          "caller": "consume",
+          "callee": "line.slice(5).trim",
+          "lineNumber": 41
+        },
+        {
+          "caller": "consume",
+          "callee": "line.slice",
+          "lineNumber": 41
+        },
+        {
+          "caller": "consume",
+          "callee": "callbacks.onToken",
+          "lineNumber": 47
+        },
+        {
+          "caller": "consume",
+          "callee": "state.tools.has",
+          "lineNumber": 50
+        },
+        {
+          "caller": "consume",
+          "callee": "getCallId",
+          "lineNumber": 50
+        },
+        {
+          "caller": "consume",
+          "callee": "ensureTool",
+          "lineNumber": 51
+        },
+        {
+          "caller": "consume",
+          "callee": "callbacks.onToolStart",
+          "lineNumber": 52
+        },
+        {
+          "caller": "consume",
+          "callee": "ensureTool",
+          "lineNumber": 56
+        },
+        {
+          "caller": "consume",
+          "callee": "callbacks.onToolArgs",
+          "lineNumber": 59
+        },
+        {
+          "caller": "consume",
+          "callee": "ensureTool",
+          "lineNumber": 64
+        },
+        {
+          "caller": "consume",
+          "callee": "Object.assign",
+          "lineNumber": 66
+        },
+        {
+          "caller": "consume",
+          "callee": "callbacks.onToolResult",
+          "lineNumber": 68
+        },
+        {
+          "caller": "consume",
+          "callee": "ensureTool",
+          "lineNumber": 73
+        },
+        {
+          "caller": "consume",
+          "callee": "callbacks.onToolEnd",
+          "lineNumber": 76
+        },
+        {
+          "caller": "consume",
+          "callee": "callbacks.onInterrupt",
+          "lineNumber": 81
+        },
+        {
+          "caller": "consume",
+          "callee": "snapshot",
+          "lineNumber": 82
+        },
+        {
+          "caller": "consume",
+          "callee": "snapshot",
+          "lineNumber": 85
+        },
+        {
+          "caller": "consume",
+          "callee": "callbacks.onDone",
+          "lineNumber": 86
+        },
+        {
+          "caller": "requestStream",
+          "callee": "reader.read",
+          "lineNumber": 95
+        },
+        {
+          "caller": "requestStream",
+          "callee": "decoder.decode",
+          "lineNumber": 96
+        },
+        {
+          "caller": "requestStream",
+          "callee": "buffer.split",
+          "lineNumber": 97
+        },
+        {
+          "caller": "requestStream",
+          "callee": "lines.pop",
+          "lineNumber": 98
+        },
+        {
+          "caller": "requestStream",
+          "callee": "lines.push",
+          "lineNumber": 99
+        },
+        {
+          "caller": "requestStream",
+          "callee": "consume",
+          "lineNumber": 101
+        },
+        {
+          "caller": "requestStream",
+          "callee": "line.trimEnd",
+          "lineNumber": 101
+        },
+        {
+          "caller": "requestStream",
+          "callee": "snapshot",
+          "lineNumber": 108
+        },
+        {
+          "caller": "requestStream",
+          "callee": "callbacks.onDone",
+          "lineNumber": 109
+        },
+        {
+          "caller": "requestStream",
+          "callee": "callbacks.onError",
+          "lineNumber": 112
+        },
+        {
+          "caller": "requestStream",
+          "callee": "reader.cancel().catch",
+          "lineNumber": 116
+        },
+        {
+          "caller": "requestStream",
+          "callee": "reader.cancel",
+          "lineNumber": 116
+        },
+        {
+          "caller": "requestStream",
+          "callee": "reader.releaseLock",
+          "lineNumber": 117
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/api/chat.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 132,
+      "nonEmptyLines": 123,
+      "functions": [
+        {
+          "name": "streamResponse",
+          "startLine": 6,
+          "endLine": 14,
+          "params": [
+            "events"
+          ]
+        },
+        {
+          "name": "start",
+          "startLine": 16,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "args",
+          "startLine": 17,
+          "endLine": 17,
+          "params": [
+            "id",
+            "value"
+          ]
+        },
+        {
+          "name": "result",
+          "startLine": 18,
+          "endLine": 18,
+          "params": [
+            "id",
+            "text"
+          ]
+        },
+        {
+          "name": "end",
+          "startLine": 19,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "streamResponse",
+          "callee": "new TextEncoder().encode",
+          "lineNumber": 7
+        },
+        {
+          "caller": "streamResponse",
+          "callee": "events.map(event => `data: ${JSON.stringify(event)}\\n\\n`).join",
+          "lineNumber": 7
+        },
+        {
+          "caller": "streamResponse",
+          "callee": "events.map",
+          "lineNumber": 7
+        },
+        {
+          "caller": "streamResponse",
+          "callee": "JSON.stringify",
+          "lineNumber": 7
+        },
+        {
+          "caller": "start",
+          "callee": "controller.enqueue",
+          "lineNumber": 10
+        },
+        {
+          "caller": "start",
+          "callee": "bytes.slice",
+          "lineNumber": 10
+        },
+        {
+          "caller": "start",
+          "callee": "controller.close",
+          "lineNumber": 11
+        },
+        {
+          "caller": "onToolEnd",
+          "callee": "callbacks.onToolEnd",
+          "lineNumber": 37
+        },
+        {
+          "caller": "onToolEnd",
+          "callee": "messages.map",
+          "lineNumber": 38
+        },
+        {
+          "caller": "onToolEnd",
+          "callee": "callbacks.onToolEnd",
+          "lineNumber": 62
+        },
+        {
+          "caller": "onToolEnd",
+          "callee": "assert.equal",
+          "lineNumber": 63
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/api/inputSafety.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 31,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/images.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "normalizeImageSource",
+          "startLine": 2,
+          "endLine": 15,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "parseResult",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "getToolImages",
+          "startLine": 22,
+          "endLine": 29,
+          "params": [
+            "tool"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "normalizeImageSource",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "parseResult",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "getToolImages",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeImageSource",
+          "callee": "value.trim",
+          "lineNumber": 4
+        },
+        {
+          "caller": "normalizeImageSource",
+          "callee": "src.match",
+          "lineNumber": 5
+        },
+        {
+          "caller": "normalizeImageSource",
+          "callee": "decodeURIComponent",
+          "lineNumber": 8
+        },
+        {
+          "caller": "normalizeImageSource",
+          "callee": "/^[\\p{L}\\p{N}_.-]+\\.(png|jpe?g|gif|webp|svg)$/iu.test",
+          "lineNumber": 9
+        },
+        {
+          "caller": "normalizeImageSource",
+          "callee": "encodeURIComponent",
+          "lineNumber": 10
+        },
+        {
+          "caller": "normalizeImageSource",
+          "callee": "/^https?:\\/\\//i.test",
+          "lineNumber": 13
+        },
+        {
+          "caller": "normalizeImageSource",
+          "callee": "/^data:image\\/(png|jpe?g|gif|webp|svg\\+xml);base64,[A-Za-z0-9+/=]+$/i.test",
+          "lineNumber": 13
+        },
+        {
+          "caller": "parseResult",
+          "callee": "JSON.parse",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "parseResult",
+          "lineNumber": 23
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "Array.isArray",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "candidates.unshift",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "candidates.unshift",
+          "lineNumber": 26
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "(typeof tool.text === 'string' ? tool.text : '').matchAll",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "candidates.push",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "candidates.map(normalizeImageSource).filter",
+          "lineNumber": 28
+        },
+        {
+          "caller": "getToolImages",
+          "callee": "candidates.map",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/images.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 38,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/markdown.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "renderMarkdown",
+          "startLine": 28,
+          "endLine": 28,
+          "params": [
+            "content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "renderMarkdown",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "highlight",
+          "callee": "hljs.getLanguage",
+          "lineNumber": 8
+        },
+        {
+          "caller": "highlight",
+          "callee": "hljs.highlight",
+          "lineNumber": 9
+        },
+        {
+          "caller": "renderMarkdown",
+          "callee": "md.render",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/replyTurns.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "user",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "id",
+            "content"
+          ]
+        },
+        {
+          "name": "ai",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "id",
+            "content"
+          ]
+        },
+        {
+          "name": "tool",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/toolCalls.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 179,
+      "nonEmptyLines": 168,
+      "functions": [
+        {
+          "name": "getCallId",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "tool"
+          ]
+        },
+        {
+          "name": "groupReplyTurns",
+          "startLine": 6,
+          "endLine": 32,
+          "params": [
+            "messages"
+          ]
+        },
+        {
+          "name": "groupChatMessages",
+          "startLine": 35,
+          "endLine": 64,
+          "params": [
+            "messages"
+          ]
+        },
+        {
+          "name": "summarizeToolCalls",
+          "startLine": 66,
+          "endLine": 73,
+          "params": [
+            "tools"
+          ]
+        },
+        {
+          "name": "parseToolArgs",
+          "startLine": 75,
+          "endLine": 83,
+          "params": [
+            "args"
+          ]
+        },
+        {
+          "name": "getToolTarget",
+          "startLine": 85,
+          "endLine": 90,
+          "params": [
+            "tool"
+          ]
+        },
+        {
+          "name": "formatToolArgs",
+          "startLine": 92,
+          "endLine": 98,
+          "params": [
+            "args"
+          ]
+        },
+        {
+          "name": "getToolStatus",
+          "startLine": 100,
+          "endLine": 109,
+          "params": [
+            "tool"
+          ]
+        },
+        {
+          "name": "getToolLabel",
+          "startLine": 115,
+          "endLine": 115,
+          "params": [
+            "tool"
+          ]
+        },
+        {
+          "name": "getToolSummary",
+          "startLine": 116,
+          "endLine": 131,
+          "params": [
+            "tool"
+          ]
+        },
+        {
+          "name": "settleToolCalls",
+          "startLine": 133,
+          "endLine": 137,
+          "params": [
+            "messages"
+          ]
+        },
+        {
+          "name": "createToolCallbacks",
+          "startLine": 140,
+          "endLine": 179,
+          "params": [
+            "getMessages"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getCallId",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "groupReplyTurns",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "groupChatMessages",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "summarizeToolCalls",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "parseToolArgs",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "getToolTarget",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "formatToolArgs",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "getToolStatus",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "getToolLabel",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "getToolSummary",
+          "line": 116,
+          "isDefault": false
+        },
+        {
+          "name": "settleToolCalls",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "createToolCallbacks",
+          "line": 140,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "flush",
+          "callee": "groupChatMessages",
+          "lineNumber": 12
+        },
+        {
+          "caller": "flush",
+          "callee": "[...grouped].reverse().find",
+          "lineNumber": 13
+        },
+        {
+          "caller": "flush",
+          "callee": "[...grouped].reverse",
+          "lineNumber": 13
+        },
+        {
+          "caller": "flush",
+          "callee": "part.content?.trim",
+          "lineNumber": 14
+        },
+        {
+          "caller": "flush",
+          "callee": "grouped.flatMap",
+          "lineNumber": 15
+        },
+        {
+          "caller": "flush",
+          "callee": "result.push",
+          "lineNumber": 16
+        },
+        {
+          "caller": "flush",
+          "callee": "grouped.filter",
+          "lineNumber": 17
+        },
+        {
+          "caller": "flush",
+          "callee": "tools.flatMap",
+          "lineNumber": 18
+        },
+        {
+          "caller": "groupReplyTurns",
+          "callee": "messages.entries",
+          "lineNumber": 21
+        },
+        {
+          "caller": "groupReplyTurns",
+          "callee": "flush",
+          "lineNumber": 23
+        },
+        {
+          "caller": "groupReplyTurns",
+          "callee": "result.push",
+          "lineNumber": 24
+        },
+        {
+          "caller": "groupReplyTurns",
+          "callee": "['assistant', 'tool'].includes",
+          "lineNumber": 26
+        },
+        {
+          "caller": "groupReplyTurns",
+          "callee": "parts.push",
+          "lineNumber": 27
+        },
+        {
+          "caller": "groupReplyTurns",
+          "callee": "flush",
+          "lineNumber": 30
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "getCallId",
+          "lineNumber": 40
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "byId.has",
+          "lineNumber": 41
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "byId.get",
+          "lineNumber": 42
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "Object.assign",
+          "lineNumber": 43
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "unique.push",
+          "lineNumber": 46
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "byId.set",
+          "lineNumber": 47
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "unique.entries",
+          "lineNumber": 50
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "groups.push",
+          "lineNumber": 52
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "getToolImages",
+          "lineNumber": 55
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "groups.at",
+          "lineNumber": 56
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "previous.tools.push",
+          "lineNumber": 58
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "groups.push",
+          "lineNumber": 60
+        },
+        {
+          "caller": "groupChatMessages",
+          "callee": "getCallId",
+          "lineNumber": 60
+        },
+        {
+          "caller": "summarizeToolCalls",
+          "callee": "counts.set",
+          "lineNumber": 70
+        },
+        {
+          "caller": "summarizeToolCalls",
+          "callee": "counts.get",
+          "lineNumber": 70
+        },
+        {
+          "caller": "summarizeToolCalls",
+          "callee": "[...counts].map",
+          "lineNumber": 72
+        },
+        {
+          "caller": "parseToolArgs",
+          "callee": "JSON.parse",
+          "lineNumber": 77
+        },
+        {
+          "caller": "parseToolArgs",
+          "callee": "Array.isArray",
+          "lineNumber": 78
+        },
+        {
+          "caller": "getToolTarget",
+          "callee": "parseToolArgs",
+          "lineNumber": 86
+        },
+        {
+          "caller": "getToolTarget",
+          "callee": "['file_path', 'path', 'url', 'query', 'pattern', 'command']\n    .map(key => args[key]).find",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getToolTarget",
+          "callee": "['file_path', 'path', 'url', 'query', 'pattern', 'command']\n    .map",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getToolTarget",
+          "callee": "value.trim",
+          "lineNumber": 89
+        },
+        {
+          "caller": "formatToolArgs",
+          "callee": "JSON.stringify",
+          "lineNumber": 94
+        },
+        {
+          "caller": "formatToolArgs",
+          "callee": "JSON.parse",
+          "lineNumber": 94
+        },
+        {
+          "caller": "formatToolArgs",
+          "callee": "String",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getToolStatus",
+          "callee": "/^\\s*(?:Error\\b|错误[:：]|Traceback \\(most recent call last\\))/.test",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getToolStatus",
+          "callee": "['waiting', 'stopped', 'ended'].includes",
+          "lineNumber": 105
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "getToolStatus",
+          "lineNumber": 117
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "getToolImages",
+          "lineNumber": 122
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "getToolImages",
+          "lineNumber": 122
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "parseResult",
+          "lineNumber": 123
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "Array.isArray",
+          "lineNumber": 124
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "String",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "text.replace",
+          "lineNumber": 128
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "body.replace(/\\s+/g, ' ').trim",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "body.replace",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getToolSummary",
+          "callee": "oneLine.slice",
+          "lineNumber": 130
+        },
+        {
+          "caller": "findTool",
+          "callee": "getMessages().find",
+          "lineNumber": 141
+        },
+        {
+          "caller": "findTool",
+          "callee": "getMessages",
+          "lineNumber": 141
+        },
+        {
+          "caller": "findTool",
+          "callee": "getCallId",
+          "lineNumber": 141
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "getCallId",
+          "lineNumber": 143
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "findTool",
+          "lineNumber": 145
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "getMessages().push",
+          "lineNumber": 149
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "getMessages",
+          "lineNumber": 149
+        },
+        {
+          "caller": "ensureTool",
+          "callee": "findTool",
+          "lineNumber": 150
+        },
+        {
+          "caller": "onToolStart",
+          "callee": "ensureTool",
+          "lineNumber": 159
+        },
+        {
+          "caller": "onToolArgs",
+          "callee": "ensureTool",
+          "lineNumber": 163
+        },
+        {
+          "caller": "onToolResult",
+          "callee": "ensureTool",
+          "lineNumber": 167
+        },
+        {
+          "caller": "onToolEnd",
+          "callee": "ensureTool",
+          "lineNumber": 175
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 12,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/utils/toolCalls.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "tool",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "id",
+            "name",
+            "args"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

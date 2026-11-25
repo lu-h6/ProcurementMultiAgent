@@ -1,0 +1,675 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/deepagents_test/01_long_memory_demo.py",
+      "type": "file",
+      "name": "01_long_memory_demo.py",
+      "filePath": "src/deepagents_test/01_long_memory_demo.py",
+      "summary": "实现项目src/deepagents test/01 long memory demo模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:src/deepagents_test/deepagents_backend/agent_workspace/abc.txt",
+      "type": "document",
+      "name": "abc.txt",
+      "filePath": "src/deepagents_test/deepagents_backend/agent_workspace/abc.txt",
+      "summary": "说明项目中的abc使用方式或设计背景。",
+      "tags": [
+        "文档",
+        "测试",
+        "txt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt",
+      "type": "document",
+      "name": "tmp.txt",
+      "filePath": "src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt",
+      "summary": "说明项目中的tmp使用方式或设计背景。",
+      "tags": [
+        "文档",
+        "测试",
+        "txt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "type": "file",
+      "name": "opensandbox_test.py",
+      "filePath": "src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "summary": "实现项目src/deepagents test/deepagents backend/opensandbox test模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "测试",
+        "沙箱",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/deepagents_test/deepagents_backend/sqlitebackend.py",
+      "type": "file",
+      "name": "sqlitebackend.py",
+      "filePath": "src/deepagents_test/deepagents_backend/sqlitebackend.py",
+      "summary": "实现项目src/deepagents test/deepagents backend/sqlitebackend模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/deepagents_test/test_v1_v2.py",
+      "type": "file",
+      "name": "test_v1_v2.py",
+      "filePath": "src/deepagents_test/test_v1_v2.py",
+      "summary": "验证test v1 v2相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/agent-collaboration-flow-zh.drawio",
+      "type": "file",
+      "name": "agent-collaboration-flow-zh.drawio",
+      "filePath": "src/docs/diagrams/agent-collaboration-flow-zh.drawio",
+      "summary": "记录agent collaboration flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/agent-collaboration-flow-zh.dsl",
+      "type": "file",
+      "name": "agent-collaboration-flow-zh.dsl",
+      "filePath": "src/docs/diagrams/agent-collaboration-flow-zh.dsl",
+      "summary": "记录agent collaboration flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/build_diagrams.py",
+      "type": "file",
+      "name": "build_diagrams.py",
+      "filePath": "src/docs/diagrams/build_diagrams.py",
+      "summary": "记录build diagrams相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/docs/diagrams/business-capabilities-zh.drawio",
+      "type": "file",
+      "name": "business-capabilities-zh.drawio",
+      "filePath": "src/docs/diagrams/business-capabilities-zh.drawio",
+      "summary": "记录business capabilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/business-capabilities-zh.dsl",
+      "type": "file",
+      "name": "business-capabilities-zh.dsl",
+      "filePath": "src/docs/diagrams/business-capabilities-zh.dsl",
+      "summary": "记录business capabilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/chart-generation-flow-zh.drawio",
+      "type": "file",
+      "name": "chart-generation-flow-zh.drawio",
+      "filePath": "src/docs/diagrams/chart-generation-flow-zh.drawio",
+      "summary": "记录chart generation flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "图表",
+        "drawio",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/chart-generation-flow-zh.dsl",
+      "type": "file",
+      "name": "chart-generation-flow-zh.dsl",
+      "filePath": "src/docs/diagrams/chart-generation-flow-zh.dsl",
+      "summary": "记录chart generation flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "图表",
+        "dsl",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/chart-startup-flow-zh.drawio",
+      "type": "file",
+      "name": "chart-startup-flow-zh.drawio",
+      "filePath": "src/docs/diagrams/chart-startup-flow-zh.drawio",
+      "summary": "记录chart startup flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "图表",
+        "drawio",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/chart-startup-flow-zh.dsl",
+      "type": "file",
+      "name": "chart-startup-flow-zh.dsl",
+      "filePath": "src/docs/diagrams/chart-startup-flow-zh.dsl",
+      "summary": "记录chart startup flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "图表",
+        "dsl",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/design-value-map-zh.drawio",
+      "type": "file",
+      "name": "design-value-map-zh.drawio",
+      "filePath": "src/docs/diagrams/design-value-map-zh.drawio",
+      "summary": "记录design value map zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/design-value-map-zh.dsl",
+      "type": "file",
+      "name": "design-value-map-zh.dsl",
+      "filePath": "src/docs/diagrams/design-value-map-zh.dsl",
+      "summary": "记录design value map zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/improvement-roadmap-zh.drawio",
+      "type": "file",
+      "name": "improvement-roadmap-zh.drawio",
+      "filePath": "src/docs/diagrams/improvement-roadmap-zh.drawio",
+      "summary": "记录improvement roadmap zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/improvement-roadmap-zh.dsl",
+      "type": "file",
+      "name": "improvement-roadmap-zh.dsl",
+      "filePath": "src/docs/diagrams/improvement-roadmap-zh.dsl",
+      "summary": "记录improvement roadmap zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/input-guard-flow-zh.drawio",
+      "type": "file",
+      "name": "input-guard-flow-zh.drawio",
+      "filePath": "src/docs/diagrams/input-guard-flow-zh.drawio",
+      "summary": "记录input guard flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "安全",
+        "drawio",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/input-guard-flow-zh.dsl",
+      "type": "file",
+      "name": "input-guard-flow-zh.dsl",
+      "filePath": "src/docs/diagrams/input-guard-flow-zh.dsl",
+      "summary": "记录input guard flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "安全",
+        "dsl",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/input-guard-resume-flow-zh.drawio",
+      "type": "file",
+      "name": "input-guard-resume-flow-zh.drawio",
+      "filePath": "src/docs/diagrams/input-guard-resume-flow-zh.drawio",
+      "summary": "记录input guard resume flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "安全",
+        "drawio",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/input-guard-resume-flow-zh.dsl",
+      "type": "file",
+      "name": "input-guard-resume-flow-zh.dsl",
+      "filePath": "src/docs/diagrams/input-guard-resume-flow-zh.dsl",
+      "summary": "记录input guard resume flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "安全",
+        "dsl",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/module-dependencies-zh.drawio",
+      "type": "file",
+      "name": "module-dependencies-zh.drawio",
+      "filePath": "src/docs/diagrams/module-dependencies-zh.drawio",
+      "summary": "记录module dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/module-dependencies-zh.dsl",
+      "type": "file",
+      "name": "module-dependencies-zh.dsl",
+      "filePath": "src/docs/diagrams/module-dependencies-zh.dsl",
+      "summary": "记录module dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/deepagents_backend/opensandbox_test.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "lineRange": [
+        17,
+        67
+      ],
+      "summary": "处理main相关逻辑，供opensandbox test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "沙箱",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/deepagents_test/deepagents_backend/sqlitebackend.py:SQLiteBackend",
+      "type": "class",
+      "name": "SQLiteBackend",
+      "filePath": "src/deepagents_test/deepagents_backend/sqlitebackend.py",
+      "lineRange": [
+        17,
+        158
+      ],
+      "summary": "SQLiteBackend 封装sqlitebackend相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/deepagents_test/test_v1_v2.py:add_one",
+      "type": "function",
+      "name": "add_one",
+      "filePath": "src/deepagents_test/test_v1_v2.py",
+      "lineRange": [
+        26,
+        27
+      ],
+      "summary": "处理add one相关逻辑，供test v1 v2模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/test_v1_v2.py:build_demo_graph",
+      "type": "function",
+      "name": "build_demo_graph",
+      "filePath": "src/deepagents_test/test_v1_v2.py",
+      "lineRange": [
+        30,
+        42
+      ],
+      "summary": "处理build demo graph相关逻辑，供test v1 v2模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/test_v1_v2.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/deepagents_test/test_v1_v2.py",
+      "lineRange": [
+        45,
+        87
+      ],
+      "summary": "处理main相关逻辑，供test v1 v2模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/docs/diagrams/build_diagrams.py:graph",
+      "type": "function",
+      "name": "graph",
+      "filePath": "src/docs/diagrams/build_diagrams.py",
+      "lineRange": [
+        17,
+        24
+      ],
+      "summary": "处理graph相关逻辑，供build diagrams模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/build_diagrams.py:node",
+      "type": "function",
+      "name": "node",
+      "filePath": "src/docs/diagrams/build_diagrams.py",
+      "lineRange": [
+        27,
+        31
+      ],
+      "summary": "处理node相关逻辑，供build diagrams模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/build_diagrams.py:edge",
+      "type": "function",
+      "name": "edge",
+      "filePath": "src/docs/diagrams/build_diagrams.py",
+      "lineRange": [
+        34,
+        37
+      ],
+      "summary": "处理edge相关逻辑，供build diagrams模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/build_diagrams.py:save",
+      "type": "function",
+      "name": "save",
+      "filePath": "src/docs/diagrams/build_diagrams.py",
+      "lineRange": [
+        40,
+        44
+      ],
+      "summary": "处理save相关逻辑，供build diagrams模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/build_diagrams.py:architecture",
+      "type": "function",
+      "name": "architecture",
+      "filePath": "src/docs/diagrams/build_diagrams.py",
+      "lineRange": [
+        47,
+        69
+      ],
+      "summary": "处理architecture相关逻辑，供build diagrams模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/build_diagrams.py:flow",
+      "type": "function",
+      "name": "flow",
+      "filePath": "src/docs/diagrams/build_diagrams.py",
+      "lineRange": [
+        72,
+        90
+      ],
+      "summary": "处理flow相关逻辑，供build diagrams模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "target": "function:src/deepagents_test/deepagents_backend/opensandbox_test.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "target": "function:src/deepagents_test/deepagents_backend/opensandbox_test.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/sqlitebackend.py",
+      "target": "class:src/deepagents_test/deepagents_backend/sqlitebackend.py:SQLiteBackend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/test_v1_v2.py",
+      "target": "function:src/deepagents_test/test_v1_v2.py:add_one",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/test_v1_v2.py",
+      "target": "function:src/deepagents_test/test_v1_v2.py:add_one",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/test_v1_v2.py",
+      "target": "function:src/deepagents_test/test_v1_v2.py:build_demo_graph",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/test_v1_v2.py",
+      "target": "function:src/deepagents_test/test_v1_v2.py:build_demo_graph",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/test_v1_v2.py",
+      "target": "function:src/deepagents_test/test_v1_v2.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/test_v1_v2.py",
+      "target": "function:src/deepagents_test/test_v1_v2.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:graph",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:graph",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:node",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:edge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:edge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:save",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:save",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:architecture",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:architecture",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:flow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/build_diagrams.py",
+      "target": "function:src/docs/diagrams/build_diagrams.py:flow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

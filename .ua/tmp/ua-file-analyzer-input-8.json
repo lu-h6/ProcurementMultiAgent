@@ -1,0 +1,28 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/agent/guardrails/config.yml",
+      "language": "yaml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/agent/guardrails/policies.yml",
+      "language": "yaml",
+      "sizeLines": 37,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/agent/guardrails/prompts.yml",
+      "language": "yaml",
+      "sizeLines": 28,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "src/agent/guardrails/config.yml": [],
+    "src/agent/guardrails/policies.yml": [],
+    "src/agent/guardrails/prompts.yml": []
+  }
+}

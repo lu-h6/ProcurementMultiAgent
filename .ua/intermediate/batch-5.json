@@ -1,0 +1,947 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/agent/tools/chart_generator.py",
+      "type": "file",
+      "name": "chart_generator.py",
+      "filePath": "src/agent/tools/chart_generator.py",
+      "summary": "封装 Agent 可调用的chart generator工具、参数处理与外部服务交互。",
+      "tags": [
+        "图表",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/tools/chart_validation.py",
+      "type": "file",
+      "name": "chart_validation.py",
+      "filePath": "src/agent/tools/chart_validation.py",
+      "summary": "封装 Agent 可调用的chart validation工具、参数处理与外部服务交互。",
+      "tags": [
+        "图表",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/measure_chart_tool_tokens.py",
+      "type": "file",
+      "name": "measure_chart_tool_tokens.py",
+      "filePath": "src/docs/measure_chart_tool_tokens.py",
+      "summary": "记录measure chart tool tokens相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "图表",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/test/chart_test_support.py",
+      "type": "file",
+      "name": "chart_test_support.py",
+      "filePath": "src/test/chart_test_support.py",
+      "summary": "验证chart test support相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "图表",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/test_chart_generator.py",
+      "type": "file",
+      "name": "test_chart_generator.py",
+      "filePath": "src/test/test_chart_generator.py",
+      "summary": "验证test chart generator相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "图表",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/test/test_chart_live.py",
+      "type": "file",
+      "name": "test_chart_live.py",
+      "filePath": "src/test/test_chart_live.py",
+      "summary": "验证test chart live相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "图表",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/agent/tools/chart_generator.py:_build_chart_type_reference",
+      "type": "function",
+      "name": "_build_chart_type_reference",
+      "filePath": "src/agent/tools/chart_generator.py",
+      "lineRange": [
+        50,
+        56
+      ],
+      "summary": "处理 build chart type reference相关逻辑，供chart generator模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/chart_generator.py:_build_tool_description",
+      "type": "function",
+      "name": "_build_tool_description",
+      "filePath": "src/agent/tools/chart_generator.py",
+      "lineRange": [
+        63,
+        73
+      ],
+      "summary": "处理 build tool description相关逻辑，供chart generator模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/chart_generator.py:_invoke_chart",
+      "type": "function",
+      "name": "_invoke_chart",
+      "filePath": "src/agent/tools/chart_generator.py",
+      "lineRange": [
+        76,
+        86
+      ],
+      "summary": "处理 invoke chart相关逻辑，供chart generator模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/chart_generator.py:_render_error",
+      "type": "function",
+      "name": "_render_error",
+      "filePath": "src/agent/tools/chart_generator.py",
+      "lineRange": [
+        89,
+        94
+      ],
+      "summary": "处理 render error相关逻辑，供chart generator模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/chart_generator.py:_render_chart",
+      "type": "function",
+      "name": "_render_chart",
+      "filePath": "src/agent/tools/chart_generator.py",
+      "lineRange": [
+        97,
+        117
+      ],
+      "summary": "处理 render chart相关逻辑，供chart generator模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/chart_generator.py:create_unified_chart_tool",
+      "type": "function",
+      "name": "create_unified_chart_tool",
+      "filePath": "src/agent/tools/chart_generator.py",
+      "lineRange": [
+        120,
+        155
+      ],
+      "summary": "处理create unified chart tool相关逻辑，供chart generator模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/tools/chart_validation.py:ChartConfigValidator",
+      "type": "class",
+      "name": "ChartConfigValidator",
+      "filePath": "src/agent/tools/chart_validation.py",
+      "lineRange": [
+        40,
+        117
+      ],
+      "summary": "ChartConfigValidator 封装chart validation相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/tools/chart_validation.py:_closed_schema",
+      "type": "function",
+      "name": "_closed_schema",
+      "filePath": "src/agent/tools/chart_validation.py",
+      "lineRange": [
+        12,
+        21
+      ],
+      "summary": "处理 closed schema相关逻辑，供chart validation模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/chart_validation.py:_check_finite",
+      "type": "function",
+      "name": "_check_finite",
+      "filePath": "src/agent/tools/chart_validation.py",
+      "lineRange": [
+        24,
+        32
+      ],
+      "summary": "处理 check finite相关逻辑，供chart validation模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/chart_validation.py:_require",
+      "type": "function",
+      "name": "_require",
+      "filePath": "src/agent/tools/chart_validation.py",
+      "lineRange": [
+        35,
+        37
+      ],
+      "summary": "处理 require相关逻辑，供chart validation模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/measure_chart_tool_tokens.py:measure",
+      "type": "function",
+      "name": "measure",
+      "filePath": "src/docs/measure_chart_tool_tokens.py",
+      "lineRange": [
+        21,
+        64
+      ],
+      "summary": "处理measure相关逻辑，供measure chart tool tokens模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "图表",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/chart_test_support.py:make_tools",
+      "type": "function",
+      "name": "make_tools",
+      "filePath": "src/test/chart_test_support.py",
+      "lineRange": [
+        18,
+        19
+      ],
+      "summary": "处理make tools相关逻辑，供chart test support模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/chart_test_support.py:make_visualization",
+      "type": "function",
+      "name": "make_visualization",
+      "filePath": "src/test/chart_test_support.py",
+      "lineRange": [
+        22,
+        23
+      ],
+      "summary": "处理make visualization相关逻辑，供chart test support模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/chart_test_support.py:invoke",
+      "type": "function",
+      "name": "invoke",
+      "filePath": "src/test/chart_test_support.py",
+      "lineRange": [
+        26,
+        30
+      ],
+      "summary": "处理invoke相关逻辑，供chart test support模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/test/test_chart_generator.py:RecordingSession",
+      "type": "class",
+      "name": "RecordingSession",
+      "filePath": "src/test/test_chart_generator.py",
+      "lineRange": [
+        21,
+        34
+      ],
+      "summary": "RecordingSession 封装test chart generator相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/test_chart_generator.py:ChartContractTests",
+      "type": "class",
+      "name": "ChartContractTests",
+      "filePath": "src/test/test_chart_generator.py",
+      "lineRange": [
+        37,
+        291
+      ],
+      "summary": "ChartContractTests 封装test chart generator相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/test/test_chart_live.py:CaptureSession",
+      "type": "class",
+      "name": "CaptureSession",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        47,
+        71
+      ],
+      "summary": "CaptureSession 封装test chart live相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:read_rpc",
+      "type": "function",
+      "name": "read_rpc",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        28,
+        34
+      ],
+      "summary": "处理read rpc相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:write_config",
+      "type": "function",
+      "name": "write_config",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        37,
+        39
+      ],
+      "summary": "处理write config相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:response_urls",
+      "type": "function",
+      "name": "response_urls",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        42,
+        44
+      ],
+      "summary": "处理response urls相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:prepare_curl",
+      "type": "function",
+      "name": "prepare_curl",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        74,
+        89
+      ],
+      "summary": "处理prepare curl相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:collect_results",
+      "type": "function",
+      "name": "collect_results",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        92,
+        127
+      ],
+      "summary": "处理collect results相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:prepare_pending",
+      "type": "function",
+      "name": "prepare_pending",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        130,
+        140
+      ],
+      "summary": "处理prepare pending相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:verify_images",
+      "type": "function",
+      "name": "verify_images",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        143,
+        171
+      ],
+      "summary": "处理verify images相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:download_images",
+      "type": "function",
+      "name": "download_images",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        174,
+        189
+      ],
+      "summary": "处理download images相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_chart_live.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/test/test_chart_live.py",
+      "lineRange": [
+        192,
+        221
+      ],
+      "summary": "处理main相关逻辑，供test chart live模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "图表",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_build_chart_type_reference",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_build_chart_type_reference",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_build_tool_description",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_build_tool_description",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_invoke_chart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_invoke_chart",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_render_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_render_error",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_render_chart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:_render_chart",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:create_unified_chart_tool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "function:src/agent/tools/chart_generator.py:create_unified_chart_tool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_validation.py",
+      "target": "class:src/agent/tools/chart_validation.py:ChartConfigValidator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_validation.py",
+      "target": "function:src/agent/tools/chart_validation.py:_closed_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_validation.py",
+      "target": "function:src/agent/tools/chart_validation.py:_closed_schema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_validation.py",
+      "target": "function:src/agent/tools/chart_validation.py:_check_finite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_validation.py",
+      "target": "function:src/agent/tools/chart_validation.py:_check_finite",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_validation.py",
+      "target": "function:src/agent/tools/chart_validation.py:_require",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/chart_validation.py",
+      "target": "function:src/agent/tools/chart_validation.py:_require",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/measure_chart_tool_tokens.py",
+      "target": "function:src/docs/measure_chart_tool_tokens.py:measure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/measure_chart_tool_tokens.py",
+      "target": "function:src/docs/measure_chart_tool_tokens.py:measure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/chart_test_support.py",
+      "target": "function:src/test/chart_test_support.py:make_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/chart_test_support.py",
+      "target": "function:src/test/chart_test_support.py:make_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/chart_test_support.py",
+      "target": "function:src/test/chart_test_support.py:make_visualization",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/chart_test_support.py",
+      "target": "function:src/test/chart_test_support.py:make_visualization",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/chart_test_support.py",
+      "target": "function:src/test/chart_test_support.py:invoke",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/chart_test_support.py",
+      "target": "function:src/test/chart_test_support.py:invoke",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_generator.py",
+      "target": "class:src/test/test_chart_generator.py:RecordingSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_generator.py",
+      "target": "class:src/test/test_chart_generator.py:ChartContractTests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "class:src/test/test_chart_live.py:CaptureSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:read_rpc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:read_rpc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:write_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:write_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:response_urls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:response_urls",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:prepare_curl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:prepare_curl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:collect_results",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:collect_results",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:prepare_pending",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:prepare_pending",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:verify_images",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:verify_images",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:download_images",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:download_images",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "function:src/test/test_chart_live.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/chart_generator.py",
+      "target": "file:src/agent/tools/chart_validation.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/docs/measure_chart_tool_tokens.py",
+      "target": "file:src/agent/tools/chart_generator.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/chart_test_support.py",
+      "target": "file:src/agent/tools/chart_generator.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_chart_generator.py",
+      "target": "file:src/agent/tools/chart_generator.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_chart_generator.py",
+      "target": "file:src/agent/tools/chart_validation.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_chart_generator.py",
+      "target": "file:src/test/chart_test_support.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "file:src/agent/tools/chart_generator.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_chart_live.py",
+      "target": "file:src/test/chart_test_support.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

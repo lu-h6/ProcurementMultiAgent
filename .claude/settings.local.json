@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/dmeck/Desktop/**)",
+      "Bash(python *)",
+      "Read(//Users/dmeck/miniconda3/envs/langchain/lib/python3.12/site-packages/opensandbox/exceptions/**)",
+      "mcp__ide__getDiagnostics"
+    ]
+  }
+}

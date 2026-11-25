@@ -1,0 +1,183 @@
+{
+  "project": "agent",
+  "description": "ERP 采购智能助手，基于 DeepAgents、LangChain、FastAPI 和 Vue，提供采购分析、订单工作流、MCP 集成、输入安全、MySQL 会话存储及 Web 界面。",
+  "totalFiles": 184,
+  "filteredByIgnore": 19,
+  "estimatedComplexity": "large",
+  "fileCategories": [
+    {
+      "category": "code",
+      "count": 130
+    },
+    {
+      "category": "config",
+      "count": 33
+    },
+    {
+      "category": "data",
+      "count": 1
+    },
+    {
+      "category": "docs",
+      "count": 16
+    },
+    {
+      "category": "markup",
+      "count": 4
+    }
+  ],
+  "languages": [
+    "co",
+    "config",
+    "css",
+    "drawio",
+    "dsl",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "python",
+    "sql",
+    "toml",
+    "txt",
+    "unknown",
+    "vue",
+    "yaml"
+  ],
+  "frameworks": [
+    "DeepAgents",
+    "LangChain",
+    "FastAPI",
+    "Vue",
+    "Vite",
+    "NeMo Guardrails"
+  ],
+  "nodeTypes": [
+    {
+      "Name": "function",
+      "Count": 521
+    },
+    {
+      "Name": "file",
+      "Count": 134
+    },
+    {
+      "Name": "config",
+      "Count": 33
+    },
+    {
+      "Name": "class",
+      "Count": 24
+    },
+    {
+      "Name": "document",
+      "Count": 16
+    },
+    {
+      "Name": "table",
+      "Count": 1
+    }
+  ],
+  "edgeTypes": [
+    {
+      "Name": "contains",
+      "Count": 545
+    },
+    {
+      "Name": "exports",
+      "Count": 356
+    },
+    {
+      "Name": "imports",
+      "Count": 99
+    },
+    {
+      "Name": "tested_by",
+      "Count": 5
+    },
+    {
+      "Name": "configures",
+      "Count": 1
+    }
+  ],
+  "layers": [
+    {
+      "fileCount": 8,
+      "name": "Agent 核心与编排"
+    },
+    {
+      "fileCount": 24,
+      "name": "Agent 工具与运行时"
+    },
+    {
+      "fileCount": 6,
+      "name": "Web API 与认证"
+    },
+    {
+      "fileCount": 6,
+      "name": "ERP MCP 服务"
+    },
+    {
+      "fileCount": 34,
+      "name": "Vue 前端"
+    },
+    {
+      "fileCount": 34,
+      "name": "技能与验证"
+    },
+    {
+      "fileCount": 67,
+      "name": "文档与业务数据"
+    },
+    {
+      "fileCount": 5,
+      "name": "项目配置与启动"
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "项目概览与运行方式"
+    },
+    {
+      "order": 2,
+      "title": "服务启动入口"
+    },
+    {
+      "order": 3,
+      "title": "主 Agent 编排"
+    },
+    {
+      "order": 4,
+      "title": "输入安全护栏"
+    },
+    {
+      "order": 5,
+      "title": "认证与会话 API"
+    },
+    {
+      "order": 6,
+      "title": "ERP MCP 工具"
+    },
+    {
+      "order": 7,
+      "title": "沙箱与用户隔离"
+    },
+    {
+      "order": 8,
+      "title": "持久化与业务数据"
+    },
+    {
+      "order": 9,
+      "title": "图表生成与校验"
+    },
+    {
+      "order": 10,
+      "title": "Vue 聊天工作台"
+    }
+  ],
+  "limitations": [
+    "子 Agent 与独立 LLM 审查因上游协议不兼容未运行；语义摘要采用确定性模板。",
+    "结构解析器跳过53个不支持的文本、图表与特殊格式；文件节点仍已包含。"
+  ]
+}

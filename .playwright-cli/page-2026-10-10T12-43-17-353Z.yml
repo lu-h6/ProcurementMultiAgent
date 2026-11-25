@@ -1,0 +1,58 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e12]:
+        - strong [ref=e13]: 棱镜工作台
+        - generic [ref=e14]: ERP INTELLIGENCE
+      - button "+ 新建对话" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: +
+        - text: 新建对话
+    - textbox "搜索会话..." [ref=e18]
+    - generic [ref=e19]:
+      - generic [ref=e20]: 历史记录
+      - generic [ref=e21]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - generic "你好，你知道我名字嘛？" [ref=e24]
+            - generic [ref=e25]: 17 分钟前
+          - button "×" [ref=e26]
+        - generic [ref=e27] [cursor=pointer]:
+          - generic [ref=e28]:
+            - generic "你知道我叫什么名字嘛？" [ref=e29]
+            - generic [ref=e30]: 2 小时前
+          - button "×" [ref=e31]
+        - generic [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]:
+            - generic "你知道我叫什么名字嘛？" [ref=e34]
+            - generic [ref=e35]: 2 小时前
+          - button "×" [ref=e36]
+    - generic [ref=e37]:
+      - generic [ref=e38]: Z
+      - generic [ref=e39]:
+        - strong [ref=e40]: zhuimeng
+        - generic [ref=e41]: 我的采购工作台
+      - button "退出" [ref=e42] [cursor=pointer]
+  - main [ref=e43]:
+    - generic [ref=e46]:
+      - generic [ref=e53]: ERP OPERATIONS DESK
+      - heading "把复杂工作，交给一个清晰的工作台" [level=2] [ref=e54]
+      - paragraph [ref=e55]: 采购、库存与供应商信息，都可以在这里被整理成下一步行动。
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: "01"
+          - generic [ref=e59]: 数据分析和图表生成
+        - generic [ref=e60]:
+          - generic [ref=e61]: "02"
+          - generic [ref=e62]: 网络搜索和信息查询
+        - generic [ref=e63]:
+          - generic [ref=e64]: "03"
+          - generic [ref=e65]: 代码编写和调试
+        - generic [ref=e66]:
+          - generic [ref=e67]: "04"
+          - generic [ref=e68]: 文档处理和写作
+    - generic [ref=e70]:
+      - generic [ref=e74] [cursor=pointer]: 显示工具调用
+      - generic [ref=e75]:
+        - textbox "输入消息，Enter 发送..." [ref=e76]
+        - button "发送" [disabled] [ref=e77]
+      - generic [ref=e78]: 按 Enter 发送，Shift + Enter 换行

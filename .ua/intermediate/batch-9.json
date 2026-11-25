@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "config:src/docs/chart-tool-token-comparison.json",
+      "type": "config",
+      "name": "chart-tool-token-comparison.json",
+      "filePath": "src/docs/chart-tool-token-comparison.json",
+      "summary": "记录chart tool token comparison相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "图表",
+        "json"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/project-design-preview.html",
+      "type": "file",
+      "name": "project-design-preview.html",
+      "filePath": "src/docs/project-design-preview.html",
+      "summary": "记录project design preview相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "html",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/project-design-publish.json",
+      "type": "config",
+      "name": "project-design-publish.json",
+      "filePath": "src/docs/project-design-publish.json",
+      "summary": "记录project design publish相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:src/docs/project-design.md",
+      "type": "document",
+      "name": "project-design.md",
+      "filePath": "src/docs/project-design.md",
+      "summary": "记录project design相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "文档",
+        "markdown",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

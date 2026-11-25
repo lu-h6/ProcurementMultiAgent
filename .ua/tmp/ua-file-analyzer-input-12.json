@@ -1,0 +1,187 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "docs/architecture/procurement-agent-architecture.drawio",
+      "language": "drawio",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/.vite/deps/_metadata.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/.vite/deps/package.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/.vite/deps/vue.js",
+      "language": "javascript",
+      "sizeLines": 13017,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/index.html",
+      "language": "html",
+      "sizeLines": 30,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/src/App.vue",
+      "language": "vue",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/ChatWorkspace.vue",
+      "language": "vue",
+      "sizeLines": 506,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/AuthPage.vue",
+      "language": "vue",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ChartPreview.vue",
+      "language": "vue",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ChatArea.vue",
+      "language": "vue",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/InputArea.vue",
+      "language": "vue",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/InterruptBanner.vue",
+      "language": "vue",
+      "sizeLines": 480,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/MarkdownRenderer.vue",
+      "language": "vue",
+      "sizeLines": 284,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/MessageItem.vue",
+      "language": "vue",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/Sidebar.vue",
+      "language": "vue",
+      "sizeLines": 451,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ToolCallPanel.vue",
+      "language": "vue",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/main.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/styles/main.css",
+      "language": "css",
+      "sizeLines": 171,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/src/utils/messageSources.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/messageSources.test.js",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/init_mysql.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/guardrails/rails/business.co",
+      "language": "co",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/memory/AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 233,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/architecture/procurement-agent-architecture.drawio": [],
+    "frontend/.vite/deps/_metadata.json": [],
+    "frontend/.vite/deps/package.json": [],
+    "frontend/.vite/deps/vue.js": [],
+    "frontend/index.html": [],
+    "frontend/package.json": [],
+    "frontend/src/App.vue": [],
+    "frontend/src/ChatWorkspace.vue": [],
+    "frontend/src/components/AuthPage.vue": [],
+    "frontend/src/components/ChartPreview.vue": [],
+    "frontend/src/components/ChatArea.vue": [],
+    "frontend/src/components/InputArea.vue": [],
+    "frontend/src/components/InterruptBanner.vue": [],
+    "frontend/src/components/MarkdownRenderer.vue": [],
+    "frontend/src/components/MessageItem.vue": [],
+    "frontend/src/components/Sidebar.vue": [],
+    "frontend/src/components/ToolCallPanel.vue": [],
+    "frontend/src/main.js": [
+      "frontend/src/App.vue",
+      "frontend/src/styles/main.css"
+    ],
+    "frontend/src/styles/main.css": [],
+    "frontend/src/utils/messageSources.js": [],
+    "frontend/src/utils/messageSources.test.js": [
+      "frontend/src/utils/messageSources.js"
+    ],
+    "frontend/vite.config.js": [],
+    "scripts/init_mysql.py": [],
+    "src/agent/guardrails/rails/business.co": [],
+    "src/agent/memory/AGENTS.md": []
+  }
+}

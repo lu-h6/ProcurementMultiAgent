@@ -1,0 +1,133 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/docs/diagrams/styled/agent-collaboration-flow-zh.json",
+      "language": "json",
+      "sizeLines": 776,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/business-capabilities-zh.json",
+      "language": "json",
+      "sizeLines": 455,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/chart-generation-flow-zh.json",
+      "language": "json",
+      "sizeLines": 611,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/chart-startup-flow-zh.json",
+      "language": "json",
+      "sizeLines": 361,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/design-value-map-zh.json",
+      "language": "json",
+      "sizeLines": 448,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/improvement-roadmap-zh.json",
+      "language": "json",
+      "sizeLines": 267,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/input-guard-flow-zh.json",
+      "language": "json",
+      "sizeLines": 548,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/input-guard-resume-flow-zh.json",
+      "language": "json",
+      "sizeLines": 517,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/manifest.json",
+      "language": "json",
+      "sizeLines": 113,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/module-dependencies-zh.json",
+      "language": "json",
+      "sizeLines": 493,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/order-approval-flow-zh.json",
+      "language": "json",
+      "sizeLines": 661,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/procurement-architecture-zh.json",
+      "language": "json",
+      "sizeLines": 371,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/sandbox-lifecycle-zh.json",
+      "language": "json",
+      "sizeLines": 666,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/skills-context-flow-zh.json",
+      "language": "json",
+      "sizeLines": 404,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/sse-interaction-zh.json",
+      "language": "json",
+      "sizeLines": 566,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/startup-dependencies-zh.json",
+      "language": "json",
+      "sizeLines": 488,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/storage-responsibilities-zh.json",
+      "language": "json",
+      "sizeLines": 482,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/validation.json",
+      "language": "json",
+      "sizeLines": 145,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "src/docs/diagrams/styled/agent-collaboration-flow-zh.json": [],
+    "src/docs/diagrams/styled/business-capabilities-zh.json": [],
+    "src/docs/diagrams/styled/chart-generation-flow-zh.json": [],
+    "src/docs/diagrams/styled/chart-startup-flow-zh.json": [],
+    "src/docs/diagrams/styled/design-value-map-zh.json": [],
+    "src/docs/diagrams/styled/improvement-roadmap-zh.json": [],
+    "src/docs/diagrams/styled/input-guard-flow-zh.json": [],
+    "src/docs/diagrams/styled/input-guard-resume-flow-zh.json": [],
+    "src/docs/diagrams/styled/manifest.json": [],
+    "src/docs/diagrams/styled/module-dependencies-zh.json": [],
+    "src/docs/diagrams/styled/order-approval-flow-zh.json": [],
+    "src/docs/diagrams/styled/procurement-architecture-zh.json": [],
+    "src/docs/diagrams/styled/sandbox-lifecycle-zh.json": [],
+    "src/docs/diagrams/styled/skills-context-flow-zh.json": [],
+    "src/docs/diagrams/styled/sse-interaction-zh.json": [],
+    "src/docs/diagrams/styled/startup-dependencies-zh.json": [],
+    "src/docs/diagrams/styled/storage-responsibilities-zh.json": [],
+    "src/docs/diagrams/styled/validation.json": []
+  }
+}

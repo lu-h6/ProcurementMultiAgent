@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": "列出模型、ERP/MCP、沙箱、MySQL、认证和 Web 服务的环境变量模板，不包含真实凭据。",
+      "tags": [
+        "配置",
+        "config",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "项目总览文档，说明 ERP 采购助手的安装启动、图表工具、输入安全、Web 认证和 MySQL 会话存储。",
+      "tags": [
+        "文档",
+        "markdown",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:chip_supply_db.sql",
+      "type": "table",
+      "name": "chip_supply_db.sql",
+      "filePath": "chip_supply_db.sql",
+      "summary": "包含芯链供应链业务数据库的 SQL 定义或初始化数据，为采购业务提供关系型数据结构。",
+      "tags": [
+        "数据库",
+        "sql",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:pyproject.toml",
+      "type": "config",
+      "name": "pyproject.toml",
+      "filePath": "pyproject.toml",
+      "summary": "声明 Python 包构建元数据及 DeepAgents、LangChain、FastAPI、MCP、MySQL 等运行依赖。",
+      "tags": [
+        "配置",
+        "toml",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": "requirements.txt",
+      "summary": "声明 Python 包构建元数据及 DeepAgents、LangChain、FastAPI、MCP、MySQL 等运行依赖。",
+      "tags": [
+        "文档",
+        "txt",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,1017 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [
+    "src/deepagents_test/deepagents_backend/agent_workspace/abc.txt",
+    "src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt",
+    "src/docs/diagrams/agent-collaboration-flow-zh.drawio",
+    "src/docs/diagrams/agent-collaboration-flow-zh.dsl",
+    "src/docs/diagrams/business-capabilities-zh.drawio",
+    "src/docs/diagrams/business-capabilities-zh.dsl",
+    "src/docs/diagrams/chart-generation-flow-zh.drawio",
+    "src/docs/diagrams/chart-generation-flow-zh.dsl",
+    "src/docs/diagrams/chart-startup-flow-zh.drawio",
+    "src/docs/diagrams/chart-startup-flow-zh.dsl",
+    "src/docs/diagrams/design-value-map-zh.drawio",
+    "src/docs/diagrams/design-value-map-zh.dsl",
+    "src/docs/diagrams/improvement-roadmap-zh.drawio",
+    "src/docs/diagrams/improvement-roadmap-zh.dsl",
+    "src/docs/diagrams/input-guard-flow-zh.drawio",
+    "src/docs/diagrams/input-guard-flow-zh.dsl",
+    "src/docs/diagrams/input-guard-resume-flow-zh.drawio",
+    "src/docs/diagrams/input-guard-resume-flow-zh.dsl",
+    "src/docs/diagrams/module-dependencies-zh.drawio",
+    "src/docs/diagrams/module-dependencies-zh.dsl"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/deepagents_test/01_long_memory_demo.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 40,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 17,
+          "endLine": 67,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "main",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "ConnectionConfig",
+          "lineNumber": 18
+        },
+        {
+          "caller": "main",
+          "callee": "timedelta",
+          "lineNumber": 22
+        },
+        {
+          "caller": "main",
+          "callee": "Sandbox.create",
+          "lineNumber": 26
+        },
+        {
+          "caller": "main",
+          "callee": "timedelta",
+          "lineNumber": 30
+        },
+        {
+          "caller": "main",
+          "callee": "sandbox.commands.run",
+          "lineNumber": 37
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 38
+        },
+        {
+          "caller": "main",
+          "callee": "sandbox.files.write_files",
+          "lineNumber": 41
+        },
+        {
+          "caller": "main",
+          "callee": "WriteEntry",
+          "lineNumber": 42
+        },
+        {
+          "caller": "main",
+          "callee": "sandbox.files.read_file",
+          "lineNumber": 46
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 47
+        },
+        {
+          "caller": "main",
+          "callee": "CodeInterpreter.create",
+          "lineNumber": 50
+        },
+        {
+          "caller": "main",
+          "callee": "interpreter.codes.run",
+          "lineNumber": 53
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 63
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/sqlitebackend.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 160,
+      "nonEmptyLines": 144,
+      "classes": [
+        {
+          "name": "SQLiteBackend",
+          "startLine": 17,
+          "endLine": 158,
+          "methods": [
+            "__init__",
+            "_get_file",
+            "_all_files",
+            "_file_data",
+            "ls",
+            "read",
+            "write",
+            "edit",
+            "grep",
+            "glob",
+            "close"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SQLiteBackend",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "RLock",
+          "lineNumber": 29
+        },
+        {
+          "caller": "__init__",
+          "callee": "sqlite3.connect",
+          "lineNumber": 30
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._conn.execute",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "self._conn.commit",
+          "lineNumber": 40
+        },
+        {
+          "caller": "_get_file",
+          "callee": "self._conn.execute",
+          "lineNumber": 45
+        },
+        {
+          "caller": "_get_file",
+          "callee": "cur.fetchone",
+          "lineNumber": 48
+        },
+        {
+          "caller": "_all_files",
+          "callee": "prefix.rstrip",
+          "lineNumber": 51
+        },
+        {
+          "caller": "_all_files",
+          "callee": "self._conn.execute",
+          "lineNumber": 54
+        },
+        {
+          "caller": "_all_files",
+          "callee": "len",
+          "lineNumber": 56
+        },
+        {
+          "caller": "_all_files",
+          "callee": "cur.fetchall",
+          "lineNumber": 58
+        },
+        {
+          "caller": "_file_data",
+          "callee": "self._all_files",
+          "lineNumber": 66
+        },
+        {
+          "caller": "ls",
+          "callee": "path.rstrip",
+          "lineNumber": 71
+        },
+        {
+          "caller": "ls",
+          "callee": "set",
+          "lineNumber": 73
+        },
+        {
+          "caller": "ls",
+          "callee": "self._all_files",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ls",
+          "callee": "len",
+          "lineNumber": 76
+        },
+        {
+          "caller": "ls",
+          "callee": "remaining.split",
+          "lineNumber": 78
+        },
+        {
+          "caller": "ls",
+          "callee": "seen_dirs.add",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ls",
+          "callee": "result.append",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ls",
+          "callee": "FileInfo",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ls",
+          "callee": "result.append",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ls",
+          "callee": "FileInfo",
+          "lineNumber": 83
+        },
+        {
+          "caller": "ls",
+          "callee": "LsResult",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ls",
+          "callee": "sorted",
+          "lineNumber": 88
+        },
+        {
+          "caller": "read",
+          "callee": "self._get_file",
+          "lineNumber": 91
+        },
+        {
+          "caller": "read",
+          "callee": "ReadResult",
+          "lineNumber": 93
+        },
+        {
+          "caller": "read",
+          "callee": "slice_read_response",
+          "lineNumber": 95
+        },
+        {
+          "caller": "write",
+          "callee": "self._get_file",
+          "lineNumber": 103
+        },
+        {
+          "caller": "write",
+          "callee": "WriteResult",
+          "lineNumber": 104
+        },
+        {
+          "caller": "write",
+          "callee": "datetime.now().isoformat",
+          "lineNumber": 107
+        },
+        {
+          "caller": "write",
+          "callee": "datetime.now",
+          "lineNumber": 107
+        },
+        {
+          "caller": "write",
+          "callee": "self._conn.execute",
+          "lineNumber": 108
+        },
+        {
+          "caller": "write",
+          "callee": "len",
+          "lineNumber": 110
+        },
+        {
+          "caller": "write",
+          "callee": "content.encode",
+          "lineNumber": 110
+        },
+        {
+          "caller": "write",
+          "callee": "WriteResult",
+          "lineNumber": 112
+        },
+        {
+          "caller": "edit",
+          "callee": "self._get_file",
+          "lineNumber": 119
+        },
+        {
+          "caller": "edit",
+          "callee": "EditResult",
+          "lineNumber": 121
+        },
+        {
+          "caller": "edit",
+          "callee": "perform_string_replacement",
+          "lineNumber": 122
+        },
+        {
+          "caller": "edit",
+          "callee": "isinstance",
+          "lineNumber": 123
+        },
+        {
+          "caller": "edit",
+          "callee": "EditResult",
+          "lineNumber": 124
+        },
+        {
+          "caller": "edit",
+          "callee": "datetime.now().isoformat",
+          "lineNumber": 126
+        },
+        {
+          "caller": "edit",
+          "callee": "datetime.now",
+          "lineNumber": 126
+        },
+        {
+          "caller": "edit",
+          "callee": "self._conn.execute",
+          "lineNumber": 127
+        },
+        {
+          "caller": "edit",
+          "callee": "len",
+          "lineNumber": 129
+        },
+        {
+          "caller": "edit",
+          "callee": "new_content.encode",
+          "lineNumber": 129
+        },
+        {
+          "caller": "edit",
+          "callee": "EditResult",
+          "lineNumber": 131
+        },
+        {
+          "caller": "grep",
+          "callee": "grep_matches_from_files",
+          "lineNumber": 139
+        },
+        {
+          "caller": "grep",
+          "callee": "self._file_data",
+          "lineNumber": 140
+        },
+        {
+          "caller": "glob",
+          "callee": "self._file_data",
+          "lineNumber": 144
+        },
+        {
+          "caller": "glob",
+          "callee": "_glob_search_files",
+          "lineNumber": 146
+        },
+        {
+          "caller": "glob",
+          "callee": "GlobResult",
+          "lineNumber": 148
+        },
+        {
+          "caller": "glob",
+          "callee": "str",
+          "lineNumber": 148
+        },
+        {
+          "caller": "glob",
+          "callee": "matched.splitlines",
+          "lineNumber": 149
+        },
+        {
+          "caller": "glob",
+          "callee": "GlobResult",
+          "lineNumber": 150
+        },
+        {
+          "caller": "glob",
+          "callee": "FileInfo",
+          "lineNumber": 151
+        },
+        {
+          "caller": "glob",
+          "callee": "len",
+          "lineNumber": 151
+        },
+        {
+          "caller": "glob",
+          "callee": "files[name][\"content\"].encode",
+          "lineNumber": 151
+        },
+        {
+          "caller": "close",
+          "callee": "self._conn.close",
+          "lineNumber": 158
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/deepagents_test/test_v1_v2.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "add_one",
+          "startLine": 26,
+          "endLine": 27,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "build_demo_graph",
+          "startLine": 30,
+          "endLine": 42,
+          "params": []
+        },
+        {
+          "name": "main",
+          "startLine": 45,
+          "endLine": 87,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "State",
+          "startLine": 22,
+          "endLine": 23,
+          "methods": [],
+          "properties": [
+            "number"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "State",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "add_one",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "build_demo_graph",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "main",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build_demo_graph",
+          "callee": "StateGraph",
+          "lineNumber": 32
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "child.add_node",
+          "lineNumber": 33
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "child.add_edge",
+          "lineNumber": 34
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "child.add_edge",
+          "lineNumber": 35
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "StateGraph",
+          "lineNumber": 38
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "parent.add_node",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "child.compile",
+          "lineNumber": 39
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "parent.add_edge",
+          "lineNumber": 40
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "parent.add_edge",
+          "lineNumber": 41
+        },
+        {
+          "caller": "build_demo_graph",
+          "callee": "parent.compile",
+          "lineNumber": 42
+        },
+        {
+          "caller": "main",
+          "callee": "build_demo_graph",
+          "lineNumber": 46
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 54
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 55
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 56
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 57
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 58
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 61
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 62
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 64
+        },
+        {
+          "caller": "main",
+          "callee": "graph.astream",
+          "lineNumber": 65
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 71
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 73
+        },
+        {
+          "caller": "main",
+          "callee": "graph.astream",
+          "lineNumber": 74
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 80
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 86
+        },
+        {
+          "caller": "main",
+          "callee": "print",
+          "lineNumber": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/docs/diagrams/build_diagrams.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 293,
+      "nonEmptyLines": 275,
+      "functions": [
+        {
+          "name": "graph",
+          "startLine": 17,
+          "endLine": 24,
+          "params": [
+            "title"
+          ]
+        },
+        {
+          "name": "node",
+          "startLine": 27,
+          "endLine": 31,
+          "params": [
+            "root",
+            "key",
+            "label",
+            "x",
+            "y",
+            "w",
+            "h",
+            "color",
+            "shape",
+            "parent"
+          ]
+        },
+        {
+          "name": "edge",
+          "startLine": 34,
+          "endLine": 37,
+          "params": [
+            "root",
+            "key",
+            "source",
+            "target",
+            "label"
+          ]
+        },
+        {
+          "name": "save",
+          "startLine": 40,
+          "endLine": 44,
+          "params": [
+            "name",
+            "xml",
+            "dsl",
+            "board_type",
+            "section"
+          ]
+        },
+        {
+          "name": "architecture",
+          "startLine": 47,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "flow",
+          "startLine": 72,
+          "endLine": 90,
+          "params": [
+            "name",
+            "title",
+            "section",
+            "vertices",
+            "links"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "graph",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "node",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "edge",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "save",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "architecture",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "flow",
+          "line": 72,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "graph",
+          "callee": "ET.Element",
+          "lineNumber": 18
+        },
+        {
+          "caller": "graph",
+          "callee": "ET.SubElement",
+          "lineNumber": 19
+        },
+        {
+          "caller": "graph",
+          "callee": "ET.SubElement",
+          "lineNumber": 20
+        },
+        {
+          "caller": "graph",
+          "callee": "ET.SubElement",
+          "lineNumber": 21
+        },
+        {
+          "caller": "graph",
+          "callee": "ET.SubElement",
+          "lineNumber": 22
+        },
+        {
+          "caller": "graph",
+          "callee": "ET.SubElement",
+          "lineNumber": 23
+        },
+        {
+          "caller": "node",
+          "callee": "ET.SubElement",
+          "lineNumber": 30
+        },
+        {
+          "caller": "node",
+          "callee": "label.replace",
+          "lineNumber": 30
+        },
+        {
+          "caller": "node",
+          "callee": "ET.SubElement",
+          "lineNumber": 31
+        },
+        {
+          "caller": "node",
+          "callee": "str",
+          "lineNumber": 31
+        },
+        {
+          "caller": "node",
+          "callee": "str",
+          "lineNumber": 31
+        },
+        {
+          "caller": "node",
+          "callee": "str",
+          "lineNumber": 31
+        },
+        {
+          "caller": "node",
+          "callee": "str",
+          "lineNumber": 31
+        },
+        {
+          "caller": "edge",
+          "callee": "ET.SubElement",
+          "lineNumber": 35
+        },
+        {
+          "caller": "edge",
+          "callee": "ET.SubElement",
+          "lineNumber": 37
+        },
+        {
+          "caller": "save",
+          "callee": "ET.indent",
+          "lineNumber": 41
+        },
+        {
+          "caller": "save",
+          "callee": "ET.ElementTree(xml).write",
+          "lineNumber": 42
+        },
+        {
+          "caller": "save",
+          "callee": "ET.ElementTree",
+          "lineNumber": 42
+        },
+        {
+          "caller": "save",
+          "callee": "(ROOT / f\"{name}.dsl\").write_text",
+          "lineNumber": 43
+        },
+        {
+          "caller": "save",
+          "callee": "dsl.strip",
+          "lineNumber": 43
+        },
+        {
+          "caller": "save",
+          "callee": "dsl.strip",
+          "lineNumber": 44
+        },
+        {
+          "caller": "architecture",
+          "callee": "graph",
+          "lineNumber": 56
+        },
+        {
+          "caller": "architecture",
+          "callee": "enumerate",
+          "lineNumber": 58
+        },
+        {
+          "caller": "architecture",
+          "callee": "lines.append",
+          "lineNumber": 59
+        },
+        {
+          "caller": "architecture",
+          "callee": "node",
+          "lineNumber": 60
+        },
+        {
+          "caller": "architecture",
+          "callee": "enumerate",
+          "lineNumber": 63
+        },
+        {
+          "caller": "architecture",
+          "callee": "lines.append",
+          "lineNumber": 64
+        },
+        {
+          "caller": "architecture",
+          "callee": "\"\\n\".join",
+          "lineNumber": 65
+        },
+        {
+          "caller": "architecture",
+          "callee": "node",
+          "lineNumber": 66
+        },
+        {
+          "caller": "architecture",
+          "callee": "lines.extend",
+          "lineNumber": 67
+        },
+        {
+          "caller": "architecture",
+          "callee": "save",
+          "lineNumber": 69
+        },
+        {
+          "caller": "architecture",
+          "callee": "\"\\n\".join",
+          "lineNumber": 69
+        },
+        {
+          "caller": "flow",
+          "callee": "graph",
+          "lineNumber": 73
+        },
+        {
+          "caller": "flow",
+          "callee": "node",
+          "lineNumber": 77
+        },
+        {
+          "caller": "flow",
+          "callee": "label.replace",
+          "lineNumber": 78
+        },
+        {
+          "caller": "flow",
+          "callee": "set",
+          "lineNumber": 81
+        },
+        {
+          "caller": "ref",
+          "callee": "emitted.add",
+          "lineNumber": 85
+        },
+        {
+          "caller": "flow",
+          "callee": "enumerate",
+          "lineNumber": 87
+        },
+        {
+          "caller": "flow",
+          "callee": "edge",
+          "lineNumber": 88
+        },
+        {
+          "caller": "flow",
+          "callee": "syntax.append",
+          "lineNumber": 89
+        },
+        {
+          "caller": "flow",
+          "callee": "ref",
+          "lineNumber": 89
+        },
+        {
+          "caller": "flow",
+          "callee": "ref",
+          "lineNumber": 89
+        },
+        {
+          "caller": "flow",
+          "callee": "save",
+          "lineNumber": 90
+        },
+        {
+          "caller": "flow",
+          "callee": "\"\\n\".join",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    }
+  ]
+}

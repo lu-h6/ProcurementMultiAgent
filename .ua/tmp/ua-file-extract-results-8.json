@@ -1,0 +1,97 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 3
+    }
+  },
+  "results": [
+    {
+      "path": "src/agent/guardrails/config.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "colang_version",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "lowest_temperature",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "models",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "rails",
+          "level": 1,
+          "line": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "src/agent/guardrails/policies.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 38,
+      "nonEmptyLines": 38,
+      "sections": [
+        {
+          "heading": "custom_data",
+          "level": 1,
+          "line": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "src/agent/guardrails/prompts.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 28,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "prompts",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    }
+  ]
+}

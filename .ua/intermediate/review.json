@@ -1,0 +1,28 @@
+{
+  "issues": [],
+  "warnings": [
+    "子 Agent 语义分析及独立 LLM 审查因上游不支持加密 agent 消息而未运行；文件摘要使用确定性规则生成。",
+    "结构提取器跳过不支持的图表、文本和特殊格式文件；这些文件仍以文件节点保留。"
+  ],
+  "stats": {
+    "totalNodes": 729,
+    "totalEdges": 1006,
+    "totalLayers": 8,
+    "tourSteps": 10,
+    "nodeTypes": {
+      "file": 134,
+      "function": 521,
+      "class": 24,
+      "config": 33,
+      "document": 16,
+      "table": 1
+    },
+    "edgeTypes": {
+      "contains": 545,
+      "exports": 356,
+      "imports": 99,
+      "tested_by": 5,
+      "configures": 1
+    }
+  }
+}

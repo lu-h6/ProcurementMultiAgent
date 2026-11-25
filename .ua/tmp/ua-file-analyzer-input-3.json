@@ -1,0 +1,132 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/agent/backends/custom_opensandbox.py",
+      "language": "python",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/backends/sandbox_setup.py",
+      "language": "python",
+      "sizeLines": 238,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/input_guard.py",
+      "language": "python",
+      "sizeLines": 212,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/logging_config.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/mysql_storage.py",
+      "language": "python",
+      "sizeLines": 368,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/schema.py",
+      "language": "python",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/agent_loader.py",
+      "language": "python",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/api/auth.py",
+      "language": "python",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/api/chat.py",
+      "language": "python",
+      "sizeLines": 746,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/api/history.py",
+      "language": "python",
+      "sizeLines": 367,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/auth.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/web_main.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/agent_test.py",
+      "language": "python",
+      "sizeLines": 389,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/agent/backends/custom_opensandbox.py": [],
+    "src/agent/backends/sandbox_setup.py": [
+      "src/agent/backends/custom_opensandbox.py",
+      "src/agent/config.py"
+    ],
+    "src/agent/input_guard.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/agent/logging_config.py": [],
+    "src/agent/mysql_storage.py": [],
+    "src/agent/schema.py": [],
+    "src/api_view/agent_loader.py": [
+      "src/agent/main_agent.py",
+      "src/agent/mysql_storage.py"
+    ],
+    "src/api_view/api/auth.py": [
+      "src/agent/mysql_storage.py",
+      "src/api_view/auth.py"
+    ],
+    "src/api_view/api/chat.py": [
+      "src/agent/input_guard.py",
+      "src/agent/mysql_storage.py",
+      "src/agent/schema.py",
+      "src/api_view/agent_loader.py",
+      "src/api_view/auth.py"
+    ],
+    "src/api_view/api/history.py": [
+      "src/agent/schema.py",
+      "src/api_view/agent_loader.py",
+      "src/api_view/auth.py"
+    ],
+    "src/api_view/auth.py": [
+      "src/agent/mysql_storage.py"
+    ],
+    "src/api_view/web_main.py": [
+      "src/agent/logging_config.py",
+      "src/api_view/agent_loader.py"
+    ],
+    "src/test/agent_test.py": [
+      "src/agent/backends/sandbox_setup.py",
+      "src/agent/config.py",
+      "src/agent/input_guard.py",
+      "src/agent/logging_config.py",
+      "src/agent/main_agent.py",
+      "src/agent/mysql_storage.py",
+      "src/agent/schema.py"
+    ]
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [
+    "src/docs/project-design-preview.html"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 3
+    }
+  },
+  "results": [
+    {
+      "path": "src/docs/chart-tool-token-comparison.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 50,
+      "nonEmptyLines": 50,
+      "sections": [
+        {
+          "heading": "scope",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "tokenizer_note",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "raw_tools_count",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "unified_tools_count",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "excluded_tools",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "measurements",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "source_sha256",
+          "level": 1,
+          "line": 31
+        },
+        {
+          "heading": "schema_reduction",
+          "level": 1,
+          "line": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "src/docs/project-design-publish.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "url",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "document_id",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "title",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "updated_at",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "verified_sections",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "verified_highlights",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "verification",
+          "level": 1,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "src/docs/project-design.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 584,
+      "nonEmptyLines": 410,
+      "sections": [
+        {
+          "heading": "芯链智能采购助手项目设计文档",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1 项目定位与业务目标",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "1.1 业务背景",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "1.2 主要使用场景",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "1.3 系统边界",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "2 总体架构",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "2.1 架构思想",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "2.2 系统组成",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "2.3 分层职责",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "2.4 关键技术选型",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "3 多 Agent 协作设计",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "3.1 职责划分",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "3.2 委派与结果回收",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "3.3 Graph Factory 设计",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "4 核心业务流程",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "4.1 普通对话流程",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "4.2 采购分析流程",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "4.3 订单创建与修改流程",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "4.4 中断与恢复",
+          "level": 3,
+          "line": 185
+        },
+        {
+          "heading": "5 MCP 工具与业务集成",
+          "level": 2,
+          "line": 191
+        },
+        {
+          "heading": "5.1 ERP 工具映射",
+          "level": 3,
+          "line": 193
+        },
+        {
+          "heading": "5.2 工具发现与分配",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "5.3 统一图表入口",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "6 技能与上下文设计",
+          "level": 2,
+          "line": 228
+        },
+        {
+          "heading": "6.1 技能作用域",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "6.2 技能同步链路",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "6.3 用户上下文与记忆",
+          "level": 3,
+          "line": 246
+        },
+        {
+          "heading": "7 存储设计",
+          "level": 2,
+          "line": 254
+        },
+        {
+          "heading": "7.1 存储职责与生命周期",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "7.2 MySQL 表设计",
+          "level": 3,
+          "line": 272
+        },
+        {
+          "heading": "7.3 一致性与初始化",
+          "level": 3,
+          "line": 288
+        },
+        {
+          "heading": "8 沙箱与容错设计",
+          "level": 2,
+          "line": 294
+        },
+        {
+          "heading": "8.1 用户级执行环境",
+          "level": 3,
+          "line": 296
+        },
+        {
+          "heading": "8.2 预热与获取顺序",
+          "level": 3,
+          "line": 302
+        },
+        {
+          "heading": "8.3 代理热替换与健康恢复",
+          "level": 3,
+          "line": 308
+        },
+        {
+          "heading": "8.4 故障处理",
+          "level": 3,
+          "line": 314
+        },
+        {
+          "heading": "9 登录与输入安全",
+          "level": 2,
+          "line": 320
+        },
+        {
+          "heading": "9.1 账号和登录态",
+          "level": 3,
+          "line": 322
+        },
+        {
+          "heading": "9.2 输入护栏",
+          "level": 3,
+          "line": 330
+        },
+        {
+          "heading": "9.3 业务侧责任",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "10 Web API 与流式交互",
+          "level": 2,
+          "line": 350
+        },
+        {
+          "heading": "10.1 主要接口",
+          "level": 3,
+          "line": 352
+        },
+        {
+          "heading": "10.2 请求示例",
+          "level": 3,
+          "line": 369
+        },
+        {
+          "heading": "10.3 SSE 协议",
+          "level": 3,
+          "line": 391
+        },
+        {
+          "heading": "11 核心亮点与设计价值",
+          "level": 2,
+          "line": 408
+        },
+        {
+          "heading": "11.1 专业分工与可控写入",
+          "level": 3,
+          "line": 410
+        },
+        {
+          "heading": "11.2 预计算与按请求构图结合",
+          "level": 3,
+          "line": 414
+        },
+        {
+          "heading": "11.3 可恢复执行与可读历史分别设计",
+          "level": 3,
+          "line": 418
+        },
+        {
+          "heading": "11.4 沙箱代理支持故障后的继续工作",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "11.5 图表工具的统一入口与渐进式参数说明",
+          "level": 3,
+          "line": 426
+        },
+        {
+          "heading": "11.6 技能驱动的业务扩展",
+          "level": 3,
+          "line": 430
+        },
+        {
+          "heading": "11.7 把身份、输入检查和审批分别落实",
+          "level": 3,
+          "line": 434
+        },
+        {
+          "heading": "11.8 最终答复与执行过程同时可读",
+          "level": 3,
+          "line": 438
+        },
+        {
+          "heading": "12 模块与代码组织",
+          "level": 2,
+          "line": 444
+        },
+        {
+          "heading": "13 部署与运行",
+          "level": 2,
+          "line": 473
+        },
+        {
+          "heading": "13.1 依赖服务",
+          "level": 3,
+          "line": 475
+        },
+        {
+          "heading": "13.2 启动步骤",
+          "level": 3,
+          "line": 489
+        },
+        {
+          "heading": "13.3 运行观测",
+          "level": 3,
+          "line": 515
+        },
+        {
+          "heading": "14 当前边界与后续建设",
+          "level": 2,
+          "line": 521
+        },
+        {
+          "heading": "15 测试与验收设计",
+          "level": 2,
+          "line": 541
+        },
+        {
+          "heading": "16 设计依据与参考文档衔接",
+          "level": 2,
+          "line": 568
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 61
+      }
+    }
+  ]
+}

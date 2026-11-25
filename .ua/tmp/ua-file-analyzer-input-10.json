@@ -1,0 +1,35 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/docs/diagrams/boards.json",
+      "language": "json",
+      "sizeLines": 98,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/diagram-review.html",
+      "language": "html",
+      "sizeLines": 0,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/docs/diagrams/publish-progress.json",
+      "language": "json",
+      "sizeLines": 97,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/yuque-boards.json",
+      "language": "json",
+      "sizeLines": 113,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "src/docs/diagrams/boards.json": [],
+    "src/docs/diagrams/diagram-review.html": [],
+    "src/docs/diagrams/publish-progress.json": [],
+    "src/docs/diagrams/yuque-boards.json": []
+  }
+}

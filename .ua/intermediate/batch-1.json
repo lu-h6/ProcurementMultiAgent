@@ -1,0 +1,1395 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/agent/backends/sandbox_manager.py",
+      "type": "file",
+      "name": "sandbox_manager.py",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "summary": "实现 OpenSandbox 执行后端及其sandbox manager生命周期、配置或代理适配。",
+      "tags": [
+        "沙箱",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/agent/backends/sandbox_proxy.py",
+      "type": "file",
+      "name": "sandbox_proxy.py",
+      "filePath": "src/agent/backends/sandbox_proxy.py",
+      "summary": "实现 OpenSandbox 执行后端及其sandbox proxy生命周期、配置或代理适配。",
+      "tags": [
+        "沙箱",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/config.py",
+      "type": "file",
+      "name": "config.py",
+      "filePath": "src/agent/config.py",
+      "summary": "实现项目src/agent/config模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/main_agent.py",
+      "type": "file",
+      "name": "main_agent.py",
+      "filePath": "src/agent/main_agent.py",
+      "summary": "实现项目src/agent/main agent模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/agent/memory/prompts.py",
+      "type": "file",
+      "name": "prompts.py",
+      "filePath": "src/agent/memory/prompts.py",
+      "summary": "实现项目src/agent/memory/prompts模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/agent/middleware_config.py",
+      "type": "file",
+      "name": "middleware_config.py",
+      "filePath": "src/agent/middleware_config.py",
+      "summary": "实现项目src/agent/middleware config模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/middlewares/context_injection.py",
+      "type": "file",
+      "name": "context_injection.py",
+      "filePath": "src/agent/middlewares/context_injection.py",
+      "summary": "实现 Agent 运行时的context injection中间件，处理跨请求的上下文、安全或工具行为。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/middlewares/guardrail_response.py",
+      "type": "file",
+      "name": "guardrail_response.py",
+      "filePath": "src/agent/middlewares/guardrail_response.py",
+      "summary": "实现 Agent 运行时的guardrail response中间件，处理跨请求的上下文、安全或工具行为。",
+      "tags": [
+        "安全",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/agent/middlewares/sandbox_breaker.py",
+      "type": "file",
+      "name": "sandbox_breaker.py",
+      "filePath": "src/agent/middlewares/sandbox_breaker.py",
+      "summary": "实现 Agent 运行时的sandbox breaker中间件，处理跨请求的上下文、安全或工具行为。",
+      "tags": [
+        "沙箱",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/middlewares/sandbox_health.py",
+      "type": "file",
+      "name": "sandbox_health.py",
+      "filePath": "src/agent/middlewares/sandbox_health.py",
+      "summary": "实现 Agent 运行时的sandbox health中间件，处理跨请求的上下文、安全或工具行为。",
+      "tags": [
+        "沙箱",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/middlewares/skills_sync.py",
+      "type": "file",
+      "name": "skills_sync.py",
+      "filePath": "src/agent/middlewares/skills_sync.py",
+      "summary": "实现 Agent 运行时的skills sync中间件，处理跨请求的上下文、安全或工具行为。",
+      "tags": [
+        "技能",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/middlewares/tool_error.py",
+      "type": "file",
+      "name": "tool_error.py",
+      "filePath": "src/agent/middlewares/tool_error.py",
+      "summary": "实现 Agent 运行时的tool error中间件，处理跨请求的上下文、安全或工具行为。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/middlewares/user_skills_restore.py",
+      "type": "file",
+      "name": "user_skills_restore.py",
+      "filePath": "src/agent/middlewares/user_skills_restore.py",
+      "summary": "实现 Agent 运行时的user skills restore中间件，处理跨请求的上下文、安全或工具行为。",
+      "tags": [
+        "技能",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/tools/assign_skill.py",
+      "type": "file",
+      "name": "assign_skill.py",
+      "filePath": "src/agent/tools/assign_skill.py",
+      "summary": "封装 Agent 可调用的assign skill工具、参数处理与外部服务交互。",
+      "tags": [
+        "技能",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/tools/download_sandbox_file.py",
+      "type": "file",
+      "name": "download_sandbox_file.py",
+      "filePath": "src/agent/tools/download_sandbox_file.py",
+      "summary": "封装 Agent 可调用的download sandbox file工具、参数处理与外部服务交互。",
+      "tags": [
+        "沙箱",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/tools/hitl_tools.py",
+      "type": "file",
+      "name": "hitl_tools.py",
+      "filePath": "src/agent/tools/hitl_tools.py",
+      "summary": "封装 Agent 可调用的hitl tools工具、参数处理与外部服务交互。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:_sandbox_storage",
+      "type": "function",
+      "name": "_sandbox_storage",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        31,
+        34
+      ],
+      "summary": "处理 sandbox storage相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:initialize",
+      "type": "function",
+      "name": "initialize",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        37,
+        40
+      ],
+      "summary": "处理initialize相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:pre_warm",
+      "type": "function",
+      "name": "pre_warm",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        43,
+        53
+      ],
+      "summary": "处理pre warm相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:ensure_sandbox_for_user",
+      "type": "function",
+      "name": "ensure_sandbox_for_user",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        56,
+        117
+      ],
+      "summary": "处理ensure sandbox for user相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:recreate_user_sandbox",
+      "type": "function",
+      "name": "recreate_user_sandbox",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        120,
+        127
+      ],
+      "summary": "处理recreate user sandbox相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:cleanup_user",
+      "type": "function",
+      "name": "cleanup_user",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        130,
+        140
+      ],
+      "summary": "处理cleanup user相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:shutdown",
+      "type": "function",
+      "name": "shutdown",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        143,
+        158
+      ],
+      "summary": "处理shutdown相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:_delete_sandbox",
+      "type": "function",
+      "name": "_delete_sandbox",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        164,
+        172
+      ],
+      "summary": "处理 delete sandbox相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:_rebuild_sandbox",
+      "type": "function",
+      "name": "_rebuild_sandbox",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        175,
+        200
+      ],
+      "summary": "处理 rebuild sandbox相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:_schedule_replenish",
+      "type": "function",
+      "name": "_schedule_replenish",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        203,
+        206
+      ],
+      "summary": "处理 schedule replenish相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_manager.py:_replenish_warm",
+      "type": "function",
+      "name": "_replenish_warm",
+      "filePath": "src/agent/backends/sandbox_manager.py",
+      "lineRange": [
+        209,
+        222
+      ],
+      "summary": "处理 replenish warm相关逻辑，供sandbox manager模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/agent/backends/sandbox_proxy.py:SandboxBackendProxy",
+      "type": "class",
+      "name": "SandboxBackendProxy",
+      "filePath": "src/agent/backends/sandbox_proxy.py",
+      "lineRange": [
+        24,
+        106
+      ],
+      "summary": "SandboxBackendProxy 封装sandbox proxy相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/main_agent.py:precompute_agent_context",
+      "type": "function",
+      "name": "precompute_agent_context",
+      "filePath": "src/agent/main_agent.py",
+      "lineRange": [
+        93,
+        107
+      ],
+      "summary": "处理precompute agent context相关逻辑，供main agent模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/main_agent.py:create_main_agent",
+      "type": "function",
+      "name": "create_main_agent",
+      "filePath": "src/agent/main_agent.py",
+      "lineRange": [
+        114,
+        254
+      ],
+      "summary": "处理create main agent相关逻辑，供main agent模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/agent/middleware_config.py:create_analyst_middleware",
+      "type": "function",
+      "name": "create_analyst_middleware",
+      "filePath": "src/agent/middleware_config.py",
+      "lineRange": [
+        16,
+        36
+      ],
+      "summary": "处理create analyst middleware相关逻辑，供middleware config模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/middleware_config.py:create_order_middleware",
+      "type": "function",
+      "name": "create_order_middleware",
+      "filePath": "src/agent/middleware_config.py",
+      "lineRange": [
+        39,
+        52
+      ],
+      "summary": "处理create order middleware相关逻辑，供middleware config模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/agent/middlewares/context_injection.py:UserInfoInjectionMiddleware",
+      "type": "class",
+      "name": "UserInfoInjectionMiddleware",
+      "filePath": "src/agent/middlewares/context_injection.py",
+      "lineRange": [
+        15,
+        58
+      ],
+      "summary": "UserInfoInjectionMiddleware 封装context injection相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/middlewares/guardrail_response.py:GuardrailResponseMiddleware",
+      "type": "class",
+      "name": "GuardrailResponseMiddleware",
+      "filePath": "src/agent/middlewares/guardrail_response.py",
+      "lineRange": [
+        9,
+        23
+      ],
+      "summary": "GuardrailResponseMiddleware 封装guardrail response相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/middlewares/sandbox_breaker.py:SandboxCircuitBreakerMiddleware",
+      "type": "class",
+      "name": "SandboxCircuitBreakerMiddleware",
+      "filePath": "src/agent/middlewares/sandbox_breaker.py",
+      "lineRange": [
+        75,
+        109
+      ],
+      "summary": "SandboxCircuitBreakerMiddleware 封装sandbox breaker相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/middlewares/sandbox_breaker.py:_looks_like_sandbox_error",
+      "type": "function",
+      "name": "_looks_like_sandbox_error",
+      "filePath": "src/agent/middlewares/sandbox_breaker.py",
+      "lineRange": [
+        42,
+        44
+      ],
+      "summary": "处理 looks like sandbox error相关逻辑，供sandbox breaker模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/middlewares/sandbox_breaker.py:_count_consecutive_sandbox_errors",
+      "type": "function",
+      "name": "_count_consecutive_sandbox_errors",
+      "filePath": "src/agent/middlewares/sandbox_breaker.py",
+      "lineRange": [
+        47,
+        72
+      ],
+      "summary": "处理 count consecutive sandbox errors相关逻辑，供sandbox breaker模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/agent/middlewares/sandbox_health.py:SandboxHealthMiddleware",
+      "type": "class",
+      "name": "SandboxHealthMiddleware",
+      "filePath": "src/agent/middlewares/sandbox_health.py",
+      "lineRange": [
+        24,
+        77
+      ],
+      "summary": "SandboxHealthMiddleware 封装sandbox health相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/middlewares/skills_sync.py:SkillsSyncMiddleware",
+      "type": "class",
+      "name": "SkillsSyncMiddleware",
+      "filePath": "src/agent/middlewares/skills_sync.py",
+      "lineRange": [
+        21,
+        110
+      ],
+      "summary": "SkillsSyncMiddleware 封装skills sync相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/middlewares/tool_error.py:ToolErrorMiddleware",
+      "type": "class",
+      "name": "ToolErrorMiddleware",
+      "filePath": "src/agent/middlewares/tool_error.py",
+      "lineRange": [
+        48,
+        91
+      ],
+      "summary": "ToolErrorMiddleware 封装tool error相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/middlewares/tool_error.py:_tool_call_id",
+      "type": "function",
+      "name": "_tool_call_id",
+      "filePath": "src/agent/middlewares/tool_error.py",
+      "lineRange": [
+        22,
+        26
+      ],
+      "summary": "处理 tool call id相关逻辑，供tool error模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/middlewares/tool_error.py:_tool_name",
+      "type": "function",
+      "name": "_tool_name",
+      "filePath": "src/agent/middlewares/tool_error.py",
+      "lineRange": [
+        29,
+        33
+      ],
+      "summary": "处理 tool name相关逻辑，供tool error模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/middlewares/tool_error.py:_build_error_payload",
+      "type": "function",
+      "name": "_build_error_payload",
+      "filePath": "src/agent/middlewares/tool_error.py",
+      "lineRange": [
+        36,
+        45
+      ],
+      "summary": "处理 build error payload相关逻辑，供tool error模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/agent/middlewares/user_skills_restore.py:UserSkillsRestoreMiddleware",
+      "type": "class",
+      "name": "UserSkillsRestoreMiddleware",
+      "filePath": "src/agent/middlewares/user_skills_restore.py",
+      "lineRange": [
+        19,
+        87
+      ],
+      "summary": "UserSkillsRestoreMiddleware 封装user skills restore相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/tools/assign_skill.py:create_assign_skill_tool",
+      "type": "function",
+      "name": "create_assign_skill_tool",
+      "filePath": "src/agent/tools/assign_skill.py",
+      "lineRange": [
+        14,
+        91
+      ],
+      "summary": "处理create assign skill tool相关逻辑，供assign skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/tools/assign_skill.py:_persist_skill",
+      "type": "function",
+      "name": "_persist_skill",
+      "filePath": "src/agent/tools/assign_skill.py",
+      "lineRange": [
+        98,
+        151
+      ],
+      "summary": "处理 persist skill相关逻辑，供assign skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/tools/assign_skill.py:_cleanup_packages",
+      "type": "function",
+      "name": "_cleanup_packages",
+      "filePath": "src/agent/tools/assign_skill.py",
+      "lineRange": [
+        154,
+        168
+      ],
+      "summary": "处理 cleanup packages相关逻辑，供assign skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/download_sandbox_file.py:create_download_tool",
+      "type": "function",
+      "name": "create_download_tool",
+      "filePath": "src/agent/tools/download_sandbox_file.py",
+      "lineRange": [
+        11,
+        103
+      ],
+      "summary": "处理create download tool相关逻辑，供download sandbox file模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/tools/hitl_tools.py:request_order_info",
+      "type": "function",
+      "name": "request_order_info",
+      "filePath": "src/agent/tools/hitl_tools.py",
+      "lineRange": [
+        20,
+        38
+      ],
+      "summary": "处理request order info相关逻辑，供hitl tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_sandbox_storage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_sandbox_storage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:initialize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:initialize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:pre_warm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:pre_warm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:ensure_sandbox_for_user",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:ensure_sandbox_for_user",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:recreate_user_sandbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:recreate_user_sandbox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:cleanup_user",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:cleanup_user",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:shutdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:shutdown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_delete_sandbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_delete_sandbox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_rebuild_sandbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_rebuild_sandbox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_schedule_replenish",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_schedule_replenish",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_replenish_warm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "function:src/agent/backends/sandbox_manager.py:_replenish_warm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_proxy.py",
+      "target": "class:src/agent/backends/sandbox_proxy.py:SandboxBackendProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "function:src/agent/main_agent.py:precompute_agent_context",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "function:src/agent/main_agent.py:precompute_agent_context",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "function:src/agent/main_agent.py:create_main_agent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "function:src/agent/main_agent.py:create_main_agent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middleware_config.py",
+      "target": "function:src/agent/middleware_config.py:create_analyst_middleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middleware_config.py",
+      "target": "function:src/agent/middleware_config.py:create_analyst_middleware",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middleware_config.py",
+      "target": "function:src/agent/middleware_config.py:create_order_middleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middleware_config.py",
+      "target": "function:src/agent/middleware_config.py:create_order_middleware",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middlewares/context_injection.py",
+      "target": "class:src/agent/middlewares/context_injection.py:UserInfoInjectionMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/guardrail_response.py",
+      "target": "class:src/agent/middlewares/guardrail_response.py:GuardrailResponseMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/sandbox_breaker.py",
+      "target": "class:src/agent/middlewares/sandbox_breaker.py:SandboxCircuitBreakerMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/sandbox_breaker.py",
+      "target": "function:src/agent/middlewares/sandbox_breaker.py:_looks_like_sandbox_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/sandbox_breaker.py",
+      "target": "function:src/agent/middlewares/sandbox_breaker.py:_looks_like_sandbox_error",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middlewares/sandbox_breaker.py",
+      "target": "function:src/agent/middlewares/sandbox_breaker.py:_count_consecutive_sandbox_errors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/sandbox_breaker.py",
+      "target": "function:src/agent/middlewares/sandbox_breaker.py:_count_consecutive_sandbox_errors",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middlewares/sandbox_health.py",
+      "target": "class:src/agent/middlewares/sandbox_health.py:SandboxHealthMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/skills_sync.py",
+      "target": "class:src/agent/middlewares/skills_sync.py:SkillsSyncMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/tool_error.py",
+      "target": "class:src/agent/middlewares/tool_error.py:ToolErrorMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/tool_error.py",
+      "target": "function:src/agent/middlewares/tool_error.py:_tool_call_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/tool_error.py",
+      "target": "function:src/agent/middlewares/tool_error.py:_tool_call_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middlewares/tool_error.py",
+      "target": "function:src/agent/middlewares/tool_error.py:_tool_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/tool_error.py",
+      "target": "function:src/agent/middlewares/tool_error.py:_tool_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middlewares/tool_error.py",
+      "target": "function:src/agent/middlewares/tool_error.py:_build_error_payload",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/middlewares/tool_error.py",
+      "target": "function:src/agent/middlewares/tool_error.py:_build_error_payload",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/middlewares/user_skills_restore.py",
+      "target": "class:src/agent/middlewares/user_skills_restore.py:UserSkillsRestoreMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/assign_skill.py",
+      "target": "function:src/agent/tools/assign_skill.py:create_assign_skill_tool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/assign_skill.py",
+      "target": "function:src/agent/tools/assign_skill.py:create_assign_skill_tool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/assign_skill.py",
+      "target": "function:src/agent/tools/assign_skill.py:_persist_skill",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/assign_skill.py",
+      "target": "function:src/agent/tools/assign_skill.py:_persist_skill",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/assign_skill.py",
+      "target": "function:src/agent/tools/assign_skill.py:_cleanup_packages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/assign_skill.py",
+      "target": "function:src/agent/tools/assign_skill.py:_cleanup_packages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/download_sandbox_file.py",
+      "target": "function:src/agent/tools/download_sandbox_file.py:create_download_tool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/download_sandbox_file.py",
+      "target": "function:src/agent/tools/download_sandbox_file.py:create_download_tool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/hitl_tools.py",
+      "target": "function:src/agent/tools/hitl_tools.py:request_order_info",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/hitl_tools.py",
+      "target": "function:src/agent/tools/hitl_tools.py:request_order_info",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "file:src/agent/backends/sandbox_proxy.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "file:src/agent/backends/sandbox_setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "file:src/agent/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_manager.py",
+      "target": "file:src/agent/mysql_storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/config.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/memory/prompts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middleware_config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middlewares/context_injection.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middlewares/guardrail_response.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middlewares/sandbox_breaker.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middlewares/sandbox_health.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middlewares/skills_sync.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middlewares/tool_error.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/middlewares/user_skills_restore.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/mysql_storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/schema.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/tools/assign_skill.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/tools/chart_generator.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/tools/download_sandbox_file.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/tools/hitl_tools.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/tools/mcp_client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/main_agent.py",
+      "target": "file:src/agent/tools/web_search.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/middlewares/sandbox_health.py",
+      "target": "file:src/agent/backends/sandbox_proxy.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/middlewares/skills_sync.py",
+      "target": "file:src/agent/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/tools/assign_skill.py",
+      "target": "file:src/agent/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

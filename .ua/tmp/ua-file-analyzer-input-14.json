@@ -1,0 +1,182 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/docs/diagrams/order-approval-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/order-approval-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/prepare_yuque_board_update.py",
+      "language": "python",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/procurement-architecture-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/procurement-architecture-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/sandbox-lifecycle-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/sandbox-lifecycle-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/skills-context-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/skills-context-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/sse-interaction-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/sse-interaction-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/startup-dependencies-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/startup-dependencies-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/storage-responsibilities-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/storage-responsibilities-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/style_native_boards.py",
+      "language": "python",
+      "sizeLines": 287,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/sections/chart-entry.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/docs/sections/input-guard.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/analyis_chart_params.md",
+      "language": "markdown",
+      "sizeLines": 119,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/main/find-skills/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/main/skill-management/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/main/skill-management/scripts/download_skill.py",
+      "language": "python",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/skills/order/purchase-order-summarization/NOTICE",
+      "language": "unknown",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/skills/order/purchase-order-summarization/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 388,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/procurement-analysis/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "src/docs/diagrams/order-approval-flow-zh.drawio": [],
+    "src/docs/diagrams/order-approval-flow-zh.dsl": [],
+    "src/docs/diagrams/prepare_yuque_board_update.py": [],
+    "src/docs/diagrams/procurement-architecture-zh.drawio": [],
+    "src/docs/diagrams/procurement-architecture-zh.dsl": [],
+    "src/docs/diagrams/sandbox-lifecycle-zh.drawio": [],
+    "src/docs/diagrams/sandbox-lifecycle-zh.dsl": [],
+    "src/docs/diagrams/skills-context-flow-zh.drawio": [],
+    "src/docs/diagrams/skills-context-flow-zh.dsl": [],
+    "src/docs/diagrams/sse-interaction-zh.drawio": [],
+    "src/docs/diagrams/sse-interaction-zh.dsl": [],
+    "src/docs/diagrams/startup-dependencies-zh.drawio": [],
+    "src/docs/diagrams/startup-dependencies-zh.dsl": [],
+    "src/docs/diagrams/storage-responsibilities-zh.drawio": [],
+    "src/docs/diagrams/storage-responsibilities-zh.dsl": [],
+    "src/docs/diagrams/style_native_boards.py": [],
+    "src/docs/sections/chart-entry.md": [],
+    "src/docs/sections/input-guard.md": [],
+    "src/skills/analyis_chart_params.md": [],
+    "src/skills/main/find-skills/SKILL.md": [],
+    "src/skills/main/skill-management/SKILL.md": [],
+    "src/skills/main/skill-management/scripts/download_skill.py": [],
+    "src/skills/order/purchase-order-summarization/NOTICE": [],
+    "src/skills/order/purchase-order-summarization/SKILL.md": [],
+    "src/skills/procurement/procurement-analysis/SKILL.md": []
+  }
+}

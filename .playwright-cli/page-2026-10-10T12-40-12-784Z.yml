@@ -1,0 +1,45 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e12]:
+        - strong [ref=e13]: 棱镜工作台
+        - generic [ref=e14]: ERP INTELLIGENCE
+      - button "+ 新建对话" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: +
+        - text: 新建对话
+    - textbox "搜索会话..." [ref=e18]
+    - generic [ref=e19]:
+      - generic [ref=e20]: 历史记录
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: 暂无会话记录
+        - paragraph [ref=e24]: 开始一个新对话吧
+    - generic [ref=e25]:
+      - generic [ref=e26]: Z
+      - generic [ref=e27]:
+        - strong [ref=e28]: zhuimeng
+        - generic [ref=e29]: 我的采购工作台
+      - button "退出" [ref=e30] [cursor=pointer]
+  - main [ref=e31]:
+    - generic [ref=e34]:
+      - generic [ref=e41]: ERP OPERATIONS DESK
+      - heading "把复杂工作，交给一个清晰的工作台" [level=2] [ref=e42]
+      - paragraph [ref=e43]: 采购、库存与供应商信息，都可以在这里被整理成下一步行动。
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: "01"
+          - generic [ref=e47]: 数据分析和图表生成
+        - generic [ref=e48]:
+          - generic [ref=e49]: "02"
+          - generic [ref=e50]: 网络搜索和信息查询
+        - generic [ref=e51]:
+          - generic [ref=e52]: "03"
+          - generic [ref=e53]: 代码编写和调试
+        - generic [ref=e54]:
+          - generic [ref=e55]: "04"
+          - generic [ref=e56]: 文档处理和写作
+    - generic [ref=e58]:
+      - generic [ref=e62] [cursor=pointer]: 显示工具调用
+      - generic [ref=e63]:
+        - textbox "输入消息，Enter 发送..." [ref=e64]
+        - button "发送" [disabled] [ref=e65]
+      - generic [ref=e66]: 按 Enter 发送，Shift + Enter 换行

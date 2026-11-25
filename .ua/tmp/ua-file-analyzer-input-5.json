@@ -1,0 +1,63 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/agent/tools/chart_generator.py",
+      "language": "python",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/chart_validation.py",
+      "language": "python",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/measure_chart_tool_tokens.py",
+      "language": "python",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/chart_test_support.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_chart_generator.py",
+      "language": "python",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_chart_live.py",
+      "language": "python",
+      "sizeLines": 225,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/agent/tools/chart_generator.py": [
+      "src/agent/tools/chart_validation.py"
+    ],
+    "src/agent/tools/chart_validation.py": [],
+    "src/docs/measure_chart_tool_tokens.py": [
+      "src/agent/tools/chart_generator.py"
+    ],
+    "src/test/chart_test_support.py": [
+      "src/agent/tools/chart_generator.py"
+    ],
+    "src/test/test_chart_generator.py": [
+      "src/agent/tools/chart_generator.py",
+      "src/agent/tools/chart_validation.py",
+      "src/test/chart_test_support.py"
+    ],
+    "src/test/test_chart_live.py": [
+      "src/agent/env_utils.py",
+      "src/agent/tools/chart_generator.py",
+      "src/test/chart_test_support.py"
+    ]
+  }
+}

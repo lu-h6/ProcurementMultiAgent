@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "config:src/docs/diagrams/boards.json",
+      "type": "config",
+      "name": "boards.json",
+      "filePath": "src/docs/diagrams/boards.json",
+      "summary": "记录boards相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/diagram-review.html",
+      "type": "file",
+      "name": "diagram-review.html",
+      "filePath": "src/docs/diagrams/diagram-review.html",
+      "summary": "记录diagram review相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "html",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:src/docs/diagrams/publish-progress.json",
+      "type": "config",
+      "name": "publish-progress.json",
+      "filePath": "src/docs/diagrams/publish-progress.json",
+      "summary": "记录publish progress相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:src/docs/diagrams/yuque-boards.json",
+      "type": "config",
+      "name": "yuque-boards.json",
+      "filePath": "src/docs/diagrams/yuque-boards.json",
+      "summary": "记录yuque boards相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

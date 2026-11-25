@@ -1,0 +1,829 @@
+{
+  "nodes": [
+    {
+      "id": "file:frontend/src/api/chat.js",
+      "type": "file",
+      "name": "chat.js",
+      "filePath": "frontend/src/api/chat.js",
+      "summary": "提供 Web chat接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "api",
+        "javascript",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/api/chat.test.js",
+      "type": "file",
+      "name": "chat.test.js",
+      "filePath": "frontend/src/api/chat.test.js",
+      "summary": "提供 Web chat.test接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "测试",
+        "api",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/api/inputSafety.test.js",
+      "type": "file",
+      "name": "inputSafety.test.js",
+      "filePath": "frontend/src/api/inputSafety.test.js",
+      "summary": "提供 Web inputSafety.test接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "测试",
+        "api",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/utils/images.js",
+      "type": "file",
+      "name": "images.js",
+      "filePath": "frontend/src/utils/images.js",
+      "summary": "实现 Vue 前端的images界面、状态、API 或样式功能。",
+      "tags": [
+        "javascript",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/utils/images.test.js",
+      "type": "file",
+      "name": "images.test.js",
+      "filePath": "frontend/src/utils/images.test.js",
+      "summary": "验证images.test相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "javascript",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/utils/markdown.js",
+      "type": "file",
+      "name": "markdown.js",
+      "filePath": "frontend/src/utils/markdown.js",
+      "summary": "实现 Vue 前端的markdown界面、状态、API 或样式功能。",
+      "tags": [
+        "javascript",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/utils/replyTurns.test.js",
+      "type": "file",
+      "name": "replyTurns.test.js",
+      "filePath": "frontend/src/utils/replyTurns.test.js",
+      "summary": "验证replyTurns.test相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "javascript",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/utils/toolCalls.js",
+      "type": "file",
+      "name": "toolCalls.js",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "summary": "实现 Vue 前端的toolCalls界面、状态、API 或样式功能。",
+      "tags": [
+        "javascript",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/utils/toolCalls.test.js",
+      "type": "file",
+      "name": "toolCalls.test.js",
+      "filePath": "frontend/src/utils/toolCalls.test.js",
+      "summary": "验证toolCalls.test相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "javascript",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/api/chat.js:streamChat",
+      "type": "function",
+      "name": "streamChat",
+      "filePath": "frontend/src/api/chat.js",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "处理streamChat相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/chat.js:resumeChat",
+      "type": "function",
+      "name": "resumeChat",
+      "filePath": "frontend/src/api/chat.js",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "处理resumeChat相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/chat.js:requestStream",
+      "type": "function",
+      "name": "requestStream",
+      "filePath": "frontend/src/api/chat.js",
+      "lineRange": [
+        13,
+        120
+      ],
+      "summary": "处理requestStream相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:frontend/src/utils/images.js:normalizeImageSource",
+      "type": "function",
+      "name": "normalizeImageSource",
+      "filePath": "frontend/src/utils/images.js",
+      "lineRange": [
+        2,
+        15
+      ],
+      "summary": "处理normalizeImageSource相关逻辑，供images模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/images.js:parseResult",
+      "type": "function",
+      "name": "parseResult",
+      "filePath": "frontend/src/utils/images.js",
+      "lineRange": [
+        17,
+        20
+      ],
+      "summary": "处理parseResult相关逻辑，供images模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/images.js:getToolImages",
+      "type": "function",
+      "name": "getToolImages",
+      "filePath": "frontend/src/utils/images.js",
+      "lineRange": [
+        22,
+        29
+      ],
+      "summary": "处理getToolImages相关逻辑，供images模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/markdown.js:renderMarkdown",
+      "type": "function",
+      "name": "renderMarkdown",
+      "filePath": "frontend/src/utils/markdown.js",
+      "lineRange": [
+        28,
+        28
+      ],
+      "summary": "处理renderMarkdown相关逻辑，供markdown模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:getCallId",
+      "type": "function",
+      "name": "getCallId",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        3,
+        3
+      ],
+      "summary": "处理getCallId相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:groupReplyTurns",
+      "type": "function",
+      "name": "groupReplyTurns",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        6,
+        32
+      ],
+      "summary": "处理groupReplyTurns相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:groupChatMessages",
+      "type": "function",
+      "name": "groupChatMessages",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        35,
+        64
+      ],
+      "summary": "处理groupChatMessages相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:summarizeToolCalls",
+      "type": "function",
+      "name": "summarizeToolCalls",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        66,
+        73
+      ],
+      "summary": "处理summarizeToolCalls相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:parseToolArgs",
+      "type": "function",
+      "name": "parseToolArgs",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        75,
+        83
+      ],
+      "summary": "处理parseToolArgs相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:getToolTarget",
+      "type": "function",
+      "name": "getToolTarget",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        85,
+        90
+      ],
+      "summary": "处理getToolTarget相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:formatToolArgs",
+      "type": "function",
+      "name": "formatToolArgs",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        92,
+        98
+      ],
+      "summary": "处理formatToolArgs相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:getToolStatus",
+      "type": "function",
+      "name": "getToolStatus",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        100,
+        109
+      ],
+      "summary": "处理getToolStatus相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:getToolLabel",
+      "type": "function",
+      "name": "getToolLabel",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        115,
+        115
+      ],
+      "summary": "处理getToolLabel相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:getToolSummary",
+      "type": "function",
+      "name": "getToolSummary",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        116,
+        131
+      ],
+      "summary": "处理getToolSummary相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:settleToolCalls",
+      "type": "function",
+      "name": "settleToolCalls",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        133,
+        137
+      ],
+      "summary": "处理settleToolCalls相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/utils/toolCalls.js:createToolCallbacks",
+      "type": "function",
+      "name": "createToolCallbacks",
+      "filePath": "frontend/src/utils/toolCalls.js",
+      "lineRange": [
+        140,
+        179
+      ],
+      "summary": "处理createToolCallbacks相关逻辑，供toolCalls模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "function:frontend/src/api/chat.js:streamChat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "function:frontend/src/api/chat.js:streamChat",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "function:frontend/src/api/chat.js:resumeChat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "function:frontend/src/api/chat.js:resumeChat",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "function:frontend/src/api/chat.js:requestStream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/images.js",
+      "target": "function:frontend/src/utils/images.js:normalizeImageSource",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/images.js",
+      "target": "function:frontend/src/utils/images.js:normalizeImageSource",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/images.js",
+      "target": "function:frontend/src/utils/images.js:parseResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/images.js",
+      "target": "function:frontend/src/utils/images.js:parseResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/images.js",
+      "target": "function:frontend/src/utils/images.js:getToolImages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/images.js",
+      "target": "function:frontend/src/utils/images.js:getToolImages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/markdown.js",
+      "target": "function:frontend/src/utils/markdown.js:renderMarkdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/markdown.js",
+      "target": "function:frontend/src/utils/markdown.js:renderMarkdown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getCallId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getCallId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:groupReplyTurns",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:groupReplyTurns",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:groupChatMessages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:groupChatMessages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:summarizeToolCalls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:summarizeToolCalls",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:parseToolArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:parseToolArgs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolTarget",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolTarget",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:formatToolArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:formatToolArgs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:getToolSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:settleToolCalls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:settleToolCalls",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:createToolCallbacks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "function:frontend/src/utils/toolCalls.js:createToolCallbacks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "file:frontend/src/api/http.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "file:frontend/src/utils/toolCalls.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/chat.test.js",
+      "target": "file:frontend/src/api/chat.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/chat.test.js",
+      "target": "file:frontend/src/utils/toolCalls.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/inputSafety.test.js",
+      "target": "file:frontend/src/api/chat.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/utils/images.test.js",
+      "target": "file:frontend/src/utils/images.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/utils/images.test.js",
+      "target": "file:frontend/src/utils/markdown.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/utils/images.test.js",
+      "target": "file:frontend/src/utils/toolCalls.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/utils/markdown.js",
+      "target": "file:frontend/src/utils/images.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/utils/replyTurns.test.js",
+      "target": "file:frontend/src/utils/toolCalls.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "file:frontend/src/utils/images.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.test.js",
+      "target": "file:frontend/src/utils/toolCalls.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/chat.js",
+      "target": "file:frontend/src/api/chat.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:frontend/src/utils/images.js",
+      "target": "file:frontend/src/utils/images.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:frontend/src/utils/toolCalls.js",
+      "target": "file:frontend/src/utils/toolCalls.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

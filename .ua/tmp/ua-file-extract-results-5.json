@@ -1,0 +1,3083 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 6,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 6,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/agent/tools/chart_generator.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 155,
+      "nonEmptyLines": 131,
+      "functions": [
+        {
+          "name": "_build_chart_type_reference",
+          "startLine": 50,
+          "endLine": 56,
+          "params": [
+            "available"
+          ]
+        },
+        {
+          "name": "_build_tool_description",
+          "startLine": 63,
+          "endLine": 73,
+          "params": [
+            "tool_map"
+          ]
+        },
+        {
+          "name": "_invoke_chart",
+          "startLine": 76,
+          "endLine": 86,
+          "params": [
+            "mcp_tool",
+            "arguments",
+            "config"
+          ]
+        },
+        {
+          "name": "_render_error",
+          "startLine": 89,
+          "endLine": 94,
+          "params": [
+            "kind",
+            "exc"
+          ]
+        },
+        {
+          "name": "_render_chart",
+          "startLine": 97,
+          "endLine": 117,
+          "params": [
+            "kind",
+            "mcp_tool",
+            "arguments",
+            "config"
+          ]
+        },
+        {
+          "name": "create_unified_chart_tool",
+          "startLine": 120,
+          "endLine": 155,
+          "params": [
+            "chart_mcp_tools"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "_build_chart_type_reference",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "_build_tool_description",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "_invoke_chart",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "_render_error",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "_render_chart",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "create_unified_chart_tool",
+          "line": 120,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_build_chart_type_reference",
+          "callee": "rows.append",
+          "lineNumber": 55
+        },
+        {
+          "caller": "_build_chart_type_reference",
+          "callee": "'/'.join",
+          "lineNumber": 55
+        },
+        {
+          "caller": "_build_chart_type_reference",
+          "callee": "\"\\n\".join",
+          "lineNumber": 56
+        },
+        {
+          "caller": "_build_tool_description",
+          "callee": "set",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_build_tool_description",
+          "callee": "set",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_build_tool_description",
+          "callee": "_build_chart_type_reference",
+          "lineNumber": 67
+        },
+        {
+          "caller": "_invoke_chart",
+          "callee": "mcp_tool.ainvoke",
+          "lineNumber": 78
+        },
+        {
+          "caller": "_invoke_chart",
+          "callee": "uuid4",
+          "lineNumber": 79
+        },
+        {
+          "caller": "_invoke_chart",
+          "callee": "isinstance",
+          "lineNumber": 82
+        },
+        {
+          "caller": "_invoke_chart",
+          "callee": "ToolException",
+          "lineNumber": 84
+        },
+        {
+          "caller": "_invoke_chart",
+          "callee": "str",
+          "lineNumber": 84
+        },
+        {
+          "caller": "_render_error",
+          "callee": "str",
+          "lineNumber": 90
+        },
+        {
+          "caller": "_render_error",
+          "callee": "ToolException",
+          "lineNumber": 91
+        },
+        {
+          "caller": "_render_error",
+          "callee": "isinstance",
+          "lineNumber": 92
+        },
+        {
+          "caller": "_render_error",
+          "callee": "ToolException",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_render_error",
+          "callee": "str",
+          "lineNumber": 93
+        },
+        {
+          "caller": "_render_error",
+          "callee": "ToolException",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_render_error",
+          "callee": "type",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "_invoke_chart",
+          "lineNumber": 99
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "arguments.get",
+          "lineNumber": 103
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "any",
+          "lineNumber": 104
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "str",
+          "lineNumber": 104
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "_render_error",
+          "lineNumber": 107
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "_invoke_chart",
+          "lineNumber": 109
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "_render_error",
+          "lineNumber": 111
+        },
+        {
+          "caller": "_render_chart",
+          "callee": "isinstance",
+          "lineNumber": 113
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "_TOOL_NAMES.items",
+          "lineNumber": 122
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "names.get",
+          "lineNumber": 125
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "other_tools.append",
+          "lineNumber": 127
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "ValueError",
+          "lineNumber": 129
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "ValueError",
+          "lineNumber": 133
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "ChartConfigValidator",
+          "lineNumber": 135
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "tool_map.items",
+          "lineNumber": 135
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "create_model",
+          "lineNumber": 136
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "ConfigDict",
+          "lineNumber": 138
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "tuple",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "sorted",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "Field",
+          "lineNumber": 139
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "Field",
+          "lineNumber": 140
+        },
+        {
+          "caller": "generate_chart",
+          "callee": "validators[chart_type].prepare",
+          "lineNumber": 144
+        },
+        {
+          "caller": "generate_chart",
+          "callee": "_render_chart",
+          "lineNumber": 145
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "StructuredTool",
+          "lineNumber": 147
+        },
+        {
+          "caller": "create_unified_chart_tool",
+          "callee": "_build_tool_description",
+          "lineNumber": 149
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/agent/tools/chart_validation.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "_closed_schema",
+          "startLine": 12,
+          "endLine": 21,
+          "params": [
+            "schema"
+          ]
+        },
+        {
+          "name": "_check_finite",
+          "startLine": 24,
+          "endLine": 32,
+          "params": [
+            "value",
+            "path"
+          ]
+        },
+        {
+          "name": "_require",
+          "startLine": 35,
+          "endLine": 37,
+          "params": [
+            "condition",
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChartConfigValidator",
+          "startLine": 40,
+          "endLine": 117,
+          "methods": [
+            "__init__",
+            "prepare"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "_closed_schema",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "_check_finite",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "_require",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "ChartConfigValidator",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "_closed_schema",
+          "callee": "isinstance",
+          "lineNumber": 14
+        },
+        {
+          "caller": "_closed_schema",
+          "callee": "_closed_schema",
+          "lineNumber": 15
+        },
+        {
+          "caller": "_closed_schema",
+          "callee": "isinstance",
+          "lineNumber": 16
+        },
+        {
+          "caller": "_closed_schema",
+          "callee": "_closed_schema",
+          "lineNumber": 18
+        },
+        {
+          "caller": "_closed_schema",
+          "callee": "schema.items",
+          "lineNumber": 18
+        },
+        {
+          "caller": "_closed_schema",
+          "callee": "result.setdefault",
+          "lineNumber": 20
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "isinstance",
+          "lineNumber": 25
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "math.isfinite",
+          "lineNumber": 25
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "ToolException",
+          "lineNumber": 26
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "isinstance",
+          "lineNumber": 27
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "value.items",
+          "lineNumber": 28
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "_check_finite",
+          "lineNumber": 29
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "isinstance",
+          "lineNumber": 30
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "enumerate",
+          "lineNumber": 31
+        },
+        {
+          "caller": "_check_finite",
+          "callee": "_check_finite",
+          "lineNumber": 32
+        },
+        {
+          "caller": "_require",
+          "callee": "ToolException",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "schema.model_json_schema",
+          "lineNumber": 44
+        },
+        {
+          "caller": "__init__",
+          "callee": "_closed_schema",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "Draft7Validator.check_schema",
+          "lineNumber": 46
+        },
+        {
+          "caller": "__init__",
+          "callee": "Draft7Validator",
+          "lineNumber": 47
+        },
+        {
+          "caller": "prepare",
+          "callee": "deepcopy",
+          "lineNumber": 50
+        },
+        {
+          "caller": "prepare",
+          "callee": "isinstance",
+          "lineNumber": 53
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 53
+        },
+        {
+          "caller": "prepare",
+          "callee": "_check_finite",
+          "lineNumber": 55
+        },
+        {
+          "caller": "prepare",
+          "callee": "next",
+          "lineNumber": 56
+        },
+        {
+          "caller": "prepare",
+          "callee": "self.validator.iter_errors",
+          "lineNumber": 56
+        },
+        {
+          "caller": "prepare",
+          "callee": "\"\".join",
+          "lineNumber": 58
+        },
+        {
+          "caller": "prepare",
+          "callee": "isinstance",
+          "lineNumber": 58
+        },
+        {
+          "caller": "prepare",
+          "callee": "ToolException",
+          "lineNumber": 59
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 63
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 64
+        },
+        {
+          "caller": "prepare",
+          "callee": "bool",
+          "lineNumber": 66
+        },
+        {
+          "caller": "prepare",
+          "callee": "row.get",
+          "lineNumber": 66
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 67
+        },
+        {
+          "caller": "prepare",
+          "callee": "any",
+          "lineNumber": 67
+        },
+        {
+          "caller": "prepare",
+          "callee": "all",
+          "lineNumber": 67
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 69
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 69
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 69
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 70
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.setdefault",
+          "lineNumber": 71
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 72
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.setdefault",
+          "lineNumber": 73
+        },
+        {
+          "caller": "prepare",
+          "callee": "any",
+          "lineNumber": 74
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 75
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.setdefault",
+          "lineNumber": 77
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.setdefault",
+          "lineNumber": 78
+        },
+        {
+          "caller": "prepare",
+          "callee": "config.get",
+          "lineNumber": 79
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 80
+        },
+        {
+          "caller": "prepare",
+          "callee": "all",
+          "lineNumber": 80
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 82
+        },
+        {
+          "caller": "prepare",
+          "callee": "all",
+          "lineNumber": 82
+        },
+        {
+          "caller": "prepare",
+          "callee": "len",
+          "lineNumber": 82
+        },
+        {
+          "caller": "prepare",
+          "callee": "len",
+          "lineNumber": 82
+        },
+        {
+          "caller": "prepare",
+          "callee": "set",
+          "lineNumber": 85
+        },
+        {
+          "caller": "prepare",
+          "callee": "enumerate",
+          "lineNumber": 86
+        },
+        {
+          "caller": "prepare",
+          "callee": "series.get",
+          "lineNumber": 87
+        },
+        {
+          "caller": "prepare",
+          "callee": "title.strip",
+          "lineNumber": 88
+        },
+        {
+          "caller": "prepare",
+          "callee": "used_titles.add",
+          "lineNumber": 94
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 97
+        },
+        {
+          "caller": "prepare",
+          "callee": "int",
+          "lineNumber": 97
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 99
+        },
+        {
+          "caller": "prepare",
+          "callee": "enumerate",
+          "lineNumber": 101
+        },
+        {
+          "caller": "prepare",
+          "callee": "row.get",
+          "lineNumber": 102
+        },
+        {
+          "caller": "prepare",
+          "callee": "row.get",
+          "lineNumber": 102
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 103
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 104
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 107
+        },
+        {
+          "caller": "prepare",
+          "callee": "len",
+          "lineNumber": 107
+        },
+        {
+          "caller": "prepare",
+          "callee": "len",
+          "lineNumber": 107
+        },
+        {
+          "caller": "prepare",
+          "callee": "set",
+          "lineNumber": 107
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 108
+        },
+        {
+          "caller": "prepare",
+          "callee": "all",
+          "lineNumber": 108
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 111
+        },
+        {
+          "caller": "prepare",
+          "callee": "len",
+          "lineNumber": 111
+        },
+        {
+          "caller": "prepare",
+          "callee": "config[\"title\"].strip",
+          "lineNumber": 111
+        },
+        {
+          "caller": "prepare",
+          "callee": "data.get",
+          "lineNumber": 112
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 113
+        },
+        {
+          "caller": "prepare",
+          "callee": "data.get",
+          "lineNumber": 113
+        },
+        {
+          "caller": "prepare",
+          "callee": "data.setdefault",
+          "lineNumber": 114
+        },
+        {
+          "caller": "prepare",
+          "callee": "_require",
+          "lineNumber": 116
+        },
+        {
+          "caller": "prepare",
+          "callee": "config[\"markerPopup\"].get",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/docs/measure_chart_tool_tokens.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "measure",
+          "startLine": 21,
+          "endLine": 64,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "measure",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "measure",
+          "callee": "make_tools",
+          "lineNumber": 23
+        },
+        {
+          "caller": "measure",
+          "callee": "object",
+          "lineNumber": 23
+        },
+        {
+          "caller": "measure",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 24
+        },
+        {
+          "caller": "measure",
+          "callee": "json.dumps",
+          "lineNumber": 26
+        },
+        {
+          "caller": "measure",
+          "callee": "serialize",
+          "lineNumber": 28
+        },
+        {
+          "caller": "measure",
+          "callee": "convert_to_openai_tool",
+          "lineNumber": 28
+        },
+        {
+          "caller": "measure",
+          "callee": "serialize",
+          "lineNumber": 29
+        },
+        {
+          "caller": "measure",
+          "callee": "convert_to_openai_tool",
+          "lineNumber": 29
+        },
+        {
+          "caller": "measure",
+          "callee": "(ROOT / \"skills/analyis_chart_params.md\").read_text",
+          "lineNumber": 31
+        },
+        {
+          "caller": "measure",
+          "callee": "len",
+          "lineNumber": 36
+        },
+        {
+          "caller": "measure",
+          "callee": "len",
+          "lineNumber": 40
+        },
+        {
+          "caller": "measure",
+          "callee": "len",
+          "lineNumber": 40
+        },
+        {
+          "caller": "measure",
+          "callee": "text.encode",
+          "lineNumber": 40
+        },
+        {
+          "caller": "measure",
+          "callee": "values.items",
+          "lineNumber": 41
+        },
+        {
+          "caller": "measure",
+          "callee": "str",
+          "lineNumber": 44
+        },
+        {
+          "caller": "measure",
+          "callee": "path.relative_to",
+          "lineNumber": 44
+        },
+        {
+          "caller": "measure",
+          "callee": "hashlib.sha256(path.read_bytes()).hexdigest",
+          "lineNumber": 44
+        },
+        {
+          "caller": "measure",
+          "callee": "hashlib.sha256",
+          "lineNumber": 44
+        },
+        {
+          "caller": "measure",
+          "callee": "path.read_bytes",
+          "lineNumber": 44
+        },
+        {
+          "caller": "measure",
+          "callee": "tiktoken.get_encoding",
+          "lineNumber": 52
+        },
+        {
+          "caller": "measure",
+          "callee": "values.items",
+          "lineNumber": 53
+        },
+        {
+          "caller": "measure",
+          "callee": "len",
+          "lineNumber": 54
+        },
+        {
+          "caller": "measure",
+          "callee": "encoder.encode",
+          "lineNumber": 54
+        },
+        {
+          "caller": "measure",
+          "callee": "type",
+          "lineNumber": 56
+        },
+        {
+          "caller": "measure",
+          "callee": "result.setdefault",
+          "lineNumber": 60
+        },
+        {
+          "caller": "measure",
+          "callee": "round",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/test/chart_test_support.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "make_tools",
+          "startLine": 18,
+          "endLine": 19,
+          "params": [
+            "session"
+          ]
+        },
+        {
+          "name": "make_visualization",
+          "startLine": 22,
+          "endLine": 23,
+          "params": [
+            "session"
+          ]
+        },
+        {
+          "name": "invoke",
+          "startLine": 26,
+          "endLine": 30,
+          "params": [
+            "tool",
+            "case",
+            "**kwargs"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "make_tools",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "make_visualization",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "invoke",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "make_tools",
+          "callee": "convert_mcp_tool_to_langchain_tool",
+          "lineNumber": 19
+        },
+        {
+          "caller": "make_tools",
+          "callee": "Tool.model_validate",
+          "lineNumber": 19
+        },
+        {
+          "caller": "make_visualization",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 23
+        },
+        {
+          "caller": "make_visualization",
+          "callee": "make_tools",
+          "lineNumber": 23
+        },
+        {
+          "caller": "invoke",
+          "callee": "tool.ainvoke",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/test/test_chart_generator.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 295,
+      "nonEmptyLines": 267,
+      "classes": [
+        {
+          "name": "RecordingSession",
+          "startLine": 21,
+          "endLine": 34,
+          "methods": [
+            "__init__",
+            "call_tool"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ChartContractTests",
+          "startLine": 37,
+          "endLine": 291,
+          "methods": [
+            "setUp",
+            "call",
+            "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+            "test_group_defaults_are_safe_without_changing_explicit_intent",
+            "test_invalid_configs_never_reach_mcp",
+            "test_every_type_checks_its_required_fields_and_unknown_options",
+            "test_top_level_validation_is_recoverable",
+            "test_remote_errors_and_timeouts_are_not_successes",
+            "test_images_and_text_blocks_are_preserved",
+            "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+            "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+            "test_map_service_fault_is_reported_without_a_fake_image",
+            "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+            "test_callbacks_and_concurrent_calls_remain_isolated",
+            "test_tree_depth_is_not_silently_truncated",
+            "test_catalog_and_factory_are_complete",
+            "test_pydantic_schema_and_new_server_tools",
+            "test_reference_examples_are_executable_for_all_26_types"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RecordingSession",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ChartContractTests",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "CallToolResult",
+          "lineNumber": 24
+        },
+        {
+          "caller": "__init__",
+          "callee": "TextContent",
+          "lineNumber": 25
+        },
+        {
+          "caller": "call_tool",
+          "callee": "self.calls.append",
+          "lineNumber": 31
+        },
+        {
+          "caller": "call_tool",
+          "callee": "deepcopy",
+          "lineNumber": 31
+        },
+        {
+          "caller": "setUp",
+          "callee": "RecordingSession",
+          "lineNumber": 39
+        },
+        {
+          "caller": "setUp",
+          "callee": "make_visualization",
+          "lineNumber": 40
+        },
+        {
+          "caller": "call",
+          "callee": "invoke",
+          "lineNumber": 43
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.subTest",
+          "lineNumber": 47
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "deepcopy",
+          "lineNumber": 48
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "invoke",
+          "lineNumber": 49
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 50
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 51
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 52
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 53
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "len",
+          "lineNumber": 53
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 54
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 55
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 56
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 57
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 58
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "len",
+          "lineNumber": 58
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "len",
+          "lineNumber": 58
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "self.assertEqual",
+          "lineNumber": 59
+        },
+        {
+          "caller": "test_all_rendering_scenarios_route_and_preserve_content_artifact",
+          "callee": "set",
+          "lineNumber": 59
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.call",
+          "lineNumber": 64
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.assertEqual",
+          "lineNumber": 65
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "dict",
+          "lineNumber": 66
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.call",
+          "lineNumber": 67
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.assertFalse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.call",
+          "lineNumber": 69
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.assertFalse",
+          "lineNumber": 70
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.call",
+          "lineNumber": 71
+        },
+        {
+          "caller": "test_group_defaults_are_safe_without_changing_explicit_intent",
+          "callee": "self.assertEqual",
+          "lineNumber": 72
+        },
+        {
+          "caller": "test_invalid_configs_never_reach_mcp",
+          "callee": "cases.append",
+          "lineNumber": 108
+        },
+        {
+          "caller": "test_invalid_configs_never_reach_mcp",
+          "callee": "self.subTest",
+          "lineNumber": 110
+        },
+        {
+          "caller": "test_invalid_configs_never_reach_mcp",
+          "callee": "self.call",
+          "lineNumber": 111
+        },
+        {
+          "caller": "test_invalid_configs_never_reach_mcp",
+          "callee": "self.assertEqual",
+          "lineNumber": 112
+        },
+        {
+          "caller": "test_invalid_configs_never_reach_mcp",
+          "callee": "self.assertIsNone",
+          "lineNumber": 113
+        },
+        {
+          "caller": "test_invalid_configs_never_reach_mcp",
+          "callee": "self.assertEqual",
+          "lineNumber": 114
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "next",
+          "lineNumber": 119
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "self.subTest",
+          "lineNumber": 121
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "deepcopy",
+          "lineNumber": 122
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "config.pop",
+          "lineNumber": 122
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "self.assertEqual",
+          "lineNumber": 123
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "self.call",
+          "lineNumber": 123
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "dict",
+          "lineNumber": 124
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "self.subTest",
+          "lineNumber": 125
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "self.assertEqual",
+          "lineNumber": 126
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "self.call",
+          "lineNumber": 126
+        },
+        {
+          "caller": "test_every_type_checks_its_required_fields_and_unknown_options",
+          "callee": "self.assertEqual",
+          "lineNumber": 127
+        },
+        {
+          "caller": "test_top_level_validation_is_recoverable",
+          "callee": "self.tool.ainvoke",
+          "lineNumber": 136
+        },
+        {
+          "caller": "test_top_level_validation_is_recoverable",
+          "callee": "self.assertEqual",
+          "lineNumber": 137
+        },
+        {
+          "caller": "test_top_level_validation_is_recoverable",
+          "callee": "self.assertEqual",
+          "lineNumber": 138
+        },
+        {
+          "caller": "test_top_level_validation_is_recoverable",
+          "callee": "self.assertEqual",
+          "lineNumber": 139
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "CallToolResult",
+          "lineNumber": 142
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "TextContent",
+          "lineNumber": 142
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.call",
+          "lineNumber": 143
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.assertEqual",
+          "lineNumber": 144
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.assertIn",
+          "lineNumber": 145
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "str",
+          "lineNumber": 145
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "TimeoutError",
+          "lineNumber": 146
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.call",
+          "lineNumber": 147
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.assertEqual",
+          "lineNumber": 148
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.assertIn",
+          "lineNumber": 149
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.assertNotIn",
+          "lineNumber": 150
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "asyncio.CancelledError",
+          "lineNumber": 151
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.assertRaises",
+          "lineNumber": 152
+        },
+        {
+          "caller": "test_remote_errors_and_timeouts_are_not_successes",
+          "callee": "self.call",
+          "lineNumber": 153
+        },
+        {
+          "caller": "test_images_and_text_blocks_are_preserved",
+          "callee": "CallToolResult",
+          "lineNumber": 156
+        },
+        {
+          "caller": "test_images_and_text_blocks_are_preserved",
+          "callee": "TextContent",
+          "lineNumber": 157
+        },
+        {
+          "caller": "test_images_and_text_blocks_are_preserved",
+          "callee": "ImageContent",
+          "lineNumber": 158
+        },
+        {
+          "caller": "test_images_and_text_blocks_are_preserved",
+          "callee": "self.call",
+          "lineNumber": 160
+        },
+        {
+          "caller": "test_images_and_text_blocks_are_preserved",
+          "callee": "self.assertEqual",
+          "lineNumber": 161
+        },
+        {
+          "caller": "call_tool",
+          "callee": "arguments.get",
+          "lineNumber": 169
+        },
+        {
+          "caller": "call_tool",
+          "callee": "self.calls.append",
+          "lineNumber": 170
+        },
+        {
+          "caller": "call_tool",
+          "callee": "deepcopy",
+          "lineNumber": 170
+        },
+        {
+          "caller": "call_tool",
+          "callee": "RuntimeError",
+          "lineNumber": 171
+        },
+        {
+          "caller": "call_tool",
+          "callee": "super().call_tool",
+          "lineNumber": 172
+        },
+        {
+          "caller": "call_tool",
+          "callee": "super",
+          "lineNumber": 172
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "DarkFailureSession",
+          "lineNumber": 173
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "make_visualization",
+          "lineNumber": 174
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "invoke",
+          "lineNumber": 176
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertEqual",
+          "lineNumber": 177
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertEqual",
+          "lineNumber": 178
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "len",
+          "lineNumber": 178
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertEqual",
+          "lineNumber": 179
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertEqual",
+          "lineNumber": 180
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertIn",
+          "lineNumber": 181
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "str",
+          "lineNumber": 181
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertEqual",
+          "lineNumber": 182
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "session.calls.clear",
+          "lineNumber": 184
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "RuntimeError",
+          "lineNumber": 185
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "invoke",
+          "lineNumber": 186
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertEqual",
+          "lineNumber": 187
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "self.assertEqual",
+          "lineNumber": 188
+        },
+        {
+          "caller": "test_known_dark_theme_failure_retries_once_and_discloses_fallback",
+          "callee": "len",
+          "lineNumber": 188
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "self.call",
+          "lineNumber": 192
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "self.assertEqual",
+          "lineNumber": 193
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "self.assertEqual",
+          "lineNumber": 194
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "len",
+          "lineNumber": 194
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "self.assertEqual",
+          "lineNumber": 195
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "TimeoutError",
+          "lineNumber": 196
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "self.assertEqual",
+          "lineNumber": 197
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "self.call",
+          "lineNumber": 197
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "self.assertEqual",
+          "lineNumber": 198
+        },
+        {
+          "caller": "test_working_dark_theme_and_unrelated_errors_do_not_retry",
+          "callee": "len",
+          "lineNumber": 198
+        },
+        {
+          "caller": "test_map_service_fault_is_reported_without_a_fake_image",
+          "callee": "RuntimeError",
+          "lineNumber": 201
+        },
+        {
+          "caller": "test_map_service_fault_is_reported_without_a_fake_image",
+          "callee": "self.call",
+          "lineNumber": 202
+        },
+        {
+          "caller": "test_map_service_fault_is_reported_without_a_fake_image",
+          "callee": "self.assertEqual",
+          "lineNumber": 203
+        },
+        {
+          "caller": "test_map_service_fault_is_reported_without_a_fake_image",
+          "callee": "self.assertIn",
+          "lineNumber": 204
+        },
+        {
+          "caller": "test_map_service_fault_is_reported_without_a_fake_image",
+          "callee": "self.assertNotIn",
+          "lineNumber": 205
+        },
+        {
+          "caller": "test_map_service_fault_is_reported_without_a_fake_image",
+          "callee": "self.assertEqual",
+          "lineNumber": 206
+        },
+        {
+          "caller": "test_map_service_fault_is_reported_without_a_fake_image",
+          "callee": "len",
+          "lineNumber": 206
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.call",
+          "lineNumber": 210
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.assertEqual",
+          "lineNumber": 211
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.assertEqual",
+          "lineNumber": 213
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.assertEqual",
+          "lineNumber": 214
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.assertNotIn",
+          "lineNumber": 215
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "enumerate",
+          "lineNumber": 219
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.assertEqual",
+          "lineNumber": 221
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.call",
+          "lineNumber": 221
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.assertEqual",
+          "lineNumber": 223
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "len",
+          "lineNumber": 223
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "len",
+          "lineNumber": 223
+        },
+        {
+          "caller": "test_dual_axes_supplies_distinct_series_titles_without_changing_data",
+          "callee": "self.assertEqual",
+          "lineNumber": 224
+        },
+        {
+          "caller": "on_tool_start",
+          "callee": "self.starts.append",
+          "lineNumber": 230
+        },
+        {
+          "caller": "on_tool_start",
+          "callee": "kwargs.get",
+          "lineNumber": 230
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "Recorder",
+          "lineNumber": 231
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "asyncio.gather",
+          "lineNumber": 232
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "invoke",
+          "lineNumber": 233
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "self.assertEqual",
+          "lineNumber": 236
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "self.assertEqual",
+          "lineNumber": 237
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "len",
+          "lineNumber": 237
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "self.assertTrue",
+          "lineNumber": 238
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "all",
+          "lineNumber": 238
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "self.assertEqual",
+          "lineNumber": 239
+        },
+        {
+          "caller": "test_callbacks_and_concurrent_calls_remain_isolated",
+          "callee": "len",
+          "lineNumber": 239
+        },
+        {
+          "caller": "test_tree_depth_is_not_silently_truncated",
+          "callee": "range",
+          "lineNumber": 244
+        },
+        {
+          "caller": "test_tree_depth_is_not_silently_truncated",
+          "callee": "self.call",
+          "lineNumber": 246
+        },
+        {
+          "caller": "test_tree_depth_is_not_silently_truncated",
+          "callee": "self.assertEqual",
+          "lineNumber": 247
+        },
+        {
+          "caller": "test_tree_depth_is_not_silently_truncated",
+          "callee": "self.assertEqual",
+          "lineNumber": 248
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertEqual",
+          "lineNumber": 251
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "len",
+          "lineNumber": 251
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "CHART_GROUPS.values",
+          "lineNumber": 252
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertEqual",
+          "lineNumber": 253
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "len",
+          "lineNumber": 253
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "len",
+          "lineNumber": 253
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "set",
+          "lineNumber": 253
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertEqual",
+          "lineNumber": 254
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "len",
+          "lineNumber": 254
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "deepcopy",
+          "lineNumber": 255
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "make_tools",
+          "lineNumber": 256
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 257
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertEqual",
+          "lineNumber": 258
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertIs",
+          "lineNumber": 259
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertEqual",
+          "lineNumber": 260
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "set",
+          "lineNumber": 260
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "set",
+          "lineNumber": 260
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertLess",
+          "lineNumber": 261
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "len",
+          "lineNumber": 261
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertEqual",
+          "lineNumber": 262
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertRaisesRegex",
+          "lineNumber": 263
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 264
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertRaisesRegex",
+          "lineNumber": 265
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 266
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 267
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertEqual",
+          "lineNumber": 268
+        },
+        {
+          "caller": "test_catalog_and_factory_are_complete",
+          "callee": "self.assertNotIn",
+          "lineNumber": 269
+        },
+        {
+          "caller": "test_pydantic_schema_and_new_server_tools",
+          "callee": "ChartConfigValidator",
+          "lineNumber": 274
+        },
+        {
+          "caller": "test_pydantic_schema_and_new_server_tools",
+          "callee": "self.assertEqual",
+          "lineNumber": 275
+        },
+        {
+          "caller": "test_pydantic_schema_and_new_server_tools",
+          "callee": "validator.prepare",
+          "lineNumber": 275
+        },
+        {
+          "caller": "test_pydantic_schema_and_new_server_tools",
+          "callee": "StructuredTool",
+          "lineNumber": 277
+        },
+        {
+          "caller": "test_pydantic_schema_and_new_server_tools",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 278
+        },
+        {
+          "caller": "test_pydantic_schema_and_new_server_tools",
+          "callee": "make_tools",
+          "lineNumber": 278
+        },
+        {
+          "caller": "test_pydantic_schema_and_new_server_tools",
+          "callee": "self.assertIs",
+          "lineNumber": 279
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "Path",
+          "lineNumber": 282
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "set",
+          "lineNumber": 283
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "re.findall",
+          "lineNumber": 284
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "reference.read_text",
+          "lineNumber": 284
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "json.loads(block).items",
+          "lineNumber": 285
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "json.loads",
+          "lineNumber": 285
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "self.subTest",
+          "lineNumber": 286
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "self.assertNotIn",
+          "lineNumber": 287
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "documented.add",
+          "lineNumber": 288
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "self.call",
+          "lineNumber": 289
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "self.assertEqual",
+          "lineNumber": 290
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "self.assertEqual",
+          "lineNumber": 291
+        },
+        {
+          "caller": "test_reference_examples_are_executable_for_all_26_types",
+          "callee": "set",
+          "lineNumber": 291
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "src/test/test_chart_live.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 225,
+      "nonEmptyLines": 195,
+      "functions": [
+        {
+          "name": "read_rpc",
+          "startLine": 28,
+          "endLine": 34,
+          "params": [
+            "path"
+          ]
+        },
+        {
+          "name": "write_config",
+          "startLine": 37,
+          "endLine": 39,
+          "params": [
+            "path",
+            "blocks"
+          ]
+        },
+        {
+          "name": "response_urls",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "prepare_curl",
+          "startLine": 74,
+          "endLine": 89,
+          "params": [
+            "output",
+            "session_config",
+            "selected"
+          ]
+        },
+        {
+          "name": "collect_results",
+          "startLine": 92,
+          "endLine": 127,
+          "params": [
+            "output",
+            "selected",
+            "tool_factory"
+          ]
+        },
+        {
+          "name": "prepare_pending",
+          "startLine": 130,
+          "endLine": 140,
+          "params": [
+            "output",
+            "session_config"
+          ]
+        },
+        {
+          "name": "verify_images",
+          "startLine": 143,
+          "endLine": 171,
+          "params": [
+            "output"
+          ]
+        },
+        {
+          "name": "download_images",
+          "startLine": 174,
+          "endLine": 189,
+          "params": [
+            "output"
+          ]
+        },
+        {
+          "name": "main",
+          "startLine": 192,
+          "endLine": 221,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PendingResponse",
+          "startLine": 24,
+          "endLine": 25,
+          "methods": [],
+          "properties": []
+        },
+        {
+          "name": "CaptureSession",
+          "startLine": 47,
+          "endLine": 71,
+          "methods": [
+            "__init__",
+            "call_tool"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PendingResponse",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "read_rpc",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "write_config",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "response_urls",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "CaptureSession",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "prepare_curl",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "collect_results",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "prepare_pending",
+          "line": 130,
+          "isDefault": false
+        },
+        {
+          "name": "verify_images",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "download_images",
+          "line": 174,
+          "isDefault": false
+        },
+        {
+          "name": "main",
+          "line": 192,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "read_rpc",
+          "callee": "path.read_text",
+          "lineNumber": 29
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "json.loads",
+          "lineNumber": 31
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "json.loads",
+          "lineNumber": 33
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "line.removeprefix('data:').strip",
+          "lineNumber": 33
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "line.removeprefix",
+          "lineNumber": 33
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "text.splitlines",
+          "lineNumber": 33
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "line.startswith",
+          "lineNumber": 33
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "next",
+          "lineNumber": 34
+        },
+        {
+          "caller": "read_rpc",
+          "callee": "reversed",
+          "lineNumber": 34
+        },
+        {
+          "caller": "write_config",
+          "callee": "path.write_text",
+          "lineNumber": 38
+        },
+        {
+          "caller": "write_config",
+          "callee": "'\\nnext\\n'.join",
+          "lineNumber": 38
+        },
+        {
+          "caller": "write_config",
+          "callee": "'\\n'.join",
+          "lineNumber": 38
+        },
+        {
+          "caller": "write_config",
+          "callee": "path.chmod",
+          "lineNumber": 39
+        },
+        {
+          "caller": "response_urls",
+          "callee": "isinstance",
+          "lineNumber": 43
+        },
+        {
+          "caller": "response_urls",
+          "callee": "block.get",
+          "lineNumber": 43
+        },
+        {
+          "caller": "response_urls",
+          "callee": "isinstance",
+          "lineNumber": 43
+        },
+        {
+          "caller": "response_urls",
+          "callee": "list",
+          "lineNumber": 44
+        },
+        {
+          "caller": "response_urls",
+          "callee": "dict.fromkeys",
+          "lineNumber": 44
+        },
+        {
+          "caller": "response_urls",
+          "callee": "re.findall",
+          "lineNumber": 44
+        },
+        {
+          "caller": "call_tool",
+          "callee": "path.write_text",
+          "lineNumber": 59
+        },
+        {
+          "caller": "call_tool",
+          "callee": "json.dumps",
+          "lineNumber": 59
+        },
+        {
+          "caller": "call_tool",
+          "callee": "CallToolResult",
+          "lineNumber": 60
+        },
+        {
+          "caller": "call_tool",
+          "callee": "TextContent",
+          "lineNumber": 60
+        },
+        {
+          "caller": "call_tool",
+          "callee": "path.exists",
+          "lineNumber": 61
+        },
+        {
+          "caller": "call_tool",
+          "callee": "json.loads",
+          "lineNumber": 61
+        },
+        {
+          "caller": "call_tool",
+          "callee": "path.read_text",
+          "lineNumber": 61
+        },
+        {
+          "caller": "call_tool",
+          "callee": "path.exists",
+          "lineNumber": 62
+        },
+        {
+          "caller": "call_tool",
+          "callee": "path.replace",
+          "lineNumber": 62
+        },
+        {
+          "caller": "call_tool",
+          "callee": "path.with_suffix",
+          "lineNumber": 62
+        },
+        {
+          "caller": "call_tool",
+          "callee": "response_path.exists",
+          "lineNumber": 63
+        },
+        {
+          "caller": "call_tool",
+          "callee": "response_path.replace",
+          "lineNumber": 63
+        },
+        {
+          "caller": "call_tool",
+          "callee": "response_path.with_suffix",
+          "lineNumber": 63
+        },
+        {
+          "caller": "call_tool",
+          "callee": "path.write_text",
+          "lineNumber": 64
+        },
+        {
+          "caller": "call_tool",
+          "callee": "json.dumps",
+          "lineNumber": 64
+        },
+        {
+          "caller": "call_tool",
+          "callee": "response_path.exists",
+          "lineNumber": 65
+        },
+        {
+          "caller": "call_tool",
+          "callee": "PendingResponse",
+          "lineNumber": 65
+        },
+        {
+          "caller": "call_tool",
+          "callee": "read_rpc",
+          "lineNumber": 66
+        },
+        {
+          "caller": "call_tool",
+          "callee": "response.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "call_tool",
+          "callee": "AssertionError",
+          "lineNumber": 68
+        },
+        {
+          "caller": "call_tool",
+          "callee": "RuntimeError",
+          "lineNumber": 70
+        },
+        {
+          "caller": "call_tool",
+          "callee": "response['error'].get",
+          "lineNumber": 70
+        },
+        {
+          "caller": "call_tool",
+          "callee": "CallToolResult.model_validate",
+          "lineNumber": 71
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "session_config.read_text().splitlines",
+          "lineNumber": 75
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "session_config.read_text",
+          "lineNumber": 75
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "line.startswith",
+          "lineNumber": 75
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "any",
+          "lineNumber": 76
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "line.startswith",
+          "lineNumber": 76
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "ValueError",
+          "lineNumber": 77
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "invoke",
+          "lineNumber": 80
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "make_visualization",
+          "lineNumber": 80
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "CaptureSession",
+          "lineNumber": 80
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "AssertionError",
+          "lineNumber": 82
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "blocks.append",
+          "lineNumber": 83
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "json.dumps",
+          "lineNumber": 85
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "str",
+          "lineNumber": 85
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "json.dumps",
+          "lineNumber": 86
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "str",
+          "lineNumber": 86
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "write_config",
+          "lineNumber": 88
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "print",
+          "lineNumber": 89
+        },
+        {
+          "caller": "prepare_curl",
+          "callee": "len",
+          "lineNumber": 89
+        },
+        {
+          "caller": "collect_results",
+          "callee": "json.loads",
+          "lineNumber": 94
+        },
+        {
+          "caller": "collect_results",
+          "callee": "previous_path.read_text",
+          "lineNumber": 94
+        },
+        {
+          "caller": "collect_results",
+          "callee": "previous_path.exists",
+          "lineNumber": 94
+        },
+        {
+          "caller": "collect_results",
+          "callee": "tool_factory",
+          "lineNumber": 98
+        },
+        {
+          "caller": "collect_results",
+          "callee": "invoke",
+          "lineNumber": 99
+        },
+        {
+          "caller": "collect_results",
+          "callee": "response_urls",
+          "lineNumber": 100
+        },
+        {
+          "caller": "collect_results",
+          "callee": "image_path.exists",
+          "lineNumber": 102
+        },
+        {
+          "caller": "collect_results",
+          "callee": "previous.get(case['id'], {}).get",
+          "lineNumber": 102
+        },
+        {
+          "caller": "collect_results",
+          "callee": "previous.get",
+          "lineNumber": 102
+        },
+        {
+          "caller": "collect_results",
+          "callee": "image_path.unlink",
+          "lineNumber": 103
+        },
+        {
+          "caller": "collect_results",
+          "callee": "bool",
+          "lineNumber": 104
+        },
+        {
+          "caller": "collect_results",
+          "callee": "str",
+          "lineNumber": 106
+        },
+        {
+          "caller": "collect_results",
+          "callee": "str",
+          "lineNumber": 108
+        },
+        {
+          "caller": "collect_results",
+          "callee": "type",
+          "lineNumber": 112
+        },
+        {
+          "caller": "collect_results",
+          "callee": "records.append",
+          "lineNumber": 113
+        },
+        {
+          "caller": "collect_results",
+          "callee": "print",
+          "lineNumber": 114
+        },
+        {
+          "caller": "collect_results",
+          "callee": "(output / 'results.json').write_text",
+          "lineNumber": 115
+        },
+        {
+          "caller": "collect_results",
+          "callee": "json.dumps",
+          "lineNumber": 115
+        },
+        {
+          "caller": "collect_results",
+          "callee": "blocks.append",
+          "lineNumber": 119
+        },
+        {
+          "caller": "collect_results",
+          "callee": "json.dumps",
+          "lineNumber": 120
+        },
+        {
+          "caller": "collect_results",
+          "callee": "json.dumps",
+          "lineNumber": 122
+        },
+        {
+          "caller": "collect_results",
+          "callee": "str",
+          "lineNumber": 122
+        },
+        {
+          "caller": "collect_results",
+          "callee": "write_config",
+          "lineNumber": 124
+        },
+        {
+          "caller": "collect_results",
+          "callee": "print",
+          "lineNumber": 126
+        },
+        {
+          "caller": "collect_results",
+          "callee": "len",
+          "lineNumber": 126
+        },
+        {
+          "caller": "collect_results",
+          "callee": "len",
+          "lineNumber": 126
+        },
+        {
+          "caller": "collect_results",
+          "callee": "len",
+          "lineNumber": 126
+        },
+        {
+          "caller": "collect_results",
+          "callee": "bool",
+          "lineNumber": 127
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "output.glob",
+          "lineNumber": 131
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "path.with_name(path.name.replace('.request.json', '.response.txt')).exists",
+          "lineNumber": 131
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "path.with_name",
+          "lineNumber": 131
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "path.name.replace",
+          "lineNumber": 131
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "ValueError",
+          "lineNumber": 133
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "session_config.read_text().splitlines",
+          "lineNumber": 134
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "session_config.read_text",
+          "lineNumber": 134
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "line.startswith",
+          "lineNumber": 134
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "write_config",
+          "lineNumber": 135
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "json.dumps",
+          "lineNumber": 137
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "str",
+          "lineNumber": 137
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "json.dumps",
+          "lineNumber": 138
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "str",
+          "lineNumber": 138
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "path.with_name",
+          "lineNumber": 138
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "path.name.replace",
+          "lineNumber": 138
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "print",
+          "lineNumber": 140
+        },
+        {
+          "caller": "prepare_pending",
+          "callee": "len",
+          "lineNumber": 140
+        },
+        {
+          "caller": "verify_images",
+          "callee": "json.loads",
+          "lineNumber": 145
+        },
+        {
+          "caller": "verify_images",
+          "callee": "(output / 'results.json').read_text",
+          "lineNumber": 145
+        },
+        {
+          "caller": "verify_images",
+          "callee": "Image.open",
+          "lineNumber": 151
+        },
+        {
+          "caller": "verify_images",
+          "callee": "image.load",
+          "lineNumber": 152
+        },
+        {
+          "caller": "verify_images",
+          "callee": "ValueError",
+          "lineNumber": 155
+        },
+        {
+          "caller": "verify_images",
+          "callee": "max",
+          "lineNumber": 156
+        },
+        {
+          "caller": "verify_images",
+          "callee": "ImageStat.Stat",
+          "lineNumber": 156
+        },
+        {
+          "caller": "verify_images",
+          "callee": "image.convert",
+          "lineNumber": 156
+        },
+        {
+          "caller": "verify_images",
+          "callee": "ValueError",
+          "lineNumber": 157
+        },
+        {
+          "caller": "verify_images",
+          "callee": "any",
+          "lineNumber": 161
+        },
+        {
+          "caller": "verify_images",
+          "callee": "len",
+          "lineNumber": 161
+        },
+        {
+          "caller": "verify_images",
+          "callee": "set",
+          "lineNumber": 161
+        },
+        {
+          "caller": "verify_images",
+          "callee": "ValueError",
+          "lineNumber": 162
+        },
+        {
+          "caller": "verify_images",
+          "callee": "path.stat",
+          "lineNumber": 163
+        },
+        {
+          "caller": "verify_images",
+          "callee": "(output / 'results.json').write_text",
+          "lineNumber": 167
+        },
+        {
+          "caller": "verify_images",
+          "callee": "json.dumps",
+          "lineNumber": 167
+        },
+        {
+          "caller": "verify_images",
+          "callee": "print",
+          "lineNumber": 169
+        },
+        {
+          "caller": "verify_images",
+          "callee": "len",
+          "lineNumber": 169
+        },
+        {
+          "caller": "verify_images",
+          "callee": "len",
+          "lineNumber": 169
+        },
+        {
+          "caller": "verify_images",
+          "callee": "len",
+          "lineNumber": 169
+        },
+        {
+          "caller": "verify_images",
+          "callee": "print",
+          "lineNumber": 170
+        },
+        {
+          "caller": "verify_images",
+          "callee": "r.get",
+          "lineNumber": 170
+        },
+        {
+          "caller": "verify_images",
+          "callee": "bool",
+          "lineNumber": 171
+        },
+        {
+          "caller": "download_images",
+          "callee": "json.loads",
+          "lineNumber": 177
+        },
+        {
+          "caller": "download_images",
+          "callee": "(output / 'results.json').read_text",
+          "lineNumber": 177
+        },
+        {
+          "caller": "download_images",
+          "callee": "asyncio.Semaphore",
+          "lineNumber": 178
+        },
+        {
+          "caller": "download_images",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 179
+        },
+        {
+          "caller": "download",
+          "callee": "client.get",
+          "lineNumber": 184
+        },
+        {
+          "caller": "download",
+          "callee": "response.raise_for_status",
+          "lineNumber": 185
+        },
+        {
+          "caller": "download",
+          "callee": "(output / (record['id'] + '.image')).write_bytes",
+          "lineNumber": 186
+        },
+        {
+          "caller": "download",
+          "callee": "print",
+          "lineNumber": 188
+        },
+        {
+          "caller": "download",
+          "callee": "type",
+          "lineNumber": 188
+        },
+        {
+          "caller": "download_images",
+          "callee": "asyncio.gather",
+          "lineNumber": 189
+        },
+        {
+          "caller": "download_images",
+          "callee": "download",
+          "lineNumber": 189
+        },
+        {
+          "caller": "main",
+          "callee": "argparse.ArgumentParser",
+          "lineNumber": 193
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 194
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 195
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 196
+        },
+        {
+          "caller": "main",
+          "callee": "parser.add_argument",
+          "lineNumber": 197
+        },
+        {
+          "caller": "main",
+          "callee": "parser.parse_args",
+          "lineNumber": 198
+        },
+        {
+          "caller": "main",
+          "callee": "args.output.resolve",
+          "lineNumber": 199
+        },
+        {
+          "caller": "main",
+          "callee": "output.mkdir",
+          "lineNumber": 199
+        },
+        {
+          "caller": "main",
+          "callee": "ValueError",
+          "lineNumber": 201
+        },
+        {
+          "caller": "main",
+          "callee": "prepare_curl",
+          "lineNumber": 203
+        },
+        {
+          "caller": "main",
+          "callee": "int",
+          "lineNumber": 205
+        },
+        {
+          "caller": "main",
+          "callee": "verify_images",
+          "lineNumber": 205
+        },
+        {
+          "caller": "factory",
+          "callee": "make_visualization",
+          "lineNumber": 207
+        },
+        {
+          "caller": "factory",
+          "callee": "CaptureSession",
+          "lineNumber": 207
+        },
+        {
+          "caller": "main",
+          "callee": "collect_results",
+          "lineNumber": 208
+        },
+        {
+          "caller": "main",
+          "callee": "prepare_pending",
+          "lineNumber": 209
+        },
+        {
+          "caller": "main",
+          "callee": "int",
+          "lineNumber": 210
+        },
+        {
+          "caller": "main",
+          "callee": "ValueError",
+          "lineNumber": 211
+        },
+        {
+          "caller": "main",
+          "callee": "MultiServerMCPClient",
+          "lineNumber": 212
+        },
+        {
+          "caller": "main",
+          "callee": "client.get_tools",
+          "lineNumber": 213
+        },
+        {
+          "caller": "main",
+          "callee": "AssertionError",
+          "lineNumber": 216
+        },
+        {
+          "caller": "main",
+          "callee": "create_unified_chart_tool",
+          "lineNumber": 217
+        },
+        {
+          "caller": "main",
+          "callee": "collect_results",
+          "lineNumber": 219
+        },
+        {
+          "caller": "main",
+          "callee": "download_images",
+          "lineNumber": 220
+        },
+        {
+          "caller": "main",
+          "callee": "int",
+          "lineNumber": 221
+        },
+        {
+          "caller": "main",
+          "callee": "verify_images",
+          "lineNumber": 221
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 11,
+        "functionCount": 9,
+        "classCount": 2
+      }
+    }
+  ]
+}

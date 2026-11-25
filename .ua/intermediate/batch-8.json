@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "config:src/agent/guardrails/config.yml",
+      "type": "config",
+      "name": "config.yml",
+      "filePath": "src/agent/guardrails/config.yml",
+      "summary": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "tags": [
+        "配置",
+        "安全",
+        "yaml"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:src/agent/guardrails/policies.yml",
+      "type": "config",
+      "name": "policies.yml",
+      "filePath": "src/agent/guardrails/policies.yml",
+      "summary": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "tags": [
+        "配置",
+        "安全",
+        "yaml"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:src/agent/guardrails/prompts.yml",
+      "type": "config",
+      "name": "prompts.yml",
+      "filePath": "src/agent/guardrails/prompts.yml",
+      "summary": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "tags": [
+        "配置",
+        "安全",
+        "yaml"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

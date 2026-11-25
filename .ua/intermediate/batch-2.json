@@ -1,0 +1,1868 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/agent/env_utils.py",
+      "type": "file",
+      "name": "env_utils.py",
+      "filePath": "src/agent/env_utils.py",
+      "summary": "实现项目src/agent/env utils模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/agent/tools/mcp_client.py",
+      "type": "file",
+      "name": "mcp_client.py",
+      "filePath": "src/agent/tools/mcp_client.py",
+      "summary": "封装 Agent 可调用的mcp client工具、参数处理与外部服务交互。",
+      "tags": [
+        "mcp",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/agent/tools/web_search.py",
+      "type": "file",
+      "name": "web_search.py",
+      "filePath": "src/agent/tools/web_search.py",
+      "summary": "封装 Agent 可调用的web search工具、参数处理与外部服务交互。",
+      "tags": [
+        "api",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "type": "file",
+      "name": "opensandboxbackend.py",
+      "filePath": "src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "summary": "实现项目src/deepagents test/deepagents backend/opensandboxbackend模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "测试",
+        "沙箱",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "type": "file",
+      "name": "statebackend.py",
+      "filePath": "src/deepagents_test/deepagents_backend/statebackend.py",
+      "summary": "实现项目src/deepagents test/deepagents backend/statebackend模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/deepagents_test/langchain_daytona_sandbox.py",
+      "type": "file",
+      "name": "langchain_daytona_sandbox.py",
+      "filePath": "src/deepagents_test/langchain_daytona_sandbox.py",
+      "summary": "实现项目src/deepagents test/langchain daytona sandbox模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "测试",
+        "沙箱",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/deepagents_test/langgraph_demo.py",
+      "type": "file",
+      "name": "langgraph_demo.py",
+      "filePath": "src/deepagents_test/langgraph_demo.py",
+      "summary": "实现项目src/deepagents test/langgraph demo模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/deepagents_test/test_stream.py",
+      "type": "file",
+      "name": "test_stream.py",
+      "filePath": "src/deepagents_test/test_stream.py",
+      "summary": "验证test stream相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/mcp_server/http_base.py",
+      "type": "file",
+      "name": "http_base.py",
+      "filePath": "src/mcp_server/http_base.py",
+      "summary": "注册或运行 ERP MCP 服务中的http base能力。",
+      "tags": [
+        "mcp",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/mcp_server/server_main.py",
+      "type": "file",
+      "name": "server_main.py",
+      "filePath": "src/mcp_server/server_main.py",
+      "summary": "注册或运行 ERP MCP 服务中的server main能力。",
+      "tags": [
+        "mcp",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/mcp_server/tools/inventory_tools.py",
+      "type": "file",
+      "name": "inventory_tools.py",
+      "filePath": "src/mcp_server/tools/inventory_tools.py",
+      "summary": "封装 Agent 可调用的inventory tools工具、参数处理与外部服务交互。",
+      "tags": [
+        "mcp",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/mcp_server/tools/order_tools.py",
+      "type": "file",
+      "name": "order_tools.py",
+      "filePath": "src/mcp_server/tools/order_tools.py",
+      "summary": "封装 Agent 可调用的order tools工具、参数处理与外部服务交互。",
+      "tags": [
+        "mcp",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/mcp_server/tools/parts_tools.py",
+      "type": "file",
+      "name": "parts_tools.py",
+      "filePath": "src/mcp_server/tools/parts_tools.py",
+      "summary": "封装 Agent 可调用的parts tools工具、参数处理与外部服务交互。",
+      "tags": [
+        "mcp",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/mcp_server/tools/suppliers_tools.py",
+      "type": "file",
+      "name": "suppliers_tools.py",
+      "filePath": "src/mcp_server/tools/suppliers_tools.py",
+      "summary": "封装 Agent 可调用的suppliers tools工具、参数处理与外部服务交互。",
+      "tags": [
+        "mcp",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/test_all_tools.py",
+      "type": "file",
+      "name": "test_all_tools.py",
+      "filePath": "src/test/test_all_tools.py",
+      "summary": "验证test all tools相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/test/test_mcp.py",
+      "type": "file",
+      "name": "test_mcp.py",
+      "filePath": "src/test/test_mcp.py",
+      "summary": "验证test mcp相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "mcp",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/env_utils.py:get_env",
+      "type": "function",
+      "name": "get_env",
+      "filePath": "src/agent/env_utils.py",
+      "lineRange": [
+        12,
+        14
+      ],
+      "summary": "处理get env相关逻辑，供env utils模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/env_utils.py:_client_host",
+      "type": "function",
+      "name": "_client_host",
+      "filePath": "src/agent/env_utils.py",
+      "lineRange": [
+        32,
+        35
+      ],
+      "summary": "处理 client host相关逻辑，供env utils模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/tools/mcp_client.py:load_mcp_tools",
+      "type": "function",
+      "name": "load_mcp_tools",
+      "filePath": "src/agent/tools/mcp_client.py",
+      "lineRange": [
+        38,
+        84
+      ],
+      "summary": "处理load mcp tools相关逻辑，供mcp client模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/tools/web_search.py:web_search",
+      "type": "function",
+      "name": "web_search",
+      "filePath": "src/agent/tools/web_search.py",
+      "lineRange": [
+        14,
+        90
+      ],
+      "summary": "处理web search相关逻辑，供web search模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/deepagents_test/deepagents_backend/opensandboxbackend.py:OpenSandboxBackend",
+      "type": "class",
+      "name": "OpenSandboxBackend",
+      "filePath": "src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "lineRange": [
+        29,
+        230
+      ],
+      "summary": "OpenSandboxBackend 封装opensandboxbackend相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/deepagents_test/deepagents_backend/opensandboxbackend.py:run_chat",
+      "type": "function",
+      "name": "run_chat",
+      "filePath": "src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "lineRange": [
+        232,
+        270
+      ],
+      "summary": "处理run chat相关逻辑，供opensandboxbackend模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "沙箱",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/deepagents_test/deepagents_backend/opensandboxbackend.py:build_file_transfer_tools",
+      "type": "function",
+      "name": "build_file_transfer_tools",
+      "filePath": "src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "lineRange": [
+        273,
+        313
+      ],
+      "summary": "处理build file transfer tools相关逻辑，供opensandboxbackend模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "沙箱",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/deepagents_test/deepagents_backend/statebackend.py:create_model",
+      "type": "function",
+      "name": "create_model",
+      "filePath": "src/deepagents_test/deepagents_backend/statebackend.py",
+      "lineRange": [
+        15,
+        23
+      ],
+      "summary": "处理create model相关逻辑，供statebackend模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/deepagents_backend/statebackend.py:create_chat_agent",
+      "type": "function",
+      "name": "create_chat_agent",
+      "filePath": "src/deepagents_test/deepagents_backend/statebackend.py",
+      "lineRange": [
+        26,
+        46
+      ],
+      "summary": "处理create chat agent相关逻辑，供statebackend模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/deepagents_backend/statebackend.py:run_chat",
+      "type": "function",
+      "name": "run_chat",
+      "filePath": "src/deepagents_test/deepagents_backend/statebackend.py",
+      "lineRange": [
+        48,
+        86
+      ],
+      "summary": "处理run chat相关逻辑，供statebackend模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/deepagents_test/deepagents_backend/statebackend.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/deepagents_test/deepagents_backend/statebackend.py",
+      "lineRange": [
+        89,
+        96
+      ],
+      "summary": "处理main相关逻辑，供statebackend模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/langgraph_demo.py:mock_llm",
+      "type": "function",
+      "name": "mock_llm",
+      "filePath": "src/deepagents_test/langgraph_demo.py",
+      "lineRange": [
+        11,
+        13
+      ],
+      "summary": "处理mock llm相关逻辑，供langgraph demo模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/langgraph_demo.py:get_weather",
+      "type": "function",
+      "name": "get_weather",
+      "filePath": "src/deepagents_test/langgraph_demo.py",
+      "lineRange": [
+        56,
+        59
+      ],
+      "summary": "处理get weather相关逻辑，供langgraph demo模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/deepagents_test/test_stream.py:get_weather",
+      "type": "function",
+      "name": "get_weather",
+      "filePath": "src/deepagents_test/test_stream.py",
+      "lineRange": [
+        13,
+        15
+      ],
+      "summary": "处理get weather相关逻辑，供test stream模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/mcp_server/http_base.py:mcp_lifespan",
+      "type": "function",
+      "name": "mcp_lifespan",
+      "filePath": "src/mcp_server/http_base.py",
+      "lineRange": [
+        15,
+        38
+      ],
+      "summary": "处理mcp lifespan相关逻辑，供http base模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/mcp_server/server_main.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/mcp_server/server_main.py",
+      "lineRange": [
+        29,
+        38
+      ],
+      "summary": "处理main相关逻辑，供server main模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/mcp_server/tools/inventory_tools.py:register_inventory_tools",
+      "type": "function",
+      "name": "register_inventory_tools",
+      "filePath": "src/mcp_server/tools/inventory_tools.py",
+      "lineRange": [
+        6,
+        29
+      ],
+      "summary": "处理register inventory tools相关逻辑，供inventory tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/mcp_server/tools/order_tools.py:_generate_order_number",
+      "type": "function",
+      "name": "_generate_order_number",
+      "filePath": "src/mcp_server/tools/order_tools.py",
+      "lineRange": [
+        12,
+        16
+      ],
+      "summary": "处理 generate order number相关逻辑，供order tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/mcp_server/tools/order_tools.py:_prepare_request",
+      "type": "function",
+      "name": "_prepare_request",
+      "filePath": "src/mcp_server/tools/order_tools.py",
+      "lineRange": [
+        19,
+        31
+      ],
+      "summary": "处理 prepare request相关逻辑，供order tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/mcp_server/tools/order_tools.py:_serialize_request",
+      "type": "function",
+      "name": "_serialize_request",
+      "filePath": "src/mcp_server/tools/order_tools.py",
+      "lineRange": [
+        34,
+        47
+      ],
+      "summary": "处理 serialize request相关逻辑，供order tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/mcp_server/tools/order_tools.py:register_order_tools",
+      "type": "function",
+      "name": "register_order_tools",
+      "filePath": "src/mcp_server/tools/order_tools.py",
+      "lineRange": [
+        50,
+        242
+      ],
+      "summary": "处理register order tools相关逻辑，供order tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/mcp_server/tools/parts_tools.py:register_parts_tools",
+      "type": "function",
+      "name": "register_parts_tools",
+      "filePath": "src/mcp_server/tools/parts_tools.py",
+      "lineRange": [
+        6,
+        103
+      ],
+      "summary": "处理register parts tools相关逻辑，供parts tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/mcp_server/tools/suppliers_tools.py:register_supplier_tools",
+      "type": "function",
+      "name": "register_supplier_tools",
+      "filePath": "src/mcp_server/tools/suppliers_tools.py",
+      "lineRange": [
+        5,
+        26
+      ],
+      "summary": "处理register supplier tools相关逻辑，供suppliers tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "mcp",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_show_result",
+      "type": "function",
+      "name": "_show_result",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        47,
+        53
+      ],
+      "summary": "处理 show result相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_mcp_caller",
+      "type": "function",
+      "name": "_mcp_caller",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        57,
+        66
+      ],
+      "summary": "处理 mcp caller相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_agent_caller",
+      "type": "function",
+      "name": "_agent_caller",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        70,
+        98
+      ],
+      "summary": "处理 agent caller相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_require",
+      "type": "function",
+      "name": "_require",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        101,
+        103
+      ],
+      "summary": "处理 require相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_find_part",
+      "type": "function",
+      "name": "_find_part",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        106,
+        109
+      ],
+      "summary": "处理 find part相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_create_arguments",
+      "type": "function",
+      "name": "_create_arguments",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        112,
+        126
+      ],
+      "summary": "处理 create arguments相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_test_order",
+      "type": "function",
+      "name": "_test_order",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        130,
+        157
+      ],
+      "summary": "处理 test order相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_supplier_query",
+      "type": "function",
+      "name": "test_mcp_supplier_query",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        160,
+        165
+      ],
+      "summary": "处理test mcp supplier query相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_part_query",
+      "type": "function",
+      "name": "test_mcp_part_query",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        168,
+        173
+      ],
+      "summary": "处理test mcp part query相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_part_search",
+      "type": "function",
+      "name": "test_mcp_part_search",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        176,
+        181
+      ],
+      "summary": "处理test mcp part search相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_part_by_supplier",
+      "type": "function",
+      "name": "test_mcp_part_by_supplier",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        184,
+        191
+      ],
+      "summary": "处理test mcp part by supplier相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_order_create",
+      "type": "function",
+      "name": "test_mcp_order_create",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        194,
+        199
+      ],
+      "summary": "处理test mcp order create相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_order_update",
+      "type": "function",
+      "name": "test_mcp_order_update",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        202,
+        219
+      ],
+      "summary": "处理test mcp order update相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_order_search_details",
+      "type": "function",
+      "name": "test_mcp_order_search_details",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        222,
+        233
+      ],
+      "summary": "处理test mcp order search details相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_mcp_inventory_warning",
+      "type": "function",
+      "name": "test_mcp_inventory_warning",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        236,
+        240
+      ],
+      "summary": "处理test mcp inventory warning相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_check_inventory",
+      "type": "function",
+      "name": "_check_inventory",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        243,
+        247
+      ],
+      "summary": "处理 check inventory相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_agent_order_create",
+      "type": "function",
+      "name": "test_agent_order_create",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        250,
+        255
+      ],
+      "summary": "处理test agent order create相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:test_agent_inventory_warning",
+      "type": "function",
+      "name": "test_agent_inventory_warning",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        258,
+        262
+      ],
+      "summary": "处理test agent inventory warning相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_run_tests",
+      "type": "function",
+      "name": "_run_tests",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        265,
+        282
+      ],
+      "summary": "处理 run tests相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:run_all_mcp_client_tests",
+      "type": "function",
+      "name": "run_all_mcp_client_tests",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        285,
+        295
+      ],
+      "summary": "处理run all mcp client tests相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:run_all_agent_client_tests",
+      "type": "function",
+      "name": "run_all_agent_client_tests",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        298,
+        302
+      ],
+      "summary": "处理run all agent client tests相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:_run_mode",
+      "type": "function",
+      "name": "_run_mode",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        305,
+        311
+      ],
+      "summary": "处理 run mode相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_all_tools.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/test/test_all_tools.py",
+      "lineRange": [
+        314,
+        327
+      ],
+      "summary": "处理main相关逻辑，供test all tools模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_mcp.py:mcp_client",
+      "type": "function",
+      "name": "mcp_client",
+      "filePath": "src/test/test_mcp.py",
+      "lineRange": [
+        27,
+        34
+      ],
+      "summary": "处理mcp client相关逻辑，供test mcp模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "mcp",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/test_mcp.py:agent_client",
+      "type": "function",
+      "name": "agent_client",
+      "filePath": "src/test/test_mcp.py",
+      "lineRange": [
+        37,
+        49
+      ],
+      "summary": "处理agent client相关逻辑，供test mcp模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "mcp",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/agent/env_utils.py",
+      "target": "function:src/agent/env_utils.py:get_env",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/env_utils.py",
+      "target": "function:src/agent/env_utils.py:get_env",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/env_utils.py",
+      "target": "function:src/agent/env_utils.py:_client_host",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/env_utils.py",
+      "target": "function:src/agent/env_utils.py:_client_host",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/mcp_client.py",
+      "target": "function:src/agent/tools/mcp_client.py:load_mcp_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/mcp_client.py",
+      "target": "function:src/agent/tools/mcp_client.py:load_mcp_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/web_search.py",
+      "target": "function:src/agent/tools/web_search.py:web_search",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/tools/web_search.py",
+      "target": "function:src/agent/tools/web_search.py:web_search",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "target": "class:src/deepagents_test/deepagents_backend/opensandboxbackend.py:OpenSandboxBackend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/opensandboxbackend.py:run_chat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/opensandboxbackend.py:run_chat",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/opensandboxbackend.py:build_file_transfer_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/opensandboxbackend.py:build_file_transfer_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:create_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:create_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:create_chat_agent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:create_chat_agent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:run_chat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:run_chat",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "function:src/deepagents_test/deepagents_backend/statebackend.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/langgraph_demo.py",
+      "target": "function:src/deepagents_test/langgraph_demo.py:mock_llm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/langgraph_demo.py",
+      "target": "function:src/deepagents_test/langgraph_demo.py:mock_llm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/langgraph_demo.py",
+      "target": "function:src/deepagents_test/langgraph_demo.py:get_weather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/langgraph_demo.py",
+      "target": "function:src/deepagents_test/langgraph_demo.py:get_weather",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/deepagents_test/test_stream.py",
+      "target": "function:src/deepagents_test/test_stream.py:get_weather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/deepagents_test/test_stream.py",
+      "target": "function:src/deepagents_test/test_stream.py:get_weather",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/http_base.py",
+      "target": "function:src/mcp_server/http_base.py:mcp_lifespan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/http_base.py",
+      "target": "function:src/mcp_server/http_base.py:mcp_lifespan",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "function:src/mcp_server/server_main.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "function:src/mcp_server/server_main.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/tools/inventory_tools.py",
+      "target": "function:src/mcp_server/tools/inventory_tools.py:register_inventory_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/tools/inventory_tools.py",
+      "target": "function:src/mcp_server/tools/inventory_tools.py:register_inventory_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:_generate_order_number",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:_generate_order_number",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:_prepare_request",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:_prepare_request",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:_serialize_request",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:_serialize_request",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:register_order_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/tools/order_tools.py",
+      "target": "function:src/mcp_server/tools/order_tools.py:register_order_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/tools/parts_tools.py",
+      "target": "function:src/mcp_server/tools/parts_tools.py:register_parts_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/tools/parts_tools.py",
+      "target": "function:src/mcp_server/tools/parts_tools.py:register_parts_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/mcp_server/tools/suppliers_tools.py",
+      "target": "function:src/mcp_server/tools/suppliers_tools.py:register_supplier_tools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/mcp_server/tools/suppliers_tools.py",
+      "target": "function:src/mcp_server/tools/suppliers_tools.py:register_supplier_tools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_show_result",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_show_result",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_mcp_caller",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_mcp_caller",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_agent_caller",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_agent_caller",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_require",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_require",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_find_part",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_find_part",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_create_arguments",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_create_arguments",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_test_order",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_test_order",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_supplier_query",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_supplier_query",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_part_query",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_part_query",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_part_search",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_part_search",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_part_by_supplier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_part_by_supplier",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_order_create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_order_create",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_order_update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_order_update",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_order_search_details",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_order_search_details",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_inventory_warning",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_mcp_inventory_warning",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_check_inventory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_check_inventory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_agent_order_create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_agent_order_create",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_agent_inventory_warning",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:test_agent_inventory_warning",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_run_tests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_run_tests",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:run_all_mcp_client_tests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:run_all_mcp_client_tests",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:run_all_agent_client_tests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:run_all_agent_client_tests",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_run_mode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:_run_mode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "function:src/test/test_all_tools.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_mcp.py",
+      "target": "function:src/test/test_mcp.py:mcp_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_mcp.py",
+      "target": "function:src/test/test_mcp.py:mcp_client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/test_mcp.py",
+      "target": "function:src/test/test_mcp.py:agent_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/test_mcp.py",
+      "target": "function:src/test/test_mcp.py:agent_client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/tools/mcp_client.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/tools/web_search.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/deepagents_test/deepagents_backend/statebackend.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/deepagents_test/langchain_daytona_sandbox.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/deepagents_test/langgraph_demo.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/deepagents_test/test_stream.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/mcp_server/http_base.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "file:src/mcp_server/http_base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "file:src/mcp_server/tools/inventory_tools.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "file:src/mcp_server/tools/order_tools.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "file:src/mcp_server/tools/parts_tools.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/mcp_server/server_main.py",
+      "target": "file:src/mcp_server/tools/suppliers_tools.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_all_tools.py",
+      "target": "file:src/mcp_server/server_main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_mcp.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/test_mcp.py",
+      "target": "file:src/mcp_server/server_main.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

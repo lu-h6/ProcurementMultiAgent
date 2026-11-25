@@ -1,0 +1,43 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "frontend/src/api/auth.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/auth.test.js",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/history.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/http.js",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/api/auth.js": [
+      "frontend/src/api/http.js"
+    ],
+    "frontend/src/api/auth.test.js": [
+      "frontend/src/api/auth.js",
+      "frontend/src/api/history.js",
+      "frontend/src/api/http.js"
+    ],
+    "frontend/src/api/history.js": [
+      "frontend/src/api/http.js"
+    ],
+    "frontend/src/api/http.js": []
+  }
+}

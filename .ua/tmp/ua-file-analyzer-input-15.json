@@ -1,0 +1,84 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/skills/procurement/procurement-optimization/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 1028,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/supplier-price-urls/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/supplier-price-urls/data/url_mapping.yaml",
+      "language": "yaml",
+      "sizeLines": 121,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/skills/procurement/web-scraper/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/web-scraper/_meta.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/skills/procurement/web-scraper/scrape_page.py",
+      "language": "python",
+      "sizeLines": 451,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_logging.py",
+      "language": "python",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_skills_sync.py",
+      "language": "python",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_subagents.py",
+      "language": "python",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_web_search.py",
+      "language": "python",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "start_web.py",
+      "language": "python",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/skills/procurement/procurement-optimization/SKILL.md": [],
+    "src/skills/procurement/supplier-price-urls/SKILL.md": [],
+    "src/skills/procurement/supplier-price-urls/data/url_mapping.yaml": [],
+    "src/skills/procurement/web-scraper/SKILL.md": [],
+    "src/skills/procurement/web-scraper/_meta.json": [],
+    "src/skills/procurement/web-scraper/scrape_page.py": [],
+    "src/test/test_logging.py": [],
+    "src/test/test_skills_sync.py": [],
+    "src/test/test_subagents.py": [],
+    "src/test/test_web_search.py": [],
+    "start_web.py": []
+  }
+}

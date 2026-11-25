@@ -1,0 +1,1468 @@
+{
+  "name": "agent",
+  "description": "ERP 采购智能助手，基于 DeepAgents、LangChain、FastAPI 和 Vue，提供采购分析、订单工作流、MCP 集成、输入安全、MySQL 会话存储及 Web 界面。",
+  "languages": [
+    "co",
+    "config",
+    "css",
+    "drawio",
+    "dsl",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "python",
+    "sql",
+    "toml",
+    "txt",
+    "unknown",
+    "vue",
+    "yaml"
+  ],
+  "frameworks": [
+    "DeepAgents",
+    "LangChain",
+    "FastAPI",
+    "Vue",
+    "Vite",
+    "NeMo Guardrails"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 39,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "chip_supply_db.sql",
+      "language": "sql",
+      "sizeLines": 270,
+      "fileCategory": "data"
+    },
+    {
+      "path": "docs/architecture/procurement-agent-architecture.drawio",
+      "language": "drawio",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/.vite/deps/_metadata.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/.vite/deps/package.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/.vite/deps/vue.js",
+      "language": "javascript",
+      "sizeLines": 13017,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/index.html",
+      "language": "html",
+      "sizeLines": 30,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/package.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/src/App.vue",
+      "language": "vue",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/ChatWorkspace.vue",
+      "language": "vue",
+      "sizeLines": 506,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/auth.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/auth.test.js",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/chat.js",
+      "language": "javascript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/chat.test.js",
+      "language": "javascript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/history.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/http.js",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/inputSafety.test.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/AuthPage.vue",
+      "language": "vue",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ChartPreview.vue",
+      "language": "vue",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ChatArea.vue",
+      "language": "vue",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/InputArea.vue",
+      "language": "vue",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/InterruptBanner.vue",
+      "language": "vue",
+      "sizeLines": 480,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/MarkdownRenderer.vue",
+      "language": "vue",
+      "sizeLines": 284,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/MessageItem.vue",
+      "language": "vue",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/Sidebar.vue",
+      "language": "vue",
+      "sizeLines": 451,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ToolCallPanel.vue",
+      "language": "vue",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/main.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/styles/main.css",
+      "language": "css",
+      "sizeLines": 171,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/src/utils/images.js",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/images.test.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/markdown.js",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/messageSources.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/messageSources.test.js",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/replyTurns.test.js",
+      "language": "javascript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/toolCalls.js",
+      "language": "javascript",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/toolCalls.test.js",
+      "language": "javascript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "sizeLines": 39,
+      "fileCategory": "config"
+    },
+    {
+      "path": "requirements.txt",
+      "language": "txt",
+      "sizeLines": 384,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/init_mysql.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/backends/custom_opensandbox.py",
+      "language": "python",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/backends/sandbox_manager.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/backends/sandbox_proxy.py",
+      "language": "python",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/backends/sandbox_setup.py",
+      "language": "python",
+      "sizeLines": 238,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/config.py",
+      "language": "python",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/env_utils.py",
+      "language": "python",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/guardrails/config.yml",
+      "language": "yaml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/agent/guardrails/policies.yml",
+      "language": "yaml",
+      "sizeLines": 37,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/agent/guardrails/prompts.yml",
+      "language": "yaml",
+      "sizeLines": 28,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/agent/guardrails/rails/business.co",
+      "language": "co",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/input_guard.py",
+      "language": "python",
+      "sizeLines": 212,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/logging_config.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/main_agent.py",
+      "language": "python",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/memory/AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 233,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/agent/memory/prompts.py",
+      "language": "python",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middleware_config.py",
+      "language": "python",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middlewares/context_injection.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middlewares/guardrail_response.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middlewares/sandbox_breaker.py",
+      "language": "python",
+      "sizeLines": 109,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middlewares/sandbox_health.py",
+      "language": "python",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middlewares/skills_sync.py",
+      "language": "python",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middlewares/tool_error.py",
+      "language": "python",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/middlewares/user_skills_restore.py",
+      "language": "python",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/mysql_storage.py",
+      "language": "python",
+      "sizeLines": 368,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/schema.py",
+      "language": "python",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/assign_skill.py",
+      "language": "python",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/chart_generator.py",
+      "language": "python",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/chart_validation.py",
+      "language": "python",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/download_sandbox_file.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/hitl_tools.py",
+      "language": "python",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/mcp_client.py",
+      "language": "python",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/web_search.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/agent_loader.py",
+      "language": "python",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/api/auth.py",
+      "language": "python",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/api/chat.py",
+      "language": "python",
+      "sizeLines": 746,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/api/history.py",
+      "language": "python",
+      "sizeLines": 367,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/auth.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/api_view/web_main.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/01_long_memory_demo.py",
+      "language": "python",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/agent_workspace/abc.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "language": "python",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "language": "python",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/sqlitebackend.py",
+      "language": "python",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/statebackend.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/langchain_daytona_sandbox.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/langgraph_demo.py",
+      "language": "python",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/test_stream.py",
+      "language": "python",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/test_v1_v2.py",
+      "language": "python",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/chart-tool-token-comparison.json",
+      "language": "json",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/agent-collaboration-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/agent-collaboration-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/boards.json",
+      "language": "json",
+      "sizeLines": 98,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/build_diagrams.py",
+      "language": "python",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/business-capabilities-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/business-capabilities-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-generation-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-generation-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-startup-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-startup-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/design-value-map-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/design-value-map-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/diagram-review.html",
+      "language": "html",
+      "sizeLines": 0,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/docs/diagrams/improvement-roadmap-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/improvement-roadmap-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-resume-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-resume-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/module-dependencies-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/module-dependencies-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/order-approval-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/order-approval-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/prepare_yuque_board_update.py",
+      "language": "python",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/procurement-architecture-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/procurement-architecture-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/publish-progress.json",
+      "language": "json",
+      "sizeLines": 97,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/sandbox-lifecycle-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/sandbox-lifecycle-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/skills-context-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/skills-context-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/sse-interaction-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/sse-interaction-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/startup-dependencies-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/startup-dependencies-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/storage-responsibilities-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/storage-responsibilities-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/style_native_boards.py",
+      "language": "python",
+      "sizeLines": 287,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/styled/agent-collaboration-flow-zh.json",
+      "language": "json",
+      "sizeLines": 776,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/business-capabilities-zh.json",
+      "language": "json",
+      "sizeLines": 455,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/chart-generation-flow-zh.json",
+      "language": "json",
+      "sizeLines": 611,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/chart-startup-flow-zh.json",
+      "language": "json",
+      "sizeLines": 361,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/design-value-map-zh.json",
+      "language": "json",
+      "sizeLines": 448,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/improvement-roadmap-zh.json",
+      "language": "json",
+      "sizeLines": 267,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/input-guard-flow-zh.json",
+      "language": "json",
+      "sizeLines": 548,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/input-guard-resume-flow-zh.json",
+      "language": "json",
+      "sizeLines": 517,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/manifest.json",
+      "language": "json",
+      "sizeLines": 113,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/module-dependencies-zh.json",
+      "language": "json",
+      "sizeLines": 493,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/order-approval-flow-zh.json",
+      "language": "json",
+      "sizeLines": 661,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/procurement-architecture-zh.json",
+      "language": "json",
+      "sizeLines": 371,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/sandbox-lifecycle-zh.json",
+      "language": "json",
+      "sizeLines": 666,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/skills-context-flow-zh.json",
+      "language": "json",
+      "sizeLines": 404,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/sse-interaction-zh.json",
+      "language": "json",
+      "sizeLines": 566,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/startup-dependencies-zh.json",
+      "language": "json",
+      "sizeLines": 488,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/storage-responsibilities-zh.json",
+      "language": "json",
+      "sizeLines": 482,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/styled/validation.json",
+      "language": "json",
+      "sizeLines": 145,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/diagrams/yuque-boards.json",
+      "language": "json",
+      "sizeLines": 113,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/measure_chart_tool_tokens.py",
+      "language": "python",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/project-design-preview.html",
+      "language": "html",
+      "sizeLines": 2068,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/docs/project-design-publish.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/project-design.md",
+      "language": "markdown",
+      "sizeLines": 584,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/docs/sections/chart-entry.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/docs/sections/input-guard.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/mcp_server/http_base.py",
+      "language": "python",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/server_main.py",
+      "language": "python",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/inventory_tools.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/order_tools.py",
+      "language": "python",
+      "sizeLines": 241,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/parts_tools.py",
+      "language": "python",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/suppliers_tools.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/skills/analyis_chart_params.md",
+      "language": "markdown",
+      "sizeLines": 119,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/main/find-skills/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/main/skill-management/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/main/skill-management/scripts/download_skill.py",
+      "language": "python",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/skills/order/purchase-order-summarization/NOTICE",
+      "language": "unknown",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/skills/order/purchase-order-summarization/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 388,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/procurement-analysis/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/procurement-optimization/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 1028,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/supplier-price-urls/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/supplier-price-urls/data/url_mapping.yaml",
+      "language": "yaml",
+      "sizeLines": 121,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/skills/procurement/web-scraper/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/skills/procurement/web-scraper/_meta.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/skills/procurement/web-scraper/scrape_page.py",
+      "language": "python",
+      "sizeLines": 451,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/agent_test.py",
+      "language": "python",
+      "sizeLines": 389,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/chart_test_support.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_all_tools.py",
+      "language": "python",
+      "sizeLines": 331,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_chart_generator.py",
+      "language": "python",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_chart_live.py",
+      "language": "python",
+      "sizeLines": 225,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_logging.py",
+      "language": "python",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_mcp.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_skills_sync.py",
+      "language": "python",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_subagents.py",
+      "language": "python",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_web_search.py",
+      "language": "python",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "start_web.py",
+      "language": "python",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 184,
+  "filteredByIgnore": 19,
+  "estimatedComplexity": "large",
+  "importMap": {
+    ".env.example": [],
+    "README.md": [],
+    "chip_supply_db.sql": [],
+    "docs/architecture/procurement-agent-architecture.drawio": [],
+    "frontend/.vite/deps/_metadata.json": [],
+    "frontend/.vite/deps/package.json": [],
+    "frontend/.vite/deps/vue.js": [],
+    "frontend/index.html": [],
+    "frontend/package.json": [],
+    "frontend/src/App.vue": [],
+    "frontend/src/ChatWorkspace.vue": [],
+    "frontend/src/api/auth.js": [
+      "frontend/src/api/http.js"
+    ],
+    "frontend/src/api/auth.test.js": [
+      "frontend/src/api/auth.js",
+      "frontend/src/api/history.js",
+      "frontend/src/api/http.js"
+    ],
+    "frontend/src/api/chat.js": [
+      "frontend/src/api/http.js",
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/api/chat.test.js": [
+      "frontend/src/api/chat.js",
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/api/history.js": [
+      "frontend/src/api/http.js"
+    ],
+    "frontend/src/api/http.js": [],
+    "frontend/src/api/inputSafety.test.js": [
+      "frontend/src/api/chat.js"
+    ],
+    "frontend/src/components/AuthPage.vue": [],
+    "frontend/src/components/ChartPreview.vue": [],
+    "frontend/src/components/ChatArea.vue": [],
+    "frontend/src/components/InputArea.vue": [],
+    "frontend/src/components/InterruptBanner.vue": [],
+    "frontend/src/components/MarkdownRenderer.vue": [],
+    "frontend/src/components/MessageItem.vue": [],
+    "frontend/src/components/Sidebar.vue": [],
+    "frontend/src/components/ToolCallPanel.vue": [],
+    "frontend/src/main.js": [
+      "frontend/src/App.vue",
+      "frontend/src/styles/main.css"
+    ],
+    "frontend/src/styles/main.css": [],
+    "frontend/src/utils/images.js": [],
+    "frontend/src/utils/images.test.js": [
+      "frontend/src/utils/images.js",
+      "frontend/src/utils/markdown.js",
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/utils/markdown.js": [
+      "frontend/src/utils/images.js"
+    ],
+    "frontend/src/utils/messageSources.js": [],
+    "frontend/src/utils/messageSources.test.js": [
+      "frontend/src/utils/messageSources.js"
+    ],
+    "frontend/src/utils/replyTurns.test.js": [
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/utils/toolCalls.js": [
+      "frontend/src/utils/images.js"
+    ],
+    "frontend/src/utils/toolCalls.test.js": [
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/vite.config.js": [],
+    "pyproject.toml": [],
+    "requirements.txt": [],
+    "scripts/init_mysql.py": [],
+    "src/agent/backends/custom_opensandbox.py": [],
+    "src/agent/backends/sandbox_manager.py": [
+      "src/agent/backends/sandbox_proxy.py",
+      "src/agent/backends/sandbox_setup.py",
+      "src/agent/config.py",
+      "src/agent/env_utils.py",
+      "src/agent/mysql_storage.py"
+    ],
+    "src/agent/backends/sandbox_proxy.py": [],
+    "src/agent/backends/sandbox_setup.py": [
+      "src/agent/backends/custom_opensandbox.py",
+      "src/agent/config.py"
+    ],
+    "src/agent/config.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/agent/env_utils.py": [],
+    "src/agent/guardrails/config.yml": [],
+    "src/agent/guardrails/policies.yml": [],
+    "src/agent/guardrails/prompts.yml": [],
+    "src/agent/guardrails/rails/business.co": [],
+    "src/agent/input_guard.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/agent/logging_config.py": [],
+    "src/agent/main_agent.py": [
+      "src/agent/config.py",
+      "src/agent/memory/prompts.py",
+      "src/agent/middleware_config.py",
+      "src/agent/middlewares/context_injection.py",
+      "src/agent/middlewares/guardrail_response.py",
+      "src/agent/middlewares/sandbox_breaker.py",
+      "src/agent/middlewares/sandbox_health.py",
+      "src/agent/middlewares/skills_sync.py",
+      "src/agent/middlewares/tool_error.py",
+      "src/agent/middlewares/user_skills_restore.py",
+      "src/agent/mysql_storage.py",
+      "src/agent/schema.py",
+      "src/agent/tools/assign_skill.py",
+      "src/agent/tools/chart_generator.py",
+      "src/agent/tools/download_sandbox_file.py",
+      "src/agent/tools/hitl_tools.py",
+      "src/agent/tools/mcp_client.py",
+      "src/agent/tools/web_search.py"
+    ],
+    "src/agent/memory/AGENTS.md": [],
+    "src/agent/memory/prompts.py": [],
+    "src/agent/middleware_config.py": [],
+    "src/agent/middlewares/context_injection.py": [],
+    "src/agent/middlewares/guardrail_response.py": [],
+    "src/agent/middlewares/sandbox_breaker.py": [],
+    "src/agent/middlewares/sandbox_health.py": [
+      "src/agent/backends/sandbox_proxy.py"
+    ],
+    "src/agent/middlewares/skills_sync.py": [
+      "src/agent/config.py"
+    ],
+    "src/agent/middlewares/tool_error.py": [],
+    "src/agent/middlewares/user_skills_restore.py": [],
+    "src/agent/mysql_storage.py": [],
+    "src/agent/schema.py": [],
+    "src/agent/tools/assign_skill.py": [
+      "src/agent/config.py"
+    ],
+    "src/agent/tools/chart_generator.py": [
+      "src/agent/tools/chart_validation.py"
+    ],
+    "src/agent/tools/chart_validation.py": [],
+    "src/agent/tools/download_sandbox_file.py": [],
+    "src/agent/tools/hitl_tools.py": [],
+    "src/agent/tools/mcp_client.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/agent/tools/web_search.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/api_view/agent_loader.py": [
+      "src/agent/main_agent.py",
+      "src/agent/mysql_storage.py"
+    ],
+    "src/api_view/api/auth.py": [
+      "src/agent/mysql_storage.py",
+      "src/api_view/auth.py"
+    ],
+    "src/api_view/api/chat.py": [
+      "src/agent/input_guard.py",
+      "src/agent/mysql_storage.py",
+      "src/agent/schema.py",
+      "src/api_view/agent_loader.py",
+      "src/api_view/auth.py"
+    ],
+    "src/api_view/api/history.py": [
+      "src/agent/schema.py",
+      "src/api_view/agent_loader.py",
+      "src/api_view/auth.py"
+    ],
+    "src/api_view/auth.py": [
+      "src/agent/mysql_storage.py"
+    ],
+    "src/api_view/web_main.py": [
+      "src/agent/logging_config.py",
+      "src/api_view/agent_loader.py"
+    ],
+    "src/deepagents_test/01_long_memory_demo.py": [],
+    "src/deepagents_test/deepagents_backend/agent_workspace/abc.txt": [],
+    "src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt": [],
+    "src/deepagents_test/deepagents_backend/opensandbox_test.py": [],
+    "src/deepagents_test/deepagents_backend/opensandboxbackend.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/deepagents_backend/sqlitebackend.py": [],
+    "src/deepagents_test/deepagents_backend/statebackend.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/langchain_daytona_sandbox.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/langgraph_demo.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/test_stream.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/test_v1_v2.py": [],
+    "src/docs/chart-tool-token-comparison.json": [],
+    "src/docs/diagrams/agent-collaboration-flow-zh.drawio": [],
+    "src/docs/diagrams/agent-collaboration-flow-zh.dsl": [],
+    "src/docs/diagrams/boards.json": [],
+    "src/docs/diagrams/build_diagrams.py": [],
+    "src/docs/diagrams/business-capabilities-zh.drawio": [],
+    "src/docs/diagrams/business-capabilities-zh.dsl": [],
+    "src/docs/diagrams/chart-generation-flow-zh.drawio": [],
+    "src/docs/diagrams/chart-generation-flow-zh.dsl": [],
+    "src/docs/diagrams/chart-startup-flow-zh.drawio": [],
+    "src/docs/diagrams/chart-startup-flow-zh.dsl": [],
+    "src/docs/diagrams/design-value-map-zh.drawio": [],
+    "src/docs/diagrams/design-value-map-zh.dsl": [],
+    "src/docs/diagrams/diagram-review.html": [],
+    "src/docs/diagrams/improvement-roadmap-zh.drawio": [],
+    "src/docs/diagrams/improvement-roadmap-zh.dsl": [],
+    "src/docs/diagrams/input-guard-flow-zh.drawio": [],
+    "src/docs/diagrams/input-guard-flow-zh.dsl": [],
+    "src/docs/diagrams/input-guard-resume-flow-zh.drawio": [],
+    "src/docs/diagrams/input-guard-resume-flow-zh.dsl": [],
+    "src/docs/diagrams/module-dependencies-zh.drawio": [],
+    "src/docs/diagrams/module-dependencies-zh.dsl": [],
+    "src/docs/diagrams/order-approval-flow-zh.drawio": [],
+    "src/docs/diagrams/order-approval-flow-zh.dsl": [],
+    "src/docs/diagrams/prepare_yuque_board_update.py": [],
+    "src/docs/diagrams/procurement-architecture-zh.drawio": [],
+    "src/docs/diagrams/procurement-architecture-zh.dsl": [],
+    "src/docs/diagrams/publish-progress.json": [],
+    "src/docs/diagrams/sandbox-lifecycle-zh.drawio": [],
+    "src/docs/diagrams/sandbox-lifecycle-zh.dsl": [],
+    "src/docs/diagrams/skills-context-flow-zh.drawio": [],
+    "src/docs/diagrams/skills-context-flow-zh.dsl": [],
+    "src/docs/diagrams/sse-interaction-zh.drawio": [],
+    "src/docs/diagrams/sse-interaction-zh.dsl": [],
+    "src/docs/diagrams/startup-dependencies-zh.drawio": [],
+    "src/docs/diagrams/startup-dependencies-zh.dsl": [],
+    "src/docs/diagrams/storage-responsibilities-zh.drawio": [],
+    "src/docs/diagrams/storage-responsibilities-zh.dsl": [],
+    "src/docs/diagrams/style_native_boards.py": [],
+    "src/docs/diagrams/styled/agent-collaboration-flow-zh.json": [],
+    "src/docs/diagrams/styled/business-capabilities-zh.json": [],
+    "src/docs/diagrams/styled/chart-generation-flow-zh.json": [],
+    "src/docs/diagrams/styled/chart-startup-flow-zh.json": [],
+    "src/docs/diagrams/styled/design-value-map-zh.json": [],
+    "src/docs/diagrams/styled/improvement-roadmap-zh.json": [],
+    "src/docs/diagrams/styled/input-guard-flow-zh.json": [],
+    "src/docs/diagrams/styled/input-guard-resume-flow-zh.json": [],
+    "src/docs/diagrams/styled/manifest.json": [],
+    "src/docs/diagrams/styled/module-dependencies-zh.json": [],
+    "src/docs/diagrams/styled/order-approval-flow-zh.json": [],
+    "src/docs/diagrams/styled/procurement-architecture-zh.json": [],
+    "src/docs/diagrams/styled/sandbox-lifecycle-zh.json": [],
+    "src/docs/diagrams/styled/skills-context-flow-zh.json": [],
+    "src/docs/diagrams/styled/sse-interaction-zh.json": [],
+    "src/docs/diagrams/styled/startup-dependencies-zh.json": [],
+    "src/docs/diagrams/styled/storage-responsibilities-zh.json": [],
+    "src/docs/diagrams/styled/validation.json": [],
+    "src/docs/diagrams/yuque-boards.json": [],
+    "src/docs/measure_chart_tool_tokens.py": [
+      "src/agent/tools/chart_generator.py"
+    ],
+    "src/docs/project-design-preview.html": [],
+    "src/docs/project-design-publish.json": [],
+    "src/docs/project-design.md": [],
+    "src/docs/sections/chart-entry.md": [],
+    "src/docs/sections/input-guard.md": [],
+    "src/mcp_server/http_base.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/mcp_server/server_main.py": [
+      "src/agent/env_utils.py",
+      "src/mcp_server/http_base.py",
+      "src/mcp_server/tools/inventory_tools.py",
+      "src/mcp_server/tools/order_tools.py",
+      "src/mcp_server/tools/parts_tools.py",
+      "src/mcp_server/tools/suppliers_tools.py"
+    ],
+    "src/mcp_server/tools/inventory_tools.py": [],
+    "src/mcp_server/tools/order_tools.py": [],
+    "src/mcp_server/tools/parts_tools.py": [],
+    "src/mcp_server/tools/suppliers_tools.py": [],
+    "src/skills/analyis_chart_params.md": [],
+    "src/skills/main/find-skills/SKILL.md": [],
+    "src/skills/main/skill-management/SKILL.md": [],
+    "src/skills/main/skill-management/scripts/download_skill.py": [],
+    "src/skills/order/purchase-order-summarization/NOTICE": [],
+    "src/skills/order/purchase-order-summarization/SKILL.md": [],
+    "src/skills/procurement/procurement-analysis/SKILL.md": [],
+    "src/skills/procurement/procurement-optimization/SKILL.md": [],
+    "src/skills/procurement/supplier-price-urls/SKILL.md": [],
+    "src/skills/procurement/supplier-price-urls/data/url_mapping.yaml": [],
+    "src/skills/procurement/web-scraper/SKILL.md": [],
+    "src/skills/procurement/web-scraper/_meta.json": [],
+    "src/skills/procurement/web-scraper/scrape_page.py": [],
+    "src/test/agent_test.py": [
+      "src/agent/backends/sandbox_setup.py",
+      "src/agent/config.py",
+      "src/agent/input_guard.py",
+      "src/agent/logging_config.py",
+      "src/agent/main_agent.py",
+      "src/agent/mysql_storage.py",
+      "src/agent/schema.py"
+    ],
+    "src/test/chart_test_support.py": [
+      "src/agent/tools/chart_generator.py"
+    ],
+    "src/test/test_all_tools.py": [
+      "src/agent/env_utils.py",
+      "src/mcp_server/server_main.py"
+    ],
+    "src/test/test_chart_generator.py": [
+      "src/agent/tools/chart_generator.py",
+      "src/agent/tools/chart_validation.py",
+      "src/test/chart_test_support.py"
+    ],
+    "src/test/test_chart_live.py": [
+      "src/agent/env_utils.py",
+      "src/agent/tools/chart_generator.py",
+      "src/test/chart_test_support.py"
+    ],
+    "src/test/test_logging.py": [],
+    "src/test/test_mcp.py": [
+      "src/agent/env_utils.py",
+      "src/mcp_server/server_main.py"
+    ],
+    "src/test/test_skills_sync.py": [],
+    "src/test/test_subagents.py": [],
+    "src/test/test_web_search.py": [],
+    "start_web.py": []
+  }
+}

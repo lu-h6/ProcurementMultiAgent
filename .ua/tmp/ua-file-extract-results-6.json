@@ -1,0 +1,319 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "frontend/src/api/auth.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "functions": [
+        {
+          "name": "authenticate",
+          "startLine": 3,
+          "endLine": 9,
+          "params": [
+            "action",
+            "username",
+            "password"
+          ]
+        },
+        {
+          "name": "login",
+          "startLine": 11,
+          "endLine": 11,
+          "params": [
+            "username",
+            "password"
+          ]
+        },
+        {
+          "name": "register",
+          "startLine": 12,
+          "endLine": 12,
+          "params": [
+            "username",
+            "password"
+          ]
+        },
+        {
+          "name": "currentUser",
+          "startLine": 13,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "logout",
+          "startLine": 16,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "login",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "register",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "currentUser",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "logout",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "authenticate",
+          "callee": "apiFetch",
+          "lineNumber": 4
+        },
+        {
+          "caller": "authenticate",
+          "callee": "JSON.stringify",
+          "lineNumber": 6
+        },
+        {
+          "caller": "authenticate",
+          "callee": "username.trim().toLowerCase",
+          "lineNumber": 6
+        },
+        {
+          "caller": "authenticate",
+          "callee": "username.trim",
+          "lineNumber": 6
+        },
+        {
+          "caller": "authenticate",
+          "callee": "response.json",
+          "lineNumber": 8
+        },
+        {
+          "caller": "login",
+          "callee": "authenticate",
+          "lineNumber": 11
+        },
+        {
+          "caller": "register",
+          "callee": "authenticate",
+          "lineNumber": 12
+        },
+        {
+          "caller": "currentUser",
+          "callee": "await (await apiFetch('/api/auth/me', {}, false)).json",
+          "lineNumber": 14
+        },
+        {
+          "caller": "currentUser",
+          "callee": "await",
+          "lineNumber": 14
+        },
+        {
+          "caller": "currentUser",
+          "callee": "apiFetch",
+          "lineNumber": 14
+        },
+        {
+          "caller": "logout",
+          "callee": "apiFetch",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/api/auth.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 42,
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/api/history.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 40,
+      "functions": [
+        {
+          "name": "getSessions",
+          "startLine": 18,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "getMessages",
+          "startLine": 30,
+          "endLine": 34,
+          "params": [
+            "threadId"
+          ]
+        },
+        {
+          "name": "deleteSession",
+          "startLine": 42,
+          "endLine": 48,
+          "params": [
+            "threadId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSessions",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "getMessages",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "deleteSession",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSessions",
+          "callee": "apiFetch",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getSessions",
+          "callee": "response.json",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getMessages",
+          "callee": "apiFetch",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getMessages",
+          "callee": "encodeURIComponent",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getMessages",
+          "callee": "response.json",
+          "lineNumber": 33
+        },
+        {
+          "caller": "deleteSession",
+          "callee": "apiFetch",
+          "lineNumber": 43
+        },
+        {
+          "caller": "deleteSession",
+          "callee": "encodeURIComponent",
+          "lineNumber": 43
+        },
+        {
+          "caller": "deleteSession",
+          "callee": "response.json",
+          "lineNumber": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/api/http.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "apiFetch",
+          "startLine": 2,
+          "endLine": 22,
+          "params": [
+            "url"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "apiFetch",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "apiFetch",
+          "callee": "fetch",
+          "lineNumber": 3
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "response.json().catch",
+          "lineNumber": 9
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "response.json",
+          "lineNumber": 9
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "Array.isArray",
+          "lineNumber": 12
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "window.dispatchEvent",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

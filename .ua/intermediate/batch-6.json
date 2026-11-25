@@ -1,0 +1,356 @@
+{
+  "nodes": [
+    {
+      "id": "file:frontend/src/api/auth.js",
+      "type": "file",
+      "name": "auth.js",
+      "filePath": "frontend/src/api/auth.js",
+      "summary": "提供 Web auth接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "认证",
+        "api",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/api/auth.test.js",
+      "type": "file",
+      "name": "auth.test.js",
+      "filePath": "frontend/src/api/auth.test.js",
+      "summary": "提供 Web auth.test接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "测试",
+        "认证",
+        "api"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/api/history.js",
+      "type": "file",
+      "name": "history.js",
+      "filePath": "frontend/src/api/history.js",
+      "summary": "提供 Web history接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "api",
+        "javascript",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/api/http.js",
+      "type": "file",
+      "name": "http.js",
+      "filePath": "frontend/src/api/http.js",
+      "summary": "提供 Web http接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "api",
+        "javascript",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/auth.js:login",
+      "type": "function",
+      "name": "login",
+      "filePath": "frontend/src/api/auth.js",
+      "lineRange": [
+        11,
+        11
+      ],
+      "summary": "处理login相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/auth.js:register",
+      "type": "function",
+      "name": "register",
+      "filePath": "frontend/src/api/auth.js",
+      "lineRange": [
+        12,
+        12
+      ],
+      "summary": "处理register相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/auth.js:currentUser",
+      "type": "function",
+      "name": "currentUser",
+      "filePath": "frontend/src/api/auth.js",
+      "lineRange": [
+        13,
+        15
+      ],
+      "summary": "处理currentUser相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/auth.js:logout",
+      "type": "function",
+      "name": "logout",
+      "filePath": "frontend/src/api/auth.js",
+      "lineRange": [
+        16,
+        18
+      ],
+      "summary": "处理logout相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/history.js:getSessions",
+      "type": "function",
+      "name": "getSessions",
+      "filePath": "frontend/src/api/history.js",
+      "lineRange": [
+        18,
+        22
+      ],
+      "summary": "处理getSessions相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/history.js:getMessages",
+      "type": "function",
+      "name": "getMessages",
+      "filePath": "frontend/src/api/history.js",
+      "lineRange": [
+        30,
+        34
+      ],
+      "summary": "处理getMessages相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/history.js:deleteSession",
+      "type": "function",
+      "name": "deleteSession",
+      "filePath": "frontend/src/api/history.js",
+      "lineRange": [
+        42,
+        48
+      ],
+      "summary": "处理deleteSession相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/api/http.js:apiFetch",
+      "type": "function",
+      "name": "apiFetch",
+      "filePath": "frontend/src/api/http.js",
+      "lineRange": [
+        2,
+        22
+      ],
+      "summary": "处理apiFetch相关逻辑，供http模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:login",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:login",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:register",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:register",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:currentUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:currentUser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:logout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "function:frontend/src/api/auth.js:logout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/history.js",
+      "target": "function:frontend/src/api/history.js:getSessions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/history.js",
+      "target": "function:frontend/src/api/history.js:getSessions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/history.js",
+      "target": "function:frontend/src/api/history.js:getMessages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/history.js",
+      "target": "function:frontend/src/api/history.js:getMessages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/history.js",
+      "target": "function:frontend/src/api/history.js:deleteSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/history.js",
+      "target": "function:frontend/src/api/history.js:deleteSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/http.js",
+      "target": "function:frontend/src/api/http.js:apiFetch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/api/http.js",
+      "target": "function:frontend/src/api/http.js:apiFetch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "file:frontend/src/api/http.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/auth.test.js",
+      "target": "file:frontend/src/api/auth.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/auth.test.js",
+      "target": "file:frontend/src/api/history.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/auth.test.js",
+      "target": "file:frontend/src/api/http.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/history.js",
+      "target": "file:frontend/src/api/http.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/api/auth.js",
+      "target": "file:frontend/src/api/auth.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

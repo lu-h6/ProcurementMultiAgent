@@ -1,0 +1,182 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/deepagents_test/01_long_memory_demo.py",
+      "language": "python",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/agent_workspace/abc.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/opensandbox_test.py",
+      "language": "python",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/sqlitebackend.py",
+      "language": "python",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/test_v1_v2.py",
+      "language": "python",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/agent-collaboration-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 81,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/agent-collaboration-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/build_diagrams.py",
+      "language": "python",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/business-capabilities-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/business-capabilities-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-generation-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-generation-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-startup-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/chart-startup-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/design-value-map-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/design-value-map-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/improvement-roadmap-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/improvement-roadmap-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-resume-flow-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/input-guard-resume-flow-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/module-dependencies-zh.drawio",
+      "language": "drawio",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/docs/diagrams/module-dependencies-zh.dsl",
+      "language": "dsl",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/deepagents_test/01_long_memory_demo.py": [],
+    "src/deepagents_test/deepagents_backend/agent_workspace/abc.txt": [],
+    "src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt": [],
+    "src/deepagents_test/deepagents_backend/opensandbox_test.py": [],
+    "src/deepagents_test/deepagents_backend/sqlitebackend.py": [],
+    "src/deepagents_test/test_v1_v2.py": [],
+    "src/docs/diagrams/agent-collaboration-flow-zh.drawio": [],
+    "src/docs/diagrams/agent-collaboration-flow-zh.dsl": [],
+    "src/docs/diagrams/build_diagrams.py": [],
+    "src/docs/diagrams/business-capabilities-zh.drawio": [],
+    "src/docs/diagrams/business-capabilities-zh.dsl": [],
+    "src/docs/diagrams/chart-generation-flow-zh.drawio": [],
+    "src/docs/diagrams/chart-generation-flow-zh.dsl": [],
+    "src/docs/diagrams/chart-startup-flow-zh.drawio": [],
+    "src/docs/diagrams/chart-startup-flow-zh.dsl": [],
+    "src/docs/diagrams/design-value-map-zh.drawio": [],
+    "src/docs/diagrams/design-value-map-zh.dsl": [],
+    "src/docs/diagrams/improvement-roadmap-zh.drawio": [],
+    "src/docs/diagrams/improvement-roadmap-zh.dsl": [],
+    "src/docs/diagrams/input-guard-flow-zh.drawio": [],
+    "src/docs/diagrams/input-guard-flow-zh.dsl": [],
+    "src/docs/diagrams/input-guard-resume-flow-zh.drawio": [],
+    "src/docs/diagrams/input-guard-resume-flow-zh.dsl": [],
+    "src/docs/diagrams/module-dependencies-zh.drawio": [],
+    "src/docs/diagrams/module-dependencies-zh.dsl": []
+  }
+}

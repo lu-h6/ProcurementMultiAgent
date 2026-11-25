@@ -1,0 +1,90 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "frontend/src/api/chat.js",
+      "language": "javascript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/chat.test.js",
+      "language": "javascript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/api/inputSafety.test.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/images.js",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/images.test.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/markdown.js",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/replyTurns.test.js",
+      "language": "javascript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/toolCalls.js",
+      "language": "javascript",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/utils/toolCalls.test.js",
+      "language": "javascript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/api/chat.js": [
+      "frontend/src/api/http.js",
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/api/chat.test.js": [
+      "frontend/src/api/chat.js",
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/api/inputSafety.test.js": [
+      "frontend/src/api/chat.js"
+    ],
+    "frontend/src/utils/images.js": [],
+    "frontend/src/utils/images.test.js": [
+      "frontend/src/utils/images.js",
+      "frontend/src/utils/markdown.js",
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/utils/markdown.js": [
+      "frontend/src/utils/images.js"
+    ],
+    "frontend/src/utils/replyTurns.test.js": [
+      "frontend/src/utils/toolCalls.js"
+    ],
+    "frontend/src/utils/toolCalls.js": [
+      "frontend/src/utils/images.js"
+    ],
+    "frontend/src/utils/toolCalls.test.js": [
+      "frontend/src/utils/toolCalls.js"
+    ]
+  }
+}

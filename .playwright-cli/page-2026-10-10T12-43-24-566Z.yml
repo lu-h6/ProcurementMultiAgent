@@ -1,0 +1,116 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e12]:
+        - strong [ref=e13]: 棱镜工作台
+        - generic [ref=e14]: ERP INTELLIGENCE
+      - button "+ 新建对话" [ref=e15] [cursor=pointer]:
+        - generic [ref=e16]: +
+        - text: 新建对话
+    - textbox "搜索会话..." [ref=e18]
+    - generic [ref=e19]:
+      - generic [ref=e20]: 历史记录
+      - generic [ref=e21]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]:
+            - generic "你好，你知道我名字嘛？" [ref=e24]
+            - generic [ref=e25]: 17 分钟前
+          - button "×" [ref=e26]
+        - generic [ref=e27] [cursor=pointer]:
+          - generic [ref=e28]:
+            - generic "你知道我叫什么名字嘛？" [ref=e29]
+            - generic [ref=e30]: 2 小时前
+          - button "×" [ref=e31]
+        - generic [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]:
+            - generic "你知道我叫什么名字嘛？" [ref=e34]
+            - generic [ref=e35]: 2 小时前
+          - button "×" [ref=e36]
+    - generic [ref=e37]:
+      - generic [ref=e38]: Z
+      - generic [ref=e39]:
+        - strong [ref=e40]: zhuimeng
+        - generic [ref=e41]: 我的采购工作台
+      - button "退出" [ref=e42] [cursor=pointer]
+  - main [ref=e43]:
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e83]: 你好，你知道我名字嘛？
+        - generic [ref=e85]: 👤
+      - generic [ref=e86]:
+        - generic [ref=e88]: 🤖
+        - generic [ref=e89]:
+          - generic [ref=e91]: AI
+          - generic [ref=e93]:
+            - paragraph [ref=e94]:
+              - text: 您的登录用户名是
+              - strong [ref=e95]: zhuimeng
+              - text: 。
+            - paragraph [ref=e96]: 有什么采购相关的事情可以帮您的吗？
+      - generic [ref=e97]:
+        - generic [ref=e100]: 我有什么偏好
+        - generic [ref=e102]: 👤
+      - generic [ref=e103]:
+        - generic [ref=e105]: 🤖
+        - generic [ref=e106]:
+          - generic [ref=e108]: AI
+          - group [ref=e109]:
+            - generic "执行过程 · 2 次调用" [ref=e110] [cursor=pointer]
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: 您还没有设置过任何偏好，系统当前使用的是默认偏好：
+            - list [ref=e114]:
+              - listitem [ref=e115]:
+                - strong [ref=e116]: 输出格式
+                - text: ：图表（chart）
+              - listitem [ref=e117]:
+                - strong [ref=e118]: 图表类型
+                - text: ：柱状图（bar）
+              - listitem [ref=e119]:
+                - strong [ref=e120]: 货币单位
+                - text: ：人民币（CNY）
+              - listitem [ref=e121]:
+                - strong [ref=e122]: 语言
+                - text: ：中文（zh）
+            - paragraph [ref=e123]: 如果您想让分析结果以表格呈现、改用饼图/折线图，或指定其他货币单位，随时告诉我，我会记录下来。
+      - generic [ref=e124]:
+        - generic [ref=e127]: 以表格形式呈现
+        - generic [ref=e129]: 👤
+      - generic [ref=e130]:
+        - generic [ref=e132]: 🤖
+        - generic [ref=e133]:
+          - generic [ref=e135]: AI
+          - group [ref=e136]:
+            - generic "执行过程 · 1 次调用" [ref=e137] [cursor=pointer]
+          - paragraph [ref=e140]:
+            - text: 已记录，以后分析结果默认以
+            - strong [ref=e141]: 表格
+            - text: 形式呈现给您。
+      - generic [ref=e142]:
+        - generic [ref=e145]: 我有什么偏好
+        - generic [ref=e147]: 👤
+      - generic [ref=e148]:
+        - generic [ref=e150]: 🤖
+        - generic [ref=e151]:
+          - generic [ref=e153]: AI
+          - generic [ref=e155]:
+            - paragraph [ref=e156]: 您当前的偏好设置如下：
+            - list [ref=e157]:
+              - listitem [ref=e158]:
+                - strong [ref=e159]: 输出格式
+                - text: ：表格（table）
+              - listitem [ref=e160]:
+                - strong [ref=e161]: 图表类型
+                - text: ：柱状图（bar）
+              - listitem [ref=e162]:
+                - strong [ref=e163]: 货币单位
+                - text: ：人民币（CNY）
+              - listitem [ref=e164]:
+                - strong [ref=e165]: 语言
+                - text: ：中文（zh）
+            - paragraph [ref=e166]: 如果需要调整（比如改用饼图、折线图，或指定其他货币单位），随时告诉我。
+    - generic [ref=e70]:
+      - generic [ref=e74] [cursor=pointer]: 显示工具调用
+      - generic [ref=e75]:
+        - textbox "输入消息，Enter 发送..." [ref=e76]
+        - button "发送" [disabled] [ref=e77]
+      - generic [ref=e78]: 按 Enter 发送，Shift + Enter 换行

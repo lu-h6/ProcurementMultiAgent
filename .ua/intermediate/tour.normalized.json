@@ -1,0 +1,108 @@
+[
+  {
+    "order": 1,
+    "title": "项目概览与运行方式",
+    "description": "从项目说明认识采购助手的能力边界、启动依赖与主要服务。重点留意 Web、MCP、MySQL 和 OpenSandbox 如何共同组成运行环境。",
+    "nodeIds": [
+      "document:README.md",
+      "config:pyproject.toml"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "服务启动入口",
+    "description": "启动器协调 FastAPI 后端与 Vue 开发服务器，并验证本次进程就绪、端口占用和退出清理。它把多个开发服务纳入同一生命周期。",
+    "nodeIds": [
+      "file:start_web.py",
+      "file:src/api_view/web_main.py"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "主 Agent 编排",
+    "description": "主 Agent 汇总模型、MCP 工具、沙箱后端和 middleware，形成采购任务的执行入口。沿着上下文预计算与子 Agent 配置，可理解职责如何拆分。",
+    "nodeIds": [
+      "file:src/agent/main_agent.py",
+      "file:src/agent/middleware_config.py",
+      "file:src/agent/schema.py"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "输入安全护栏",
+    "description": "聊天输入先经过独立安全检查，再决定是否进入业务 Agent；配置、策略、提示和 Colang 流程共同定义检查边界。拦截、超时与无效配置采用不同失败响应。",
+    "nodeIds": [
+      "file:src/agent/input_guard.py",
+      "config:src/agent/guardrails/config.yml",
+      "config:src/agent/guardrails/policies.yml",
+      "config:src/agent/guardrails/prompts.yml"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "认证与会话 API",
+    "description": "Web API 通过登录会话取得用户名，并在历史读取、恢复和删除时检查归属。聊天路由以流式响应承载 Agent 执行状态，认证模块负责 Cookie 与同源写请求约束。",
+    "nodeIds": [
+      "file:src/api_view/api/auth.py",
+      "file:src/api_view/auth.py",
+      "file:src/api_view/api/chat.py",
+      "file:src/api_view/api/history.py"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "ERP MCP 工具",
+    "description": "MCP 服务把供应商、物料、库存和采购单操作封装为 Agent 可调用工具。主 Agent 的 MCP 客户端加载远端工具，采购操作与分析能力保持在 ERP 集成边界内。",
+    "nodeIds": [
+      "file:src/mcp_server/server_main.py",
+      "file:src/mcp_server/tools/suppliers_tools.py",
+      "file:src/mcp_server/tools/parts_tools.py",
+      "file:src/mcp_server/tools/order_tools.py",
+      "file:src/agent/tools/mcp_client.py"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "沙箱与用户隔离",
+    "description": "沙箱管理器按用户绑定和回收执行环境，代理后端承接 DeepAgents 的文件与命令操作。启动配置负责环境初始化，持久化绑定让会话能重连到正确沙箱。",
+    "nodeIds": [
+      "file:src/agent/backends/sandbox_manager.py",
+      "file:src/agent/backends/sandbox_setup.py",
+      "file:src/agent/backends/sandbox_proxy.py",
+      "file:src/agent/mysql_storage.py"
+    ]
+  },
+  {
+    "order": 8,
+    "title": "持久化与业务数据",
+    "description": "MySQL 保存检查点、展示消息、账号、登录会话和沙箱关联；供应链 SQL 文件描述独立的业务库结构。两类数据分别承担应用会话状态和 ERP 业务数据职责。",
+    "nodeIds": [
+      "file:src/agent/mysql_storage.py",
+      "file:src/agent/backends/sandbox_manager.py",
+      "table:chip_supply_db.sql"
+    ]
+  },
+  {
+    "order": 9,
+    "title": "图表生成与校验",
+    "description": "图表工具把多种图形能力统一到单一入口，再依据上游 MCP schema 校验配置并处理远端错误。测试与场景数据展示了参数约束和兼容性覆盖。",
+    "nodeIds": [
+      "file:src/agent/tools/chart_generator.py",
+      "file:src/agent/tools/chart_validation.py",
+      "file:src/test/test_chart_generator.py",
+      "document:src/skills/analyis_chart_params.md"
+    ]
+  },
+  {
+    "order": 10,
+    "title": "Vue 聊天工作台",
+    "description": "前端以聊天工作区组织消息、执行过程、审批和图表展示，并通过 API 客户端与后端交换流式结果。认证页面和历史侧栏补足会话生命周期。",
+    "nodeIds": [
+      "file:frontend/src/App.vue",
+      "file:frontend/src/ChatWorkspace.vue",
+      "file:frontend/src/components/ChatArea.vue",
+      "file:frontend/src/api/chat.js",
+      "file:frontend/src/api/auth.js"
+    ]
+  }
+]

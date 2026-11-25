@@ -1,0 +1,2446 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/agent/backends/custom_opensandbox.py",
+      "type": "file",
+      "name": "custom_opensandbox.py",
+      "filePath": "src/agent/backends/custom_opensandbox.py",
+      "summary": "实现 OpenSandbox 执行后端及其custom opensandbox生命周期、配置或代理适配。",
+      "tags": [
+        "沙箱",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/agent/backends/sandbox_setup.py",
+      "type": "file",
+      "name": "sandbox_setup.py",
+      "filePath": "src/agent/backends/sandbox_setup.py",
+      "summary": "实现 OpenSandbox 执行后端及其sandbox setup生命周期、配置或代理适配。",
+      "tags": [
+        "沙箱",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/agent/input_guard.py",
+      "type": "file",
+      "name": "input_guard.py",
+      "filePath": "src/agent/input_guard.py",
+      "summary": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "tags": [
+        "安全",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/agent/logging_config.py",
+      "type": "file",
+      "name": "logging_config.py",
+      "filePath": "src/agent/logging_config.py",
+      "summary": "实现项目src/agent/logging config模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/agent/mysql_storage.py",
+      "type": "file",
+      "name": "mysql_storage.py",
+      "filePath": "src/agent/mysql_storage.py",
+      "summary": "实现项目src/agent/mysql storage模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "持久化",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/agent/schema.py",
+      "type": "file",
+      "name": "schema.py",
+      "filePath": "src/agent/schema.py",
+      "summary": "实现项目src/agent/schema模块中的功能逻辑，并参与采购助手运行流程。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/api_view/agent_loader.py",
+      "type": "file",
+      "name": "agent_loader.py",
+      "filePath": "src/api_view/agent_loader.py",
+      "summary": "提供 Web agent loader接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "api",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/api_view/api/auth.py",
+      "type": "file",
+      "name": "auth.py",
+      "filePath": "src/api_view/api/auth.py",
+      "summary": "提供 Web auth接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "认证",
+        "api",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/api_view/api/chat.py",
+      "type": "file",
+      "name": "chat.py",
+      "filePath": "src/api_view/api/chat.py",
+      "summary": "提供 Web chat接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "api",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/api_view/api/history.py",
+      "type": "file",
+      "name": "history.py",
+      "filePath": "src/api_view/api/history.py",
+      "summary": "提供 Web history接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "api",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/api_view/auth.py",
+      "type": "file",
+      "name": "auth.py",
+      "filePath": "src/api_view/auth.py",
+      "summary": "提供 Web auth接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "认证",
+        "api",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/api_view/web_main.py",
+      "type": "file",
+      "name": "web_main.py",
+      "filePath": "src/api_view/web_main.py",
+      "summary": "提供 Web web main接口处理、会话鉴权或响应序列化。",
+      "tags": [
+        "api",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/test/agent_test.py",
+      "type": "file",
+      "name": "agent_test.py",
+      "filePath": "src/test/agent_test.py",
+      "summary": "验证agent test相关行为、输入边界和失败处理。",
+      "tags": [
+        "测试",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/agent/backends/custom_opensandbox.py:OpenSandboxBackend",
+      "type": "class",
+      "name": "OpenSandboxBackend",
+      "filePath": "src/agent/backends/custom_opensandbox.py",
+      "lineRange": [
+        35,
+        295
+      ],
+      "summary": "OpenSandboxBackend 封装custom opensandbox相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_setup.py:setup_sandbox",
+      "type": "function",
+      "name": "setup_sandbox",
+      "filePath": "src/agent/backends/sandbox_setup.py",
+      "lineRange": [
+        32,
+        83
+      ],
+      "summary": "处理setup sandbox相关逻辑，供sandbox setup模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_setup.py:_ensure_dirs",
+      "type": "function",
+      "name": "_ensure_dirs",
+      "filePath": "src/agent/backends/sandbox_setup.py",
+      "lineRange": [
+        103,
+        106
+      ],
+      "summary": "处理 ensure dirs相关逻辑，供sandbox setup模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_setup.py:_venv_bootstrap_command",
+      "type": "function",
+      "name": "_venv_bootstrap_command",
+      "filePath": "src/agent/backends/sandbox_setup.py",
+      "lineRange": [
+        115,
+        149
+      ],
+      "summary": "处理 venv bootstrap command相关逻辑，供sandbox setup模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_setup.py:_execute_required",
+      "type": "function",
+      "name": "_execute_required",
+      "filePath": "src/agent/backends/sandbox_setup.py",
+      "lineRange": [
+        152,
+        158
+      ],
+      "summary": "处理 execute required相关逻辑，供sandbox setup模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_setup.py:_create_venv",
+      "type": "function",
+      "name": "_create_venv",
+      "filePath": "src/agent/backends/sandbox_setup.py",
+      "lineRange": [
+        161,
+        190
+      ],
+      "summary": "处理 create venv相关逻辑，供sandbox setup模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/backends/sandbox_setup.py:_seed_files",
+      "type": "function",
+      "name": "_seed_files",
+      "filePath": "src/agent/backends/sandbox_setup.py",
+      "lineRange": [
+        193,
+        238
+      ],
+      "summary": "处理 seed files相关逻辑，供sandbox setup模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "沙箱",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/input_guard.py:InputGuard",
+      "type": "class",
+      "name": "InputGuard",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        141,
+        207
+      ],
+      "summary": "InputGuard 封装input guard相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/agent/input_guard.py:_invalid_input",
+      "type": "function",
+      "name": "_invalid_input",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        51,
+        52
+      ],
+      "summary": "处理 invalid input相关逻辑，供input guard模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "安全",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/input_guard.py:_unavailable",
+      "type": "function",
+      "name": "_unavailable",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        55,
+        58
+      ],
+      "summary": "处理 unavailable相关逻辑，供input guard模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "安全",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/input_guard.py:_parse_verdict",
+      "type": "function",
+      "name": "_parse_verdict",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        61,
+        63
+      ],
+      "summary": "处理 parse verdict相关逻辑，供input guard模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "安全",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/input_guard.py:_load_configuration",
+      "type": "function",
+      "name": "_load_configuration",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        66,
+        98
+      ],
+      "summary": "处理 load configuration相关逻辑，供input guard模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "安全",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/input_guard.py:_configured_model",
+      "type": "function",
+      "name": "_configured_model",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        102,
+        112
+      ],
+      "summary": "处理 configured model相关逻辑，供input guard模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "安全",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/input_guard.py:_build_rails",
+      "type": "function",
+      "name": "_build_rails",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        115,
+        138
+      ],
+      "summary": "处理 build rails相关逻辑，供input guard模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "安全",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/input_guard.py:get_input_guard",
+      "type": "function",
+      "name": "get_input_guard",
+      "filePath": "src/agent/input_guard.py",
+      "lineRange": [
+        211,
+        212
+      ],
+      "summary": "处理get input guard相关逻辑，供input guard模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "安全",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/logging_config.py:configure_logging",
+      "type": "function",
+      "name": "configure_logging",
+      "filePath": "src/agent/logging_config.py",
+      "lineRange": [
+        7,
+        26
+      ],
+      "summary": "处理configure logging相关逻辑，供logging config模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/agent/mysql_storage.py:MySQLSettings",
+      "type": "class",
+      "name": "MySQLSettings",
+      "filePath": "src/agent/mysql_storage.py",
+      "lineRange": [
+        25,
+        57
+      ],
+      "summary": "MySQLSettings 封装mysql storage相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/mysql_storage.py:CompatibleAIOMySQLSaver",
+      "type": "class",
+      "name": "CompatibleAIOMySQLSaver",
+      "filePath": "src/agent/mysql_storage.py",
+      "lineRange": [
+        71,
+        111
+      ],
+      "summary": "CompatibleAIOMySQLSaver 封装mysql storage相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/agent/mysql_storage.py:MySQLStorage",
+      "type": "class",
+      "name": "MySQLStorage",
+      "filePath": "src/agent/mysql_storage.py",
+      "lineRange": [
+        157,
+        365
+      ],
+      "summary": "MySQLStorage 封装mysql storage相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/agent/mysql_storage.py:_create_table_if_missing",
+      "type": "function",
+      "name": "_create_table_if_missing",
+      "filePath": "src/agent/mysql_storage.py",
+      "lineRange": [
+        60,
+        68
+      ],
+      "summary": "处理 create table if missing相关逻辑，供mysql storage模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "持久化",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/agent/mysql_storage.py:_json_default",
+      "type": "function",
+      "name": "_json_default",
+      "filePath": "src/agent/mysql_storage.py",
+      "lineRange": [
+        151,
+        154
+      ],
+      "summary": "处理 json default相关逻辑，供mysql storage模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "持久化",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/api_view/agent_loader.py:AgentLoader",
+      "type": "class",
+      "name": "AgentLoader",
+      "filePath": "src/api_view/agent_loader.py",
+      "lineRange": [
+        31,
+        172
+      ],
+      "summary": "AgentLoader 封装agent loader相关状态与行为，是所在模块的主要对象结构。",
+      "tags": [
+        "类",
+        "数据模型",
+        "业务逻辑"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api_view/api/auth.py:register",
+      "type": "function",
+      "name": "register",
+      "filePath": "src/api_view/api/auth.py",
+      "lineRange": [
+        36,
+        41
+      ],
+      "summary": "处理register相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/auth.py:login",
+      "type": "function",
+      "name": "login",
+      "filePath": "src/api_view/api/auth.py",
+      "lineRange": [
+        45,
+        52
+      ],
+      "summary": "处理login相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/auth.py:current_user",
+      "type": "function",
+      "name": "current_user",
+      "filePath": "src/api_view/api/auth.py",
+      "lineRange": [
+        56,
+        58
+      ],
+      "summary": "处理current user相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/auth.py:logout",
+      "type": "function",
+      "name": "logout",
+      "filePath": "src/api_view/api/auth.py",
+      "lineRange": [
+        62,
+        67
+      ],
+      "summary": "处理logout相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:get_debug_log_path",
+      "type": "function",
+      "name": "get_debug_log_path",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        40,
+        43
+      ],
+      "summary": "处理get debug log path相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:write_debug_log",
+      "type": "function",
+      "name": "write_debug_log",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        46,
+        74
+      ],
+      "summary": "处理write debug log相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:extract_subagent_name",
+      "type": "function",
+      "name": "extract_subagent_name",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        77,
+        84
+      ],
+      "summary": "处理extract subagent name相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:parse_task_subagent_type",
+      "type": "function",
+      "name": "parse_task_subagent_type",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        90,
+        93
+      ],
+      "summary": "处理parse task subagent type相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:current_subagent_name",
+      "type": "function",
+      "name": "current_subagent_name",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        96,
+        98
+      ],
+      "summary": "处理current subagent name相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:is_likely_uuid",
+      "type": "function",
+      "name": "is_likely_uuid",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        101,
+        108
+      ],
+      "summary": "处理is likely uuid相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:extract_content_from_token",
+      "type": "function",
+      "name": "extract_content_from_token",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        111,
+        157
+      ],
+      "summary": "处理extract content from token相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:serialize_tool_result",
+      "type": "function",
+      "name": "serialize_tool_result",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        160,
+        221
+      ],
+      "summary": "处理serialize tool result相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:create_sse_message",
+      "type": "function",
+      "name": "create_sse_message",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        224,
+        226
+      ],
+      "summary": "处理create sse message相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:stream_chat_response",
+      "type": "function",
+      "name": "stream_chat_response",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        246,
+        626
+      ],
+      "summary": "处理stream chat response相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:chat_stream",
+      "type": "function",
+      "name": "chat_stream",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        634,
+        667
+      ],
+      "summary": "处理chat stream相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:chat_resume",
+      "type": "function",
+      "name": "chat_resume",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        671,
+        693
+      ],
+      "summary": "处理chat resume相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:get_chat_state",
+      "type": "function",
+      "name": "get_chat_state",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        697,
+        720
+      ],
+      "summary": "处理get chat state相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/chat.py:get_chat_history",
+      "type": "function",
+      "name": "get_chat_history",
+      "filePath": "src/api_view/api/chat.py",
+      "lineRange": [
+        724,
+        746
+      ],
+      "summary": "处理get chat history相关逻辑，供chat模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:get_message_attr",
+      "type": "function",
+      "name": "get_message_attr",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        35,
+        40
+      ],
+      "summary": "处理get message attr相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:get_message_role",
+      "type": "function",
+      "name": "get_message_role",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        43,
+        57
+      ],
+      "summary": "处理get message role相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:get_message_content",
+      "type": "function",
+      "name": "get_message_content",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        60,
+        90
+      ],
+      "summary": "处理get message content相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:extract_images_from_content",
+      "type": "function",
+      "name": "extract_images_from_content",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        93,
+        124
+      ],
+      "summary": "处理extract images from content相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:serialize_messages_from_checkpoint",
+      "type": "function",
+      "name": "serialize_messages_from_checkpoint",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        127,
+        224
+      ],
+      "summary": "处理serialize messages from checkpoint相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:get_sessions",
+      "type": "function",
+      "name": "get_sessions",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        232,
+        294
+      ],
+      "summary": "处理get sessions相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:get_session_messages",
+      "type": "function",
+      "name": "get_session_messages",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        298,
+        339
+      ],
+      "summary": "处理get session messages相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:delete_session",
+      "type": "function",
+      "name": "delete_session",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        343,
+        355
+      ],
+      "summary": "处理delete session相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/api/history.py:update_session_title",
+      "type": "function",
+      "name": "update_session_title",
+      "filePath": "src/api_view/api/history.py",
+      "lineRange": [
+        359,
+        367
+      ],
+      "summary": "处理update session title相关逻辑，供history模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:hash_password",
+      "type": "function",
+      "name": "hash_password",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        17,
+        21
+      ],
+      "summary": "处理hash password相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:verify_password",
+      "type": "function",
+      "name": "verify_password",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        24,
+        36
+      ],
+      "summary": "处理verify password相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:token_hash",
+      "type": "function",
+      "name": "token_hash",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        39,
+        40
+      ],
+      "summary": "处理token hash相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:cookie_secure",
+      "type": "function",
+      "name": "cookie_secure",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        43,
+        44
+      ],
+      "summary": "处理cookie secure相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:require_user",
+      "type": "function",
+      "name": "require_user",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        47,
+        54
+      ],
+      "summary": "处理require user相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:require_same_origin_request",
+      "type": "function",
+      "name": "require_same_origin_request",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        57,
+        60
+      ],
+      "summary": "处理require same origin request相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:require_thread",
+      "type": "function",
+      "name": "require_thread",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        63,
+        66
+      ],
+      "summary": "处理require thread相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/auth.py:start_session",
+      "type": "function",
+      "name": "start_session",
+      "filePath": "src/api_view/auth.py",
+      "lineRange": [
+        69,
+        79
+      ],
+      "summary": "处理start session相关逻辑，供auth模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "认证",
+        "api",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/web_main.py:lifespan",
+      "type": "function",
+      "name": "lifespan",
+      "filePath": "src/api_view/web_main.py",
+      "lineRange": [
+        27,
+        38
+      ],
+      "summary": "处理lifespan相关逻辑，供web main模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/web_main.py:root",
+      "type": "function",
+      "name": "root",
+      "filePath": "src/api_view/web_main.py",
+      "lineRange": [
+        80,
+        92
+      ],
+      "summary": "处理root相关逻辑，供web main模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/api_view/web_main.py:health_check",
+      "type": "function",
+      "name": "health_check",
+      "filePath": "src/api_view/web_main.py",
+      "lineRange": [
+        99,
+        113
+      ],
+      "summary": "处理health check相关逻辑，供web main模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "api",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/agent_test.py:extract_content_from_token",
+      "type": "function",
+      "name": "extract_content_from_token",
+      "filePath": "src/test/agent_test.py",
+      "lineRange": [
+        20,
+        55
+      ],
+      "summary": "处理extract content from token相关逻辑，供agent test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/agent_test.py:stream_agent_response",
+      "type": "function",
+      "name": "stream_agent_response",
+      "filePath": "src/test/agent_test.py",
+      "lineRange": [
+        58,
+        236
+      ],
+      "summary": "处理stream agent response相关逻辑，供agent test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/test/agent_test.py:_print_order_summary",
+      "type": "function",
+      "name": "_print_order_summary",
+      "filePath": "src/test/agent_test.py",
+      "lineRange": [
+        239,
+        271
+      ],
+      "summary": "处理 print order summary相关逻辑，供agent test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/agent_test.py:_handle_interrupts",
+      "type": "function",
+      "name": "_handle_interrupts",
+      "filePath": "src/test/agent_test.py",
+      "lineRange": [
+        274,
+        293
+      ],
+      "summary": "处理 handle interrupts相关逻辑，供agent test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/agent_test.py:_handle_hitl_interrupt",
+      "type": "function",
+      "name": "_handle_hitl_interrupt",
+      "filePath": "src/test/agent_test.py",
+      "lineRange": [
+        296,
+        329
+      ],
+      "summary": "处理 handle hitl interrupt相关逻辑，供agent test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/agent_test.py:_handle_order_info_interrupt",
+      "type": "function",
+      "name": "_handle_order_info_interrupt",
+      "filePath": "src/test/agent_test.py",
+      "lineRange": [
+        332,
+        343
+      ],
+      "summary": "处理 handle order info interrupt相关逻辑，供agent test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/agent_test.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/test/agent_test.py",
+      "lineRange": [
+        346,
+        384
+      ],
+      "summary": "处理main相关逻辑，供agent test模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "测试",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/agent/backends/custom_opensandbox.py",
+      "target": "class:src/agent/backends/custom_opensandbox.py:OpenSandboxBackend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:setup_sandbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:setup_sandbox",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_ensure_dirs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_ensure_dirs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_venv_bootstrap_command",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_venv_bootstrap_command",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_execute_required",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_execute_required",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_create_venv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_create_venv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_seed_files",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "function:src/agent/backends/sandbox_setup.py:_seed_files",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "class:src/agent/input_guard.py:InputGuard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_invalid_input",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_invalid_input",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_unavailable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_unavailable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_parse_verdict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_parse_verdict",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_load_configuration",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_load_configuration",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_configured_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_configured_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_build_rails",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:_build_rails",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:get_input_guard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "function:src/agent/input_guard.py:get_input_guard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/logging_config.py",
+      "target": "function:src/agent/logging_config.py:configure_logging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/logging_config.py",
+      "target": "function:src/agent/logging_config.py:configure_logging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/mysql_storage.py",
+      "target": "class:src/agent/mysql_storage.py:MySQLSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/mysql_storage.py",
+      "target": "class:src/agent/mysql_storage.py:CompatibleAIOMySQLSaver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/mysql_storage.py",
+      "target": "class:src/agent/mysql_storage.py:MySQLStorage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/mysql_storage.py",
+      "target": "function:src/agent/mysql_storage.py:_create_table_if_missing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/mysql_storage.py",
+      "target": "function:src/agent/mysql_storage.py:_create_table_if_missing",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/mysql_storage.py",
+      "target": "function:src/agent/mysql_storage.py:_json_default",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/agent/mysql_storage.py",
+      "target": "function:src/agent/mysql_storage.py:_json_default",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/agent_loader.py",
+      "target": "class:src/api_view/agent_loader.py:AgentLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:register",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:register",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:login",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:login",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:current_user",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:current_user",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:logout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "function:src/api_view/api/auth.py:logout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:get_debug_log_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:get_debug_log_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:write_debug_log",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:write_debug_log",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:extract_subagent_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:extract_subagent_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:parse_task_subagent_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:parse_task_subagent_type",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:current_subagent_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:current_subagent_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:is_likely_uuid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:is_likely_uuid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:extract_content_from_token",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:extract_content_from_token",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:serialize_tool_result",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:serialize_tool_result",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:create_sse_message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:create_sse_message",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:stream_chat_response",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:stream_chat_response",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:chat_stream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:chat_stream",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:chat_resume",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:chat_resume",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:get_chat_state",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:get_chat_state",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:get_chat_history",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "function:src/api_view/api/chat.py:get_chat_history",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_message_attr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_message_attr",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_message_role",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_message_role",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_message_content",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_message_content",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:extract_images_from_content",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:extract_images_from_content",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:serialize_messages_from_checkpoint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:serialize_messages_from_checkpoint",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_sessions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_sessions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_session_messages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:get_session_messages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:delete_session",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:delete_session",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:update_session_title",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "function:src/api_view/api/history.py:update_session_title",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:hash_password",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:hash_password",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:verify_password",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:verify_password",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:token_hash",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:token_hash",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:cookie_secure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:cookie_secure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:require_user",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:require_user",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:require_same_origin_request",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:require_same_origin_request",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:require_thread",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:require_thread",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:start_session",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "function:src/api_view/auth.py:start_session",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "function:src/api_view/web_main.py:lifespan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "function:src/api_view/web_main.py:lifespan",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "function:src/api_view/web_main.py:root",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "function:src/api_view/web_main.py:root",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "function:src/api_view/web_main.py:health_check",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "function:src/api_view/web_main.py:health_check",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:extract_content_from_token",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:extract_content_from_token",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:stream_agent_response",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:stream_agent_response",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_print_order_summary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_print_order_summary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_handle_interrupts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_handle_interrupts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_handle_hitl_interrupt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_handle_hitl_interrupt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_handle_order_info_interrupt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:_handle_order_info_interrupt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "function:src/test/agent_test.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "file:src/agent/backends/custom_opensandbox.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/backends/sandbox_setup.py",
+      "target": "file:src/agent/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/agent/input_guard.py",
+      "target": "file:src/agent/env_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/agent_loader.py",
+      "target": "file:src/agent/main_agent.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/agent_loader.py",
+      "target": "file:src/agent/mysql_storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "file:src/agent/mysql_storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/auth.py",
+      "target": "file:src/api_view/auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "file:src/agent/input_guard.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "file:src/agent/mysql_storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "file:src/agent/schema.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "file:src/api_view/agent_loader.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/chat.py",
+      "target": "file:src/api_view/auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "file:src/agent/schema.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "file:src/api_view/agent_loader.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/api/history.py",
+      "target": "file:src/api_view/auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/auth.py",
+      "target": "file:src/agent/mysql_storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "file:src/agent/logging_config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/api_view/web_main.py",
+      "target": "file:src/api_view/agent_loader.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "file:src/agent/backends/sandbox_setup.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "file:src/agent/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "file:src/agent/input_guard.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "file:src/agent/logging_config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "file:src/agent/main_agent.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "file:src/agent/mysql_storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/agent_test.py",
+      "target": "file:src/agent/schema.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

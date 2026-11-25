@@ -1,0 +1,42 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 39,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "chip_supply_db.sql",
+      "language": "sql",
+      "sizeLines": 270,
+      "fileCategory": "data"
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "sizeLines": 39,
+      "fileCategory": "config"
+    },
+    {
+      "path": "requirements.txt",
+      "language": "txt",
+      "sizeLines": 384,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".env.example": [],
+    "README.md": [],
+    "chip_supply_db.sql": [],
+    "pyproject.toml": [],
+    "requirements.txt": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/docs/chart-tool-token-comparison.json",
+      "language": "json",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/project-design-preview.html",
+      "language": "html",
+      "sizeLines": 2068,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/docs/project-design-publish.json",
+      "language": "json",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/docs/project-design.md",
+      "language": "markdown",
+      "sizeLines": 584,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "src/docs/chart-tool-token-comparison.json": [],
+    "src/docs/project-design-preview.html": [],
+    "src/docs/project-design-publish.json": [],
+    "src/docs/project-design.md": []
+  }
+}

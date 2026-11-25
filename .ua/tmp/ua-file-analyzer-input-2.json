@@ -1,0 +1,148 @@
+{
+  "projectRoot": "E:\\PythonProjects\\ProcurementMultiAgent\\ProcurementMultiAgent",
+  "batchFiles": [
+    {
+      "path": "src/agent/env_utils.py",
+      "language": "python",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/mcp_client.py",
+      "language": "python",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/agent/tools/web_search.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/opensandboxbackend.py",
+      "language": "python",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/deepagents_backend/statebackend.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/langchain_daytona_sandbox.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/langgraph_demo.py",
+      "language": "python",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/deepagents_test/test_stream.py",
+      "language": "python",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/http_base.py",
+      "language": "python",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/server_main.py",
+      "language": "python",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/inventory_tools.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/order_tools.py",
+      "language": "python",
+      "sizeLines": 241,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/parts_tools.py",
+      "language": "python",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/mcp_server/tools/suppliers_tools.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_all_tools.py",
+      "language": "python",
+      "sizeLines": 331,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/test_mcp.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/agent/env_utils.py": [],
+    "src/agent/tools/mcp_client.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/agent/tools/web_search.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/deepagents_backend/opensandboxbackend.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/deepagents_backend/statebackend.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/langchain_daytona_sandbox.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/langgraph_demo.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/deepagents_test/test_stream.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/mcp_server/http_base.py": [
+      "src/agent/env_utils.py"
+    ],
+    "src/mcp_server/server_main.py": [
+      "src/agent/env_utils.py",
+      "src/mcp_server/http_base.py",
+      "src/mcp_server/tools/inventory_tools.py",
+      "src/mcp_server/tools/order_tools.py",
+      "src/mcp_server/tools/parts_tools.py",
+      "src/mcp_server/tools/suppliers_tools.py"
+    ],
+    "src/mcp_server/tools/inventory_tools.py": [],
+    "src/mcp_server/tools/order_tools.py": [],
+    "src/mcp_server/tools/parts_tools.py": [],
+    "src/mcp_server/tools/suppliers_tools.py": [],
+    "src/test/test_all_tools.py": [
+      "src/agent/env_utils.py",
+      "src/mcp_server/server_main.py"
+    ],
+    "src/test/test_mcp.py": [
+      "src/agent/env_utils.py",
+      "src/mcp_server/server_main.py"
+    ]
+  }
+}

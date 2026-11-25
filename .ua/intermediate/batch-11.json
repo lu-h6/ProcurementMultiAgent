@@ -1,0 +1,239 @@
+{
+  "nodes": [
+    {
+      "id": "config:src/docs/diagrams/styled/agent-collaboration-flow-zh.json",
+      "type": "config",
+      "name": "agent-collaboration-flow-zh.json",
+      "filePath": "src/docs/diagrams/styled/agent-collaboration-flow-zh.json",
+      "summary": "记录agent collaboration flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/business-capabilities-zh.json",
+      "type": "config",
+      "name": "business-capabilities-zh.json",
+      "filePath": "src/docs/diagrams/styled/business-capabilities-zh.json",
+      "summary": "记录business capabilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/chart-generation-flow-zh.json",
+      "type": "config",
+      "name": "chart-generation-flow-zh.json",
+      "filePath": "src/docs/diagrams/styled/chart-generation-flow-zh.json",
+      "summary": "记录chart generation flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "图表",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/chart-startup-flow-zh.json",
+      "type": "config",
+      "name": "chart-startup-flow-zh.json",
+      "filePath": "src/docs/diagrams/styled/chart-startup-flow-zh.json",
+      "summary": "记录chart startup flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "图表",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/design-value-map-zh.json",
+      "type": "config",
+      "name": "design-value-map-zh.json",
+      "filePath": "src/docs/diagrams/styled/design-value-map-zh.json",
+      "summary": "记录design value map zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/improvement-roadmap-zh.json",
+      "type": "config",
+      "name": "improvement-roadmap-zh.json",
+      "filePath": "src/docs/diagrams/styled/improvement-roadmap-zh.json",
+      "summary": "记录improvement roadmap zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/input-guard-flow-zh.json",
+      "type": "config",
+      "name": "input-guard-flow-zh.json",
+      "filePath": "src/docs/diagrams/styled/input-guard-flow-zh.json",
+      "summary": "记录input guard flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "安全",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/input-guard-resume-flow-zh.json",
+      "type": "config",
+      "name": "input-guard-resume-flow-zh.json",
+      "filePath": "src/docs/diagrams/styled/input-guard-resume-flow-zh.json",
+      "summary": "记录input guard resume flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "安全",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/manifest.json",
+      "type": "config",
+      "name": "manifest.json",
+      "filePath": "src/docs/diagrams/styled/manifest.json",
+      "summary": "记录manifest相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/module-dependencies-zh.json",
+      "type": "config",
+      "name": "module-dependencies-zh.json",
+      "filePath": "src/docs/diagrams/styled/module-dependencies-zh.json",
+      "summary": "记录module dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/order-approval-flow-zh.json",
+      "type": "config",
+      "name": "order-approval-flow-zh.json",
+      "filePath": "src/docs/diagrams/styled/order-approval-flow-zh.json",
+      "summary": "记录order approval flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/procurement-architecture-zh.json",
+      "type": "config",
+      "name": "procurement-architecture-zh.json",
+      "filePath": "src/docs/diagrams/styled/procurement-architecture-zh.json",
+      "summary": "记录procurement architecture zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/sandbox-lifecycle-zh.json",
+      "type": "config",
+      "name": "sandbox-lifecycle-zh.json",
+      "filePath": "src/docs/diagrams/styled/sandbox-lifecycle-zh.json",
+      "summary": "记录sandbox lifecycle zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "沙箱",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/skills-context-flow-zh.json",
+      "type": "config",
+      "name": "skills-context-flow-zh.json",
+      "filePath": "src/docs/diagrams/styled/skills-context-flow-zh.json",
+      "summary": "记录skills context flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "技能",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/sse-interaction-zh.json",
+      "type": "config",
+      "name": "sse-interaction-zh.json",
+      "filePath": "src/docs/diagrams/styled/sse-interaction-zh.json",
+      "summary": "记录sse interaction zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/startup-dependencies-zh.json",
+      "type": "config",
+      "name": "startup-dependencies-zh.json",
+      "filePath": "src/docs/diagrams/styled/startup-dependencies-zh.json",
+      "summary": "记录startup dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/storage-responsibilities-zh.json",
+      "type": "config",
+      "name": "storage-responsibilities-zh.json",
+      "filePath": "src/docs/diagrams/styled/storage-responsibilities-zh.json",
+      "summary": "记录storage responsibilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "持久化",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:src/docs/diagrams/styled/validation.json",
+      "type": "config",
+      "name": "validation.json",
+      "filePath": "src/docs/diagrams/styled/validation.json",
+      "summary": "记录validation相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "配置",
+        "json",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

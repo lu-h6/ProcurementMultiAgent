@@ -1,0 +1,742 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-25T03:03:32.4503084Z",
+  "files": {
+    "src/docs/diagrams/styled/agent-collaboration-flow-zh.json": {
+      "overview": "记录agent collaboration flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/middleware_config.py": {
+      "overview": "实现项目src/agent/middleware config模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "frontend/index.html": {
+      "overview": "实现项目frontend/index模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/deepagents_test/deepagents_backend/agent_workspace/tmp.txt": {
+      "overview": "说明项目中的tmp使用方式或设计背景。",
+      "sections": []
+    },
+    "src/docs/chart-tool-token-comparison.json": {
+      "overview": "记录chart tool token comparison相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/business-capabilities-zh.drawio": {
+      "overview": "记录business capabilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/test/test_all_tools.py": {
+      "overview": "验证test all tools相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/deepagents_test/deepagents_backend/opensandbox_test.py": {
+      "overview": "实现项目src/deepagents test/deepagents backend/opensandbox test模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/skills/procurement/procurement-optimization/SKILL.md": {
+      "overview": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "frontend/src/components/ToolCallPanel.vue": {
+      "overview": "实现 Web 聊天界面的ToolCallPanel视图组件。",
+      "sections": []
+    },
+    "src/mcp_server/tools/inventory_tools.py": {
+      "overview": "封装 Agent 可调用的inventory tools工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/mcp_server/tools/order_tools.py": {
+      "overview": "封装 Agent 可调用的order tools工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/docs/diagrams/startup-dependencies-zh.dsl": {
+      "overview": "记录startup dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/storage-responsibilities-zh.json": {
+      "overview": "记录storage responsibilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/test/test_logging.py": {
+      "overview": "验证test logging相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "frontend/package.json": {
+      "overview": "配置项目的package运行、构建或开发工具行为。",
+      "sections": []
+    },
+    "src/agent/tools/hitl_tools.py": {
+      "overview": "封装 Agent 可调用的hitl tools工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/test/agent_test.py": {
+      "overview": "验证agent test相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/deepagents_test/langchain_daytona_sandbox.py": {
+      "overview": "实现项目src/deepagents test/langchain daytona sandbox模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/docs/diagrams/build_diagrams.py": {
+      "overview": "记录build diagrams相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/tools/assign_skill.py": {
+      "overview": "封装 Agent 可调用的assign skill工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/docs/diagrams/module-dependencies-zh.dsl": {
+      "overview": "记录module dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/components/InterruptBanner.vue": {
+      "overview": "实现 Web 聊天界面的InterruptBanner视图组件。",
+      "sections": []
+    },
+    "src/deepagents_test/test_v1_v2.py": {
+      "overview": "验证test v1 v2相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/api_view/api/history.py": {
+      "overview": "提供 Web history接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/mcp_server/server_main.py": {
+      "overview": "注册或运行 ERP MCP 服务中的server main能力。",
+      "sections": []
+    },
+    "frontend/src/api/auth.js": {
+      "overview": "提供 Web auth接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/skills/order/purchase-order-summarization/SKILL.md": {
+      "overview": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "frontend/src/utils/messageSources.js": {
+      "overview": "实现 Vue 前端的messageSources界面、状态、API 或样式功能。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/startup-dependencies-zh.json": {
+      "overview": "记录startup dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/module-dependencies-zh.json": {
+      "overview": "记录module dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/test/test_mcp.py": {
+      "overview": "验证test mcp相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/skills/main/skill-management/scripts/download_skill.py": {
+      "overview": "为采购 Agent 提供download skill领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/api_view/web_main.py": {
+      "overview": "提供 Web web main接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/validation.json": {
+      "overview": "记录validation相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/sections/input-guard.md": {
+      "overview": "记录input guard相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/order-approval-flow-zh.drawio": {
+      "overview": "记录order approval flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/tools/download_sandbox_file.py": {
+      "overview": "封装 Agent 可调用的download sandbox file工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/skills/analyis_chart_params.md": {
+      "overview": "为采购 Agent 提供analyis chart params领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/agent/tools/chart_validation.py": {
+      "overview": "封装 Agent 可调用的chart validation工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/deepagents_test/01_long_memory_demo.py": {
+      "overview": "实现项目src/deepagents test/01 long memory demo模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/api_view/auth.py": {
+      "overview": "提供 Web auth接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "README.md": {
+      "overview": "项目总览文档，说明 ERP 采购助手的安装启动、图表工具、输入安全、Web 认证和 MySQL 会话存储。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/sandbox-lifecycle-zh.json": {
+      "overview": "记录sandbox lifecycle zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/input-guard-resume-flow-zh.json": {
+      "overview": "记录input guard resume flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "requirements.txt": {
+      "overview": "声明 Python 包构建元数据及 DeepAgents、LangChain、FastAPI、MCP、MySQL 等运行依赖。",
+      "sections": []
+    },
+    "src/docs/diagrams/procurement-architecture-zh.drawio": {
+      "overview": "记录procurement architecture zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/mcp_server/http_base.py": {
+      "overview": "注册或运行 ERP MCP 服务中的http base能力。",
+      "sections": []
+    },
+    "scripts/init_mysql.py": {
+      "overview": "实现项目scripts/init mysql模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/mcp_server/tools/suppliers_tools.py": {
+      "overview": "封装 Agent 可调用的suppliers tools工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "frontend/src/components/ChartPreview.vue": {
+      "overview": "实现 Web 聊天界面的ChartPreview视图组件。",
+      "sections": []
+    },
+    "src/agent/tools/chart_generator.py": {
+      "overview": "封装 Agent 可调用的chart generator工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/docs/diagrams/skills-context-flow-zh.drawio": {
+      "overview": "记录skills context flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/agent-collaboration-flow-zh.drawio": {
+      "overview": "记录agent collaboration flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/design-value-map-zh.drawio": {
+      "overview": "记录design value map zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/middlewares/guardrail_response.py": {
+      "overview": "实现 Agent 运行时的guardrail response中间件，处理跨请求的上下文、安全或工具行为。",
+      "sections": []
+    },
+    "src/api_view/api/chat.py": {
+      "overview": "提供 Web chat接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "frontend/src/utils/images.js": {
+      "overview": "实现 Vue 前端的images界面、状态、API 或样式功能。",
+      "sections": []
+    },
+    "frontend/.vite/deps/vue.js": {
+      "overview": "实现项目frontend/.vite/deps/vue模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/agent/tools/web_search.py": {
+      "overview": "封装 Agent 可调用的web search工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/docs/diagrams/input-guard-resume-flow-zh.dsl": {
+      "overview": "记录input guard resume flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/skills/procurement/supplier-price-urls/SKILL.md": {
+      "overview": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/agent/middlewares/tool_error.py": {
+      "overview": "实现 Agent 运行时的tool error中间件，处理跨请求的上下文、安全或工具行为。",
+      "sections": []
+    },
+    "src/docs/diagrams/business-capabilities-zh.dsl": {
+      "overview": "记录business capabilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/backends/sandbox_manager.py": {
+      "overview": "实现 OpenSandbox 执行后端及其sandbox manager生命周期、配置或代理适配。",
+      "sections": []
+    },
+    "src/docs/diagrams/order-approval-flow-zh.dsl": {
+      "overview": "记录order approval flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "docs/architecture/procurement-agent-architecture.drawio": {
+      "overview": "记录procurement agent architecture相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/agent-collaboration-flow-zh.dsl": {
+      "overview": "记录agent collaboration flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/measure_chart_tool_tokens.py": {
+      "overview": "记录measure chart tool tokens相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/guardrails/rails/business.co": {
+      "overview": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "sections": []
+    },
+    "src/skills/main/skill-management/SKILL.md": {
+      "overview": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/mcp_server/tools/parts_tools.py": {
+      "overview": "封装 Agent 可调用的parts tools工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/agent/input_guard.py": {
+      "overview": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "sections": []
+    },
+    "src/docs/diagrams/publish-progress.json": {
+      "overview": "记录publish progress相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/sections/chart-entry.md": {
+      "overview": "记录chart entry相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/skills/procurement/web-scraper/_meta.json": {
+      "overview": "为采购 Agent 提供 meta领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/docs/diagrams/storage-responsibilities-zh.drawio": {
+      "overview": "记录storage responsibilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/module-dependencies-zh.drawio": {
+      "overview": "记录module dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/components/MarkdownRenderer.vue": {
+      "overview": "实现 Web 聊天界面的MarkdownRenderer视图组件。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/business-capabilities-zh.json": {
+      "overview": "记录business capabilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/test/test_chart_live.py": {
+      "overview": "验证test chart live相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/deepagents_test/deepagents_backend/agent_workspace/abc.txt": {
+      "overview": "说明项目中的abc使用方式或设计背景。",
+      "sections": []
+    },
+    "src/agent/guardrails/policies.yml": {
+      "overview": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "sections": []
+    },
+    "src/agent/middlewares/sandbox_breaker.py": {
+      "overview": "实现 Agent 运行时的sandbox breaker中间件，处理跨请求的上下文、安全或工具行为。",
+      "sections": []
+    },
+    "src/api_view/api/auth.py": {
+      "overview": "提供 Web auth接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/docs/diagrams/chart-generation-flow-zh.dsl": {
+      "overview": "记录chart generation flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/middlewares/sandbox_health.py": {
+      "overview": "实现 Agent 运行时的sandbox health中间件，处理跨请求的上下文、安全或工具行为。",
+      "sections": []
+    },
+    "frontend/src/styles/main.css": {
+      "overview": "实现 Vue 前端的main界面、状态、API 或样式功能。",
+      "sections": []
+    },
+    "src/docs/diagrams/design-value-map-zh.dsl": {
+      "overview": "记录design value map zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/components/AuthPage.vue": {
+      "overview": "实现 Web 聊天界面的AuthPage视图组件。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/manifest.json": {
+      "overview": "记录manifest相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "start_web.py": {
+      "overview": "实现项目start web模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/test/test_chart_generator.py": {
+      "overview": "验证test chart generator相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/deepagents_test/langgraph_demo.py": {
+      "overview": "实现项目src/deepagents test/langgraph demo模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    ".env.example": {
+      "overview": "列出模型、ERP/MCP、沙箱、MySQL、认证和 Web 服务的环境变量模板，不包含真实凭据。",
+      "sections": []
+    },
+    "frontend/src/api/chat.js": {
+      "overview": "提供 Web chat接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/docs/diagrams/chart-generation-flow-zh.drawio": {
+      "overview": "记录chart generation flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/backends/sandbox_setup.py": {
+      "overview": "实现 OpenSandbox 执行后端及其sandbox setup生命周期、配置或代理适配。",
+      "sections": []
+    },
+    "src/agent/logging_config.py": {
+      "overview": "实现项目src/agent/logging config模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "frontend/vite.config.js": {
+      "overview": "实现项目frontend/vite.config模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/skills/procurement/procurement-analysis/SKILL.md": {
+      "overview": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/deepagents_test/deepagents_backend/opensandboxbackend.py": {
+      "overview": "实现项目src/deepagents test/deepagents backend/opensandboxbackend模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "frontend/.vite/deps/_metadata.json": {
+      "overview": "配置项目的 metadata运行、构建或开发工具行为。",
+      "sections": []
+    },
+    "src/docs/diagrams/storage-responsibilities-zh.dsl": {
+      "overview": "记录storage responsibilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/backends/custom_opensandbox.py": {
+      "overview": "实现 OpenSandbox 执行后端及其custom opensandbox生命周期、配置或代理适配。",
+      "sections": []
+    },
+    "src/docs/diagrams/prepare_yuque_board_update.py": {
+      "overview": "记录prepare yuque board update相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/schema.py": {
+      "overview": "实现项目src/agent/schema模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/agent/middlewares/context_injection.py": {
+      "overview": "实现 Agent 运行时的context injection中间件，处理跨请求的上下文、安全或工具行为。",
+      "sections": []
+    },
+    "src/test/test_subagents.py": {
+      "overview": "验证test subagents相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/skills/order/purchase-order-summarization/NOTICE": {
+      "overview": "为采购 Agent 提供NOTICE领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/docs/diagrams/chart-startup-flow-zh.dsl": {
+      "overview": "记录chart startup flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/ChatWorkspace.vue": {
+      "overview": "实现 Vue 前端的ChatWorkspace界面、状态、API 或样式功能。",
+      "sections": []
+    },
+    "src/docs/diagrams/chart-startup-flow-zh.drawio": {
+      "overview": "记录chart startup flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/improvement-roadmap-zh.json": {
+      "overview": "记录improvement roadmap zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/chart-startup-flow-zh.json": {
+      "overview": "记录chart startup flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/components/InputArea.vue": {
+      "overview": "实现 Web 聊天界面的InputArea视图组件。",
+      "sections": []
+    },
+    "src/docs/diagrams/sse-interaction-zh.drawio": {
+      "overview": "记录sse interaction zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/api_view/agent_loader.py": {
+      "overview": "提供 Web agent loader接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/docs/diagrams/sse-interaction-zh.dsl": {
+      "overview": "记录sse interaction zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/improvement-roadmap-zh.dsl": {
+      "overview": "记录improvement roadmap zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/env_utils.py": {
+      "overview": "实现项目src/agent/env utils模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/test/test_skills_sync.py": {
+      "overview": "验证test skills sync相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/agent/memory/AGENTS.md": {
+      "overview": "说明项目中的AGENTS使用方式或设计背景。",
+      "sections": []
+    },
+    "src/agent/middlewares/skills_sync.py": {
+      "overview": "实现 Agent 运行时的skills sync中间件，处理跨请求的上下文、安全或工具行为。",
+      "sections": []
+    },
+    "src/agent/guardrails/prompts.yml": {
+      "overview": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "sections": []
+    },
+    "src/docs/diagrams/skills-context-flow-zh.dsl": {
+      "overview": "记录skills context flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/input-guard-resume-flow-zh.drawio": {
+      "overview": "记录input guard resume flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/api/chat.test.js": {
+      "overview": "提供 Web chat.test接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/agent/middlewares/user_skills_restore.py": {
+      "overview": "实现 Agent 运行时的user skills restore中间件，处理跨请求的上下文、安全或工具行为。",
+      "sections": []
+    },
+    "src/agent/guardrails/config.yml": {
+      "overview": "定义或实现用户输入安全检查、策略规则、审查提示及拦截流程。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/procurement-architecture-zh.json": {
+      "overview": "记录procurement architecture zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/style_native_boards.py": {
+      "overview": "记录style native boards相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/yuque-boards.json": {
+      "overview": "记录yuque boards相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/test/test_web_search.py": {
+      "overview": "验证test web search相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/skills/procurement/web-scraper/SKILL.md": {
+      "overview": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "frontend/.vite/deps/package.json": {
+      "overview": "配置项目的package运行、构建或开发工具行为。",
+      "sections": []
+    },
+    "src/agent/config.py": {
+      "overview": "实现项目src/agent/config模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/design-value-map-zh.json": {
+      "overview": "记录design value map zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/main_agent.py": {
+      "overview": "实现项目src/agent/main agent模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "frontend/src/utils/messageSources.test.js": {
+      "overview": "验证messageSources.test相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "pyproject.toml": {
+      "overview": "声明 Python 包构建元数据及 DeepAgents、LangChain、FastAPI、MCP、MySQL 等运行依赖。",
+      "sections": []
+    },
+    "src/agent/memory/prompts.py": {
+      "overview": "实现项目src/agent/memory/prompts模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "frontend/src/api/http.js": {
+      "overview": "提供 Web http接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/skills-context-flow-zh.json": {
+      "overview": "记录skills context flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/project-design-publish.json": {
+      "overview": "记录project design publish相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/App.vue": {
+      "overview": "实现 Vue 前端的App界面、状态、API 或样式功能。",
+      "sections": []
+    },
+    "src/agent/tools/mcp_client.py": {
+      "overview": "封装 Agent 可调用的mcp client工具、参数处理与外部服务交互。",
+      "sections": []
+    },
+    "src/skills/procurement/supplier-price-urls/data/url_mapping.yaml": {
+      "overview": "为采购 Agent 提供url mapping领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/docs/diagrams/input-guard-flow-zh.dsl": {
+      "overview": "记录input guard flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/deepagents_test/test_stream.py": {
+      "overview": "验证test stream相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "frontend/src/components/Sidebar.vue": {
+      "overview": "实现 Web 聊天界面的Sidebar视图组件。",
+      "sections": []
+    },
+    "src/skills/procurement/web-scraper/scrape_page.py": {
+      "overview": "为采购 Agent 提供scrape page领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "src/docs/diagrams/input-guard-flow-zh.drawio": {
+      "overview": "记录input guard flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/utils/images.test.js": {
+      "overview": "验证images.test相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/docs/diagrams/diagram-review.html": {
+      "overview": "记录diagram review相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/agent/mysql_storage.py": {
+      "overview": "实现项目src/agent/mysql storage模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/test/chart_test_support.py": {
+      "overview": "验证chart test support相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/docs/diagrams/sandbox-lifecycle-zh.dsl": {
+      "overview": "记录sandbox lifecycle zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/chart-generation-flow-zh.json": {
+      "overview": "记录chart generation flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/api/history.js": {
+      "overview": "提供 Web history接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "frontend/src/utils/toolCalls.js": {
+      "overview": "实现 Vue 前端的toolCalls界面、状态、API 或样式功能。",
+      "sections": []
+    },
+    "src/agent/backends/sandbox_proxy.py": {
+      "overview": "实现 OpenSandbox 执行后端及其sandbox proxy生命周期、配置或代理适配。",
+      "sections": []
+    },
+    "frontend/src/utils/replyTurns.test.js": {
+      "overview": "验证replyTurns.test相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/docs/diagrams/improvement-roadmap-zh.drawio": {
+      "overview": "记录improvement roadmap zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/utils/markdown.js": {
+      "overview": "实现 Vue 前端的markdown界面、状态、API 或样式功能。",
+      "sections": []
+    },
+    "frontend/src/components/ChatArea.vue": {
+      "overview": "实现 Web 聊天界面的ChatArea视图组件。",
+      "sections": []
+    },
+    "frontend/src/api/auth.test.js": {
+      "overview": "提供 Web auth.test接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "chip_supply_db.sql": {
+      "overview": "包含芯链供应链业务数据库的 SQL 定义或初始化数据，为采购业务提供关系型数据结构。",
+      "sections": []
+    },
+    "src/docs/diagrams/startup-dependencies-zh.drawio": {
+      "overview": "记录startup dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/project-design.md": {
+      "overview": "记录project design相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/sse-interaction-zh.json": {
+      "overview": "记录sse interaction zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/deepagents_test/deepagents_backend/statebackend.py": {
+      "overview": "实现项目src/deepagents test/deepagents backend/statebackend模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "src/docs/diagrams/procurement-architecture-zh.dsl": {
+      "overview": "记录procurement architecture zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "frontend/src/utils/toolCalls.test.js": {
+      "overview": "验证toolCalls.test相关行为、输入边界和失败处理。",
+      "sections": []
+    },
+    "src/deepagents_test/deepagents_backend/sqlitebackend.py": {
+      "overview": "实现项目src/deepagents test/deepagents backend/sqlitebackend模块中的功能逻辑，并参与采购助手运行流程。",
+      "sections": []
+    },
+    "frontend/src/components/MessageItem.vue": {
+      "overview": "实现 Web 聊天界面的MessageItem视图组件。",
+      "sections": []
+    },
+    "src/docs/diagrams/sandbox-lifecycle-zh.drawio": {
+      "overview": "记录sandbox lifecycle zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/boards.json": {
+      "overview": "记录boards相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/project-design-preview.html": {
+      "overview": "记录project design preview相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/order-approval-flow-zh.json": {
+      "overview": "记录order approval flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/docs/diagrams/styled/input-guard-flow-zh.json": {
+      "overview": "记录input guard flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "sections": []
+    },
+    "src/skills/main/find-skills/SKILL.md": {
+      "overview": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "sections": []
+    },
+    "frontend/src/api/inputSafety.test.js": {
+      "overview": "提供 Web inputSafety.test接口处理、会话鉴权或响应序列化。",
+      "sections": []
+    },
+    "frontend/src/main.js": {
+      "overview": "实现 Vue 前端的main界面、状态、API 或样式功能。",
+      "sections": []
+    }
+  }
+}

@@ -1,0 +1,875 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/docs/diagrams/order-approval-flow-zh.drawio",
+      "type": "file",
+      "name": "order-approval-flow-zh.drawio",
+      "filePath": "src/docs/diagrams/order-approval-flow-zh.drawio",
+      "summary": "记录order approval flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/order-approval-flow-zh.dsl",
+      "type": "file",
+      "name": "order-approval-flow-zh.dsl",
+      "filePath": "src/docs/diagrams/order-approval-flow-zh.dsl",
+      "summary": "记录order approval flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/prepare_yuque_board_update.py",
+      "type": "file",
+      "name": "prepare_yuque_board_update.py",
+      "filePath": "src/docs/diagrams/prepare_yuque_board_update.py",
+      "summary": "记录prepare yuque board update相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/procurement-architecture-zh.drawio",
+      "type": "file",
+      "name": "procurement-architecture-zh.drawio",
+      "filePath": "src/docs/diagrams/procurement-architecture-zh.drawio",
+      "summary": "记录procurement architecture zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/procurement-architecture-zh.dsl",
+      "type": "file",
+      "name": "procurement-architecture-zh.dsl",
+      "filePath": "src/docs/diagrams/procurement-architecture-zh.dsl",
+      "summary": "记录procurement architecture zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/sandbox-lifecycle-zh.drawio",
+      "type": "file",
+      "name": "sandbox-lifecycle-zh.drawio",
+      "filePath": "src/docs/diagrams/sandbox-lifecycle-zh.drawio",
+      "summary": "记录sandbox lifecycle zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "沙箱",
+        "drawio",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/sandbox-lifecycle-zh.dsl",
+      "type": "file",
+      "name": "sandbox-lifecycle-zh.dsl",
+      "filePath": "src/docs/diagrams/sandbox-lifecycle-zh.dsl",
+      "summary": "记录sandbox lifecycle zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "沙箱",
+        "dsl",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/skills-context-flow-zh.drawio",
+      "type": "file",
+      "name": "skills-context-flow-zh.drawio",
+      "filePath": "src/docs/diagrams/skills-context-flow-zh.drawio",
+      "summary": "记录skills context flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "技能",
+        "drawio",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/skills-context-flow-zh.dsl",
+      "type": "file",
+      "name": "skills-context-flow-zh.dsl",
+      "filePath": "src/docs/diagrams/skills-context-flow-zh.dsl",
+      "summary": "记录skills context flow zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "技能",
+        "dsl",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/sse-interaction-zh.drawio",
+      "type": "file",
+      "name": "sse-interaction-zh.drawio",
+      "filePath": "src/docs/diagrams/sse-interaction-zh.drawio",
+      "summary": "记录sse interaction zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/sse-interaction-zh.dsl",
+      "type": "file",
+      "name": "sse-interaction-zh.dsl",
+      "filePath": "src/docs/diagrams/sse-interaction-zh.dsl",
+      "summary": "记录sse interaction zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/startup-dependencies-zh.drawio",
+      "type": "file",
+      "name": "startup-dependencies-zh.drawio",
+      "filePath": "src/docs/diagrams/startup-dependencies-zh.drawio",
+      "summary": "记录startup dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "drawio",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/startup-dependencies-zh.dsl",
+      "type": "file",
+      "name": "startup-dependencies-zh.dsl",
+      "filePath": "src/docs/diagrams/startup-dependencies-zh.dsl",
+      "summary": "记录startup dependencies zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "dsl",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/storage-responsibilities-zh.drawio",
+      "type": "file",
+      "name": "storage-responsibilities-zh.drawio",
+      "filePath": "src/docs/diagrams/storage-responsibilities-zh.drawio",
+      "summary": "记录storage responsibilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "持久化",
+        "drawio",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/docs/diagrams/storage-responsibilities-zh.dsl",
+      "type": "file",
+      "name": "storage-responsibilities-zh.dsl",
+      "filePath": "src/docs/diagrams/storage-responsibilities-zh.dsl",
+      "summary": "记录storage responsibilities zh相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "持久化",
+        "dsl",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/docs/diagrams/style_native_boards.py",
+      "type": "file",
+      "name": "style_native_boards.py",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "summary": "记录style native boards相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "python",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:src/docs/sections/chart-entry.md",
+      "type": "document",
+      "name": "chart-entry.md",
+      "filePath": "src/docs/sections/chart-entry.md",
+      "summary": "记录chart entry相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "文档",
+        "图表",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:src/docs/sections/input-guard.md",
+      "type": "document",
+      "name": "input-guard.md",
+      "filePath": "src/docs/sections/input-guard.md",
+      "summary": "记录input guard相关的项目设计、实现说明、验证结果或架构资料。",
+      "tags": [
+        "文档",
+        "安全",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:src/skills/analyis_chart_params.md",
+      "type": "document",
+      "name": "analyis_chart_params.md",
+      "filePath": "src/skills/analyis_chart_params.md",
+      "summary": "为采购 Agent 提供analyis chart params领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "图表",
+        "技能"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:src/skills/main/find-skills/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "src/skills/main/find-skills/SKILL.md",
+      "summary": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "技能",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:src/skills/main/skill-management/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "src/skills/main/skill-management/SKILL.md",
+      "summary": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "技能",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "type": "file",
+      "name": "download_skill.py",
+      "filePath": "src/skills/main/skill-management/scripts/download_skill.py",
+      "summary": "为采购 Agent 提供download skill领域技能说明或辅助脚本。",
+      "tags": [
+        "技能",
+        "python",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/skills/order/purchase-order-summarization/NOTICE",
+      "type": "file",
+      "name": "NOTICE",
+      "filePath": "src/skills/order/purchase-order-summarization/NOTICE",
+      "summary": "为采购 Agent 提供NOTICE领域技能说明或辅助脚本。",
+      "tags": [
+        "技能",
+        "unknown",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:src/skills/order/purchase-order-summarization/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "src/skills/order/purchase-order-summarization/SKILL.md",
+      "summary": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "技能",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:src/skills/procurement/procurement-analysis/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": "src/skills/procurement/procurement-analysis/SKILL.md",
+      "summary": "为采购 Agent 提供SKILL领域技能说明或辅助脚本。",
+      "tags": [
+        "文档",
+        "技能",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/docs/diagrams/prepare_yuque_board_update.py:prepare",
+      "type": "function",
+      "name": "prepare",
+      "filePath": "src/docs/diagrams/prepare_yuque_board_update.py",
+      "lineRange": [
+        17,
+        46
+      ],
+      "summary": "处理prepare相关逻辑，供prepare yuque board update模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:wrap",
+      "type": "function",
+      "name": "wrap",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        24,
+        35
+      ],
+      "summary": "处理wrap相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:markup",
+      "type": "function",
+      "name": "markup",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        38,
+        41
+      ],
+      "summary": "处理markup相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:rect",
+      "type": "function",
+      "name": "rect",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        44,
+        46
+      ],
+      "summary": "处理rect相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:overlap",
+      "type": "function",
+      "name": "overlap",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        49,
+        50
+      ],
+      "summary": "处理overlap相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:compress",
+      "type": "function",
+      "name": "compress",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        53,
+        62
+      ],
+      "summary": "处理compress相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:port",
+      "type": "function",
+      "name": "port",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        65,
+        68
+      ],
+      "summary": "处理port相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:route",
+      "type": "function",
+      "name": "route",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        71,
+        116
+      ],
+      "summary": "处理route相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:build_flow",
+      "type": "function",
+      "name": "build_flow",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        119,
+        194
+      ],
+      "summary": "处理build flow相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:build_architecture",
+      "type": "function",
+      "name": "build_architecture",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        197,
+        222
+      ],
+      "summary": "处理build architecture相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:draw_preview",
+      "type": "function",
+      "name": "draw_preview",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        225,
+        258
+      ],
+      "summary": "处理draw preview相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/docs/diagrams/style_native_boards.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/docs/diagrams/style_native_boards.py",
+      "lineRange": [
+        261,
+        283
+      ],
+      "summary": "处理main相关逻辑，供style native boards模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "code",
+        "采购助手",
+        "模块"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/main/skill-management/scripts/download_skill.py:extract_slug",
+      "type": "function",
+      "name": "extract_slug",
+      "filePath": "src/skills/main/skill-management/scripts/download_skill.py",
+      "lineRange": [
+        29,
+        40
+      ],
+      "summary": "处理extract slug相关逻辑，供download skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/main/skill-management/scripts/download_skill.py:parse_frontmatter",
+      "type": "function",
+      "name": "parse_frontmatter",
+      "filePath": "src/skills/main/skill-management/scripts/download_skill.py",
+      "lineRange": [
+        43,
+        59
+      ],
+      "summary": "处理parse frontmatter相关逻辑，供download skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/main/skill-management/scripts/download_skill.py:validate_skill",
+      "type": "function",
+      "name": "validate_skill",
+      "filePath": "src/skills/main/skill-management/scripts/download_skill.py",
+      "lineRange": [
+        62,
+        85
+      ],
+      "summary": "处理validate skill相关逻辑，供download skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/skills/main/skill-management/scripts/download_skill.py:download_skill",
+      "type": "function",
+      "name": "download_skill",
+      "filePath": "src/skills/main/skill-management/scripts/download_skill.py",
+      "lineRange": [
+        88,
+        146
+      ],
+      "summary": "处理download skill相关逻辑，供download skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/skills/main/skill-management/scripts/download_skill.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "src/skills/main/skill-management/scripts/download_skill.py",
+      "lineRange": [
+        149,
+        157
+      ],
+      "summary": "处理main相关逻辑，供download skill模块内部或调用方使用。",
+      "tags": [
+        "函数",
+        "技能",
+        "code",
+        "采购助手"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/docs/diagrams/prepare_yuque_board_update.py",
+      "target": "function:src/docs/diagrams/prepare_yuque_board_update.py:prepare",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/prepare_yuque_board_update.py",
+      "target": "function:src/docs/diagrams/prepare_yuque_board_update.py:prepare",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:wrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:wrap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:markup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:markup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:rect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:rect",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:overlap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:overlap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:compress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:compress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:port",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:port",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:route",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:route",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:build_flow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:build_flow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:build_architecture",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:build_architecture",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:draw_preview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:draw_preview",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/docs/diagrams/style_native_boards.py",
+      "target": "function:src/docs/diagrams/style_native_boards.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:extract_slug",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:extract_slug",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:parse_frontmatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:parse_frontmatter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:validate_skill",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:validate_skill",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:download_skill",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:download_skill",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/skills/main/skill-management/scripts/download_skill.py",
+      "target": "function:src/skills/main/skill-management/scripts/download_skill.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

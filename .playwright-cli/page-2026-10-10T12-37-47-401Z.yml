@@ -1,0 +1,66 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - link "棱镜工作台首页" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: ◈
+      - generic [ref=e7]:
+        - text: 棱镜工作台
+        - generic [ref=e8]: ERP INTELLIGENCE
+    - generic [ref=e9]: 从需求到决策，有条不紊。
+  - generic [ref=e10]:
+    - region "让每一次采购 都有据可依。" [ref=e11]:
+      - generic [ref=e12]: 你的企业采购助手
+      - heading "让每一次采购 都有据可依。" [level=1] [ref=e14]:
+        - text: 让每一次采购
+        - text: 都有据可依。
+      - paragraph [ref=e15]:
+        - text: 把供应商、物料与订单放在同一段对话里。
+        - text: 让繁复的信息清晰起来，把时间留给重要的决策。
+      - generic "采购工作流程" [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]: PROCUREMENT WORKSPACE
+          - generic [ref=e19]: 井然有序
+        - generic [ref=e20]:
+          - generic [ref=e21]: "01"
+          - generic [ref=e22]:
+            - strong [ref=e23]: 理解采购需求
+            - paragraph [ref=e24]: 从物料规格到预算，明确每一个条件
+          - generic [ref=e25]: ↗
+        - generic [ref=e26]:
+          - generic [ref=e27]: "02"
+          - generic [ref=e28]:
+            - strong [ref=e29]: 对比与分析
+            - paragraph [ref=e30]: 连接供应商信息，辅助做出采购判断
+          - generic [ref=e31]: ↗
+        - generic [ref=e32]:
+          - generic [ref=e33]: "03"
+          - generic [ref=e34]:
+            - strong [ref=e35]: 确认后，再执行
+            - paragraph [ref=e36]: 关键订单操作，由你掌握最后的决定
+          - generic [ref=e37]: ✓
+      - paragraph [ref=e38]: 专属会话记录 · 连续的工作上下文
+    - region "欢迎回来" [ref=e39]:
+      - generic "账号操作" [ref=e40]:
+        - button "登录" [pressed] [ref=e41] [cursor=pointer]
+        - button "注册账号" [ref=e42] [cursor=pointer]
+      - heading "欢迎回来" [level=2] [ref=e43]
+      - paragraph [ref=e44]: 登录账号，继续上次的工作。
+      - generic [ref=e45]:
+        - generic [ref=e46]: 用户名
+        - textbox "用户名" [ref=e47]:
+          - /placeholder: 输入你的用户名
+        - paragraph [ref=e48]: 2–32 位字母、数字、下划线或短横线，不区分大小写
+        - generic [ref=e49]: 密码
+        - generic [ref=e50]:
+          - textbox "密码" [ref=e51]:
+            - /placeholder: 输入 8–128 位密码
+          - button "显示密码" [ref=e52] [cursor=pointer]: 显示
+        - button "进入工作台" [ref=e53] [cursor=pointer]:
+          - text: 进入工作台
+          - generic [ref=e54]: →
+      - generic [ref=e55]:
+        - generic [ref=e56]: ◇
+        - text: 每次登录，回到属于你的工作空间。
+  - generic [ref=e57]:
+    - generic [ref=e58]: 棱镜 · 企业采购智能助手
+    - generic [ref=e59]: 信息更清晰，决策更从容。
